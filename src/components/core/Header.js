@@ -6,35 +6,35 @@ function Header() {
   return (
     <div>
       <nav class="border-b-[6px] border-[#09EC92] bg-white dark:bg-gray-800 shado w py-7 ">
-        <div class="px-8 mx-auto max-w-[1170px]">
+        <div class="mx-auto max-w-[1170px]">
           <div class="flex items-center justify-between h-16">
             <div class=" flex items-center">
-              <a class="flex-shrink-0" href="/">
-                <img class="w-[130px]" src={logo2} alt="Workflow" />
+              <a class="flex-shrink-0 pr-10" href="/">
+                <img class="w-[130px]" src={logo2} alt="logo" />
               </a>
               <div class="hidden md:block">
-                <div class="flex items-baseline ml-10 space-x-3">
-                  <a class="text-[16px] text-[#09EC92] font-bold py-2" href="/#">
+                <div class="flex items-baseline ml-10 space-x-5">
+                  <a class="text-[18px] text-[#09EC92] font-bold py-2" href="/#">
                     Home
                   </a>
-                  <a class="text-[16px] hover:text-[#09EC92] font-normal px-3 py-2" href="/#">
+                  <a class="text-[18px] hover:text-[#09EC92] font-normal px-3 py-2" href="/#">
                     About Us
                   </a>
-                  <a class="text-[16px] hover:text-[#09EC92] font-normal px-3 py-2" href="/#">
+                  <a class="text-[18px] hover:text-[#09EC92] font-normal px-3 py-2" href="/#">
                     Features
                   </a>
-                  <a class="text-[16px] hover:text-[#09EC92] font-normal px-3 py-2" href="/#">
+                  <a class="text-[18px] hover:text-[#09EC92] font-normal px-3 py-2" href="/#">
                     Contact Us
                   </a>
                 </div>
               </div>
             </div>
             <div class="block">
-              <div class="flex items-center ml-4 md:ml-6">
-                <button type="button" class="w-full text-[16px] font-medium whitespace-nowrap rounded-md px-4 py-2 ">
+              <div class="flex items-center gap-x-3 ml-4 md:ml-6">
+                <button type="button" class="w-full text-[16px] font-bold whitespace-nowrap rounded-md px-4 py-2 ">
                   Sign in
                 </button>
-                <button type="button" class="w-full text-[#fff] text-[16px] font-medium whitespace-nowrap rounded-full bg-[#09EC92] px-6 py-3  ">
+                <button type="button" class="text-[#fff] text-[16px] font-medium whitespace-nowrap rounded-full bg-[#09EC92] px-6 py-3  ">
                   Sign up free →
                 </button>
               </div>
