@@ -2,7 +2,7 @@ import React from 'react'
 import twoAppScreens from "../../assets/images/two-app-screens.png"
 import { FiChevronRight } from 'react-icons/fi';
 
-function ContentImageSection() {
+function ContentImage() {
     return (
         <section className='w-full bg-[#f8ffff7a]'>
             <div class="max-w-[1170px] mx-auto">
@@ -37,7 +37,7 @@ function ContentImageSection() {
                             </div>
                         </button>
                     </div>
-                    <div className='pr-14'>
+                    <div className='pr-14 pb-8'>
                         <img class=" scale-[1] mt-[-60px]" src={twoAppScreens} alt="logo" />
                     </div>
                 </div>
@@ -46,4 +46,4 @@ function ContentImageSection() {
     )
 }
 
-export default ContentImageSection
+export default ContentImage

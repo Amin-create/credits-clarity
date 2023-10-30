@@ -1,7 +1,7 @@
 import React from 'react'
 import { FiChevronRight } from 'react-icons/fi';
 
-function HelpSection() {
+function Help() {
     return (
         <section className='w-full relative'>
 
@@ -16,7 +16,7 @@ function HelpSection() {
                         </p>
                     </div>
                     <div className='flex justify-between items-center gap-x-[20px]'>
-                        <div className='w-[33%] text-center rounded-[26px] bg-gradient-to-r from-[#ffffff63] to-[#ffffff63] py-8 px-6'>
+                        <div className='w-[33%] text-center rounded-[26px] bg-gradient-to-r from-[#ffffff63] to-[#ffffff63] pt-8 pb-14 px-6'>
                             <h3 className='text-[22px] font-bold leading-[70px]'>
                                 Heading 1
                             </h3>
@@ -24,7 +24,7 @@ function HelpSection() {
                                 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.
                             </p>
                         </div>
-                        <div className='w-[33%] text-center rounded-[26px] bg-gradient-to-r from-[#ffffff63] to-[#ffffff63] py-8 px-6'>
+                        <div className='w-[33%] text-center rounded-[26px] bg-gradient-to-r from-[#ffffff63] to-[#ffffff63] pt-8 pb-14 px-6'>
                             <h3 className='text-[22px] font-bold leading-[70px]'>
                                 Heading 2
                             </h3>
@@ -32,7 +32,7 @@ function HelpSection() {
                                 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.
                             </p>
                         </div>
-                        <div className='w-[33%] text-center rounded-[26px] bg-gradient-to-r from-[#ffffff63] to-[#ffffff63] py-8 px-6'>
+                        <div className='w-[33%] text-center rounded-[26px] bg-gradient-to-r from-[#ffffff63] to-[#ffffff63] pt-8 pb-14 px-6'>
                             <h3 className='text-[22px] font-bold leading-[70px]'>
                                 Heading 3
                             </h3>
@@ -57,4 +57,4 @@ function HelpSection() {
     )
 }
 
-export default HelpSection
+export default Help
