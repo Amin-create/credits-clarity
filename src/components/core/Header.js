@@ -5,7 +5,7 @@ import logo2 from "../../assets/images/logo/logo.svg"
 function Header() {
   return (
     <div>
-      <nav class="border-b-[6px] border-[#09EC92] bg-white dark:bg-gray-800 shado w py-7 ">
+      <nav class="border-b-[6px] border-[#09EC92] bg-white dark:bg-gray-800 py-7">
         <div class="mx-auto max-w-[1170px]">
           <div class="flex items-center justify-between h-16">
             <div class=" flex items-center">
