@@ -4,6 +4,7 @@ import Header from './components/core/Header.js';
 import ContentImage from "./components/home/ContentImage";
 import Cta from "./components/home/Cta";
 import Faq from "./components/home/faq/Faq";
+import Footer from "./components/home/Footer";
 import Help from './components/home/Help.js';
 import Hero from './components/home/Hero.js';
 
@@ -15,7 +16,8 @@ function App() {
       <Help /> */}
       {/* <ContentImage /> */}
       {/* <Faq /> */}
-      <Cta />
+      {/* <Cta /> */}
+      <Footer />
     </main>
   );
 }
