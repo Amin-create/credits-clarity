@@ -38,3 +38,7 @@ body {
   background-size: cover;
   /* background-position: center; */
 }
+.cta-section {
+  background-image: url('./assets/images/bg/banner-app-screen.png'); 
+  background-size: cover;
+}

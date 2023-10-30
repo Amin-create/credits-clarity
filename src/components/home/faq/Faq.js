@@ -56,7 +56,6 @@ const FAQ = ({ faqData }) => {
                 </div>
             </div>
         </div>
-
     );
 };
 
@@ -89,24 +88,15 @@ const faqData = [
         question: 'What is Surge fee?',
         answer: '7 Chowdeck is a technology company that provides logistics services to both vendors and consumers. This potentially allows food vendors to deliver meals seamlessly while also providing consumers with an easy platform to order meals from their favourite restaurants in their city.',
     },
-    // Add more FAQ items as needed
 ];
 
 function Faq() {
     return (
         <section className='w-full bg-[#E9F9F2]'>
             <div class="max-w-[1170px] mx-auto">
-                {/* <div>
-                        */}
                 <FAQ faqData={faqData} />
-                {/* </div >
-                <div>
-                      
-                    </div> */}
-
-
-            </div >
-        </section >
+            </div>
+        </section>
     );
 }
 
