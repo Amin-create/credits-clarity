@@ -1,11 +1,12 @@
 import React from 'react'
 import twoAppScreens from "../../assets/images/two-app-screens.png"
 import { FiChevronRight } from 'react-icons/fi';
+import { Core } from '../../components';
 
 function ContentImage() {
     return (
         <section className='w-full bg-[#f8ffff7a]'>
-            <div class="max-w-[1170px] mx-auto">
+            <Core.Container>
                 <div class="flex justify-between items-start pt-[160px] pb-20">
                     <div>
                         <h1 class="max-w-[540px] text-[48px] leading-[56px] font-bold">
@@ -41,7 +42,7 @@ function ContentImage() {
                         <img class=" scale-[1] mt-[-60px]" src={twoAppScreens} alt="logo" />
                     </div>
                 </div>
-            </div>
+            </Core.Container>
         </section>
     )
 }

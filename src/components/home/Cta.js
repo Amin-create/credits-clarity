@@ -1,10 +1,11 @@
 import React from 'react'
 import { FiChevronRight } from 'react-icons/fi';
+import { Core } from '../../components';
 
 function Cta() {
     return (
-        <section className='cta-section w-full bg-[#f8ffff7a]'>
-            <div class="max-w-[1170px] mx-auto">
+        <section className='cta-section w-full bg-[#f8ffff7a]'>           
+                <Core.Container>
                 <div class="flex flex-col justify-start items-start gap-y-12 py-[90px]">
                     <h1 class="max-w-[450px] text-[#fff] text-[48px] leading-[56px] font-bold">
                         Discover Credit Clarity  - Your New Favorite
@@ -17,8 +18,8 @@ function Cta() {
                             </span>
                         </div>
                     </button>
-                </div>
-            </div>
+                </div>      
+           </Core.Container>
         </section>
     )
 }

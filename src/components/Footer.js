@@ -1,6 +1,6 @@
 import React from 'react'
-import playStore from "../../assets/images/play-store.png"
-import appStore from "../../assets/images/appstore.png"
+import playStore from "../assets/images/play-store.png"
+import appStore from "../assets/images/appstore.png"
 import { FiChevronRight } from 'react-icons/fi';
 
 function Footer() {

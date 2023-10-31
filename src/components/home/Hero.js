@@ -1,13 +1,14 @@
 import React from 'react'
 import threeAppScreens from "../../assets/images/three-app-screens.png"
 import { FiChevronRight } from 'react-icons/fi';
+import { Core } from '../../components';
 
 function Hero() {
     return (
         <section className='w-full relative'>
-            <div className='absolute z-[-1] w-full h-[572px] rounded-bl-[300px] bg-gradient-to-r from-[#1988F1] to-[#09EC92]'>
+            <div className='absolute z-[-1] w-full h-[572px] rounded-bl-[300px] bg-gradient-to-r from-gr-a-1 to-gr-a-2'>
             </div>
-            <div class="max-w-[1170px] mx-auto">
+            <Core.Container>
                 <div class="flex justify-between items-start h-[720px] pt-[130px]">
                     <div>
                         <h1 class="max-w-[540px] text-[52px] text-[#fff] font-bold leading-[70px]">
@@ -29,7 +30,7 @@ function Hero() {
                         <img class=" scale-[1] mt-[-60px]" src={threeAppScreens} alt="logo" />
                     </div>
                 </div>
-            </div>
+            </Core.Container>
         </section>
     )
 }

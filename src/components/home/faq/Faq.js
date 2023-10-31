@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
 import { TiStarburst } from 'react-icons/ti';
+import { Core } from '../../../components';
 
 const FAQItem = ({ item, isOpen, onClick, index }) => (
-    <div className={`flex justify-between items-center w-[564px] h-[70px] cursor-pointer rounded-[8px] ${isOpen && 'bg-[#0E1F3D]'} bg-gradient-to-b from-[#ffffffab] to-[#ffffff63] px-5`} onClick={() => onClick(index)}>
-        <h2 className={`${isOpen && 'text-[#fff]'} text-[#0E1F3D] text-[18px] leading-[28px] font-extrabold`}>{item.question}</h2>
+    <div className={`flex justify-between items-center w-[564px] h-[70px] cursor-pointer rounded-[8px] ${isOpen && 'bg-dark-blue'} ${!isOpen && 'bg-gradient-to-b from-[#ffffffab] to-[#ffffff63]'} px-5`} onClick={() => onClick(index)}>
+        <h2 className={`${isOpen && 'text-[#fff]'} ${!isOpen && 'text-dark-blue'}  text-[18px] leading-[28px] font-extrabold`}>{item.question}</h2>
         {isOpen && (
             <span className='text-[#09EC92] text-[30px]'>
                 <TiStarburst />
@@ -46,7 +47,7 @@ const FAQ = ({ faqData }) => {
                 <div className="w-full h-[615px] rounded-[16px] bg-[#09EC92] p-10">
                     {openIndex !== null && (
                         <>
-                            <span className='text-[#0E1F3D] text-[30px]'>
+                            <span className='text-dark-blue text-[30px]'>
                                 <TiStarburst />
                             </span>
                             <p className="text-gray-700 text-[24px] leading-[36px] font-regular mt-5">
@@ -93,9 +94,9 @@ const faqData = [
 function Faq() {
     return (
         <section className='w-full bg-[#E9F9F2]'>
-            <div class="max-w-[1170px] mx-auto">
+            <Core.Container>
                 <FAQ faqData={faqData} />
-            </div>
+            </Core.Container>
         </section>
     );
 }

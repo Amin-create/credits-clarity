@@ -1,14 +1,14 @@
 import React from 'react'
 import { FiChevronRight } from 'react-icons/fi';
+import { Core } from '../../components';
 
 function Help() {
     return (
         <section className='w-full relative'>
-
-            <div class="max-w-[1170px] mx-auto">
+            <Core.Container>
                 <div class="flex flex-col justify-center items-center gap-y-16 pb-16">
                     <div className='flex flex-col justify-center items-center'>
-                        <h2 className='text-[#0E1F3D] text-[48px] leading-[70px] font-bold mx-auto'>
+                        <h2 className='text-dark-blue text-[48px] leading-[70px] font-bold mx-auto'>
                             How can we help?
                         </h2>
                         <p className='text-[#000000] text-[18px] text-center leading-[36.5px] font-normal'>
@@ -16,7 +16,7 @@ function Help() {
                         </p>
                     </div>
                     <div className='flex justify-between items-center gap-x-[20px]'>
-                        <div className='w-[33%] text-center rounded-[26px] bg-gradient-to-r from-[#ffffff63] to-[#ffffff63] pt-8 pb-14 px-6'>
+                        <div className='w-[33%] text-center rounded-[26px] bg-gradient-to-r from-gr-b-1 to-gr-b2 pt-8 pb-14 px-6'>
                             <h3 className='text-[22px] font-bold leading-[70px]'>
                                 Heading 1
                             </h3>
@@ -24,7 +24,7 @@ function Help() {
                                 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.
                             </p>
                         </div>
-                        <div className='w-[33%] text-center rounded-[26px] bg-gradient-to-r from-[#ffffff63] to-[#ffffff63] pt-8 pb-14 px-6'>
+                        <div className='w-[33%] text-center rounded-[26px] bg-gradient-to-r from-gr-b-1 to-gr-b2 pt-8 pb-14 px-6'>
                             <h3 className='text-[22px] font-bold leading-[70px]'>
                                 Heading 2
                             </h3>
@@ -32,7 +32,7 @@ function Help() {
                                 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.
                             </p>
                         </div>
-                        <div className='w-[33%] text-center rounded-[26px] bg-gradient-to-r from-[#ffffff63] to-[#ffffff63] pt-8 pb-14 px-6'>
+                        <div className='w-[33%] text-center rounded-[26px] bg-gradient-to-r from-gr-b-1 to-gr-b2 pt-8 pb-14 px-6'>
                             <h3 className='text-[22px] font-bold leading-[70px]'>
                                 Heading 3
                             </h3>
@@ -52,7 +52,7 @@ function Help() {
                         </button>
                     </div>
                 </div>
-            </div>
+            </Core.Container>
         </section>
     )
 }

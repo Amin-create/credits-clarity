@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { TiStarburst } from 'react-icons/ti';
+import { Core } from '../../../components';
 
 const FAQ = ({ faqData }) => {
     const [openIndex, setOpenIndex] = useState(null);
@@ -32,11 +33,11 @@ const FAQ = ({ faqData }) => {
                         <div
                             className={`
                             border-[red] border-[5px]
-                        flex justify-between items-center w-[564px] h-[70px] cursor-pointer rounded-[8px] ${openIndex === index && 'bg-[#0E1F3D]'} bg-[#fff]  px-5
+                        flex justify-between items-center w-[564px] h-[70px] cursor-pointer rounded-[8px] ${openIndex === index && 'bg-dark-blue'} bg-[#fff]  px-5
                         `}
                             onClick={() => handleToggle(index)}
                         >
-                            <h2 className={`${openIndex === index && 'text-[#fff]'} text-[#0E1F3D] text-[18px] leading-[28px] font-extrabold`}>
+                            <h2 className={`${openIndex === index && 'text-[#fff]'} text-dark-blue text-[18px] leading-[28px] font-extrabold`}>
                                 {item.question}
                             </h2>
                             {openIndex === index &&
@@ -91,7 +92,9 @@ const faqData = [
 function Faq() {
     return (
         <section className='w-full bg-[#E9F9F2]'>
-            <div class="max-w-[1170px] mx-auto">
+
+            <Core.Container>
+
                 {/* <div>
                         */}
                 <FAQ faqData={faqData} />
@@ -100,8 +103,7 @@ function Faq() {
                       
                     </div> */}
 
-
-            </div >
+            </Core.Container>
         </section >
     );
 }
