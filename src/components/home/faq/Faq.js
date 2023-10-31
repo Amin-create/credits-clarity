@@ -28,11 +28,11 @@ const FAQ = ({ faqData }) => {
 
     return (
         <div className='pt-24 pb-28'>
-            <div class="flex justify-between items-center gap-x-10 gap-y-5">
-                <h2 class="w-[50%] text-[48px] leading-[56px] font-extrabold">
+            <div className="flex justify-between items-center gap-x-10 gap-y-5">
+                <h2 className="w-[50%] text-[48px] leading-[56px] font-extrabold">
                     FAQs.
                 </h2>
-                <h2 class="w-[50%] text-[48px] leading-[56px] font-extrabold">
+                <h2 className="w-[50%] text-[48px] leading-[56px] font-extrabold">
                     Ans.
                 </h2>
             </div>

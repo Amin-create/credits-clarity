@@ -1,12 +1,32 @@
 import React from 'react'
 import { FiChevronRight } from 'react-icons/fi';
 import { Core } from '../../components';
+const textArray = [
+    {
+        id: "1",
+        title: "Heading 1",
+        description:
+            "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.",
+    },
+    {
+        id: "2",
+        title: "Heading 2",
+        description:
+            "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.",
+    },
+    {
+        id: "3",
+        title: "Heading 3",
+        description:
+            "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.",
+    },
+];
 
 function Help() {
     return (
         <section className='w-full relative'>
             <Core.Container>
-                <div class="flex flex-col justify-center items-center gap-y-16 pb-16">
+                <div className="flex flex-col justify-center items-center gap-y-16 pb-16">
                     <div className='flex flex-col justify-center items-center'>
                         <h2 className='text-dark-blue text-[48px] leading-[70px] font-bold mx-auto'>
                             How can we help?
@@ -16,40 +36,14 @@ function Help() {
                         </p>
                     </div>
                     <div className='flex justify-between items-center gap-x-[20px]'>
-                        <div className='w-[33%] text-center rounded-[26px] bg-gradient-to-r from-gr-b-1 to-gr-b2 pt-8 pb-14 px-6'>
-                            <h3 className='text-[22px] font-bold leading-[70px]'>
-                                Heading 1
-                            </h3>
-                            <p className='text-[18px] font-regular leading-[25px]'>
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.
-                            </p>
-                        </div>
-                        <div className='w-[33%] text-center rounded-[26px] bg-gradient-to-r from-gr-b-1 to-gr-b2 pt-8 pb-14 px-6'>
-                            <h3 className='text-[22px] font-bold leading-[70px]'>
-                                Heading 2
-                            </h3>
-                            <p className='text-[18px] font-regular leading-[25px]'>
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.
-                            </p>
-                        </div>
-                        <div className='w-[33%] text-center rounded-[26px] bg-gradient-to-r from-gr-b-1 to-gr-b2 pt-8 pb-14 px-6'>
-                            <h3 className='text-[22px] font-bold leading-[70px]'>
-                                Heading 3
-                            </h3>
-                            <p className='text-[18px] font-regular leading-[25px]'>
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.
-                            </p>
-                        </div>
+                        {textArray.map((value) => {
+                            return (
+                                <Core.Card key={value.id} card1 data={value} />
+                            )
+                        })}
                     </div>
-                    <div className=' '>
-                        <button type="button" class="w-[311px] flex justify-between items-center  text-[#fff] text-[25px] font-bold whitespace-nowrap rounded-full bg-[#09EC92] pl-8 pr-1 py-1">
-                            Sign up free
-                            <div className='flex justify-center items-center w-[60px] h-[60px] rounded-full bg-[#fff]'>
-                                <span className='text-[#09EC92] text-[35px] pl-[5px]'>
-                                    <FiChevronRight />
-                                </span>
-                            </div>
-                        </button>
+                    <div className=''>
+                        <Core.Button greenIconicLg>Sign up free</Core.Button>
                     </div>
                 </div>
             </Core.Container>

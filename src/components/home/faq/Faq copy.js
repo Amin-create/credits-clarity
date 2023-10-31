@@ -17,17 +17,17 @@ const FAQ = ({ faqData }) => {
 
     return (
         <div className='py-24'>
-            <div class="flex justify-between items-center gap-x-4 gap-y-5">
-                <h2 class="max-w-[540px] text-[48px] leading-[56px] font-bold">
+            <div className="flex justify-between items-center gap-x-4 gap-y-5">
+                <h2 className="max-w-[540px] text-[48px] leading-[56px] font-bold">
                     FAQs.
                 </h2>
-                <h2 class="max-w-[540px] text-[48px] leading-[56px] font-bold">
+                <h2 className="max-w-[540px] text-[48px] leading-[56px] font-bold">
                     Ans.
                 </h2>
             </div>
-            <div class="flex flex-col justify-start items-start gap-x-4 gap-y-5">
+            <div className="flex flex-col justify-start items-start gap-x-4 gap-y-5">
                 {faqData.map((item, index) => (
-                    <div key={index} class="flex justify-between items-center gap-x-10">
+                    <div key={index} className="flex justify-between items-center gap-x-10">
                         {/* 1st */}
                         {/*  */}
                         <div
