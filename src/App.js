@@ -1,18 +1,30 @@
 
 import "../src/index.css";
-import { Home, Footer, Header } from './components';
+ 
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import HomePage from "./pages/Home";
+import AboutPage from "./pages/About";
+// import Blogs from "./pages/Blogs";
+// import Contact from "./pages/Contact";
+// import NoPage from "./pages/NoPage";
 
 function App() {
   return (
-    <main className="bg-main">
-      <Header />
-      <Home.Hero />
-      <Home.Help />
-      <Home.ContentImage />
-      <Home.Faq />
-      <Home.Cta />
-      <Footer />
-    </main>
+    <>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/"
+          // element={<Layout />}
+          >
+            <Route index element={<HomePage />} />
+            <Route path="about" element={<AboutPage />} />
+            {/* <Route path="blogs" element={<Blogs />} /> */}
+            {/* <Route path="contact" element={<Contact />} /> */}
+            {/* <Route path="*" element={<NoPage />} /> */}
+          </Route>
+        </Routes>
+      </BrowserRouter> 
+    </>
   );
 }
 

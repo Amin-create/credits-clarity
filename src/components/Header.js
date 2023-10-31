@@ -3,6 +3,7 @@ import logo2 from "../assets/images/logo/logo.svg";
 import { Core } from '../components';
 import { AiOutlineClose } from 'react-icons/ai';
 import { HiMenu } from 'react-icons/hi';
+import { Link } from "react-router-dom";
 
 function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -23,10 +24,10 @@ function Header() {
               <div className="hidden md:block">
                 <div className="flex items-baseline ml-10 space-x-5">
                   <a className="text-[18px] text-[#09EC92] font-bold py-2" href="/#">
-                    Home
+                    <Link to="/">Home</Link>
                   </a>
                   <a className="text-[18px] hover:text-[#09EC92] font-normal px-3 py-2" href="/#">
-                    About Us
+                    <Link to="/about">About Us</Link>
                   </a>
                   <a className="text-[18px] hover:text-[#09EC92] font-normal px-3 py-2" href="/#">
                     Features
