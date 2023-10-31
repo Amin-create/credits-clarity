@@ -1,19 +1,26 @@
-import React from 'react'
-// import logo from "../../assets/images/logo/logo.png"
-import logo2 from "../assets/images/logo/logo.svg"
+import React, { useState } from 'react';
+import logo2 from "../assets/images/logo/logo.svg";
 import { Core } from '../components';
+import { AiOutlineClose } from 'react-icons/ai';
+import { HiMenu } from 'react-icons/hi';
 
 function Header() {
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
+  const toggleMobileMenu = () => {
+    setMobileMenuOpen(!mobileMenuOpen);
+  };
+
   return (
     <div>
-      <nav class="border-b-[6px] border-[#09EC92] bg-white dark:bg-gray-800 py-7"> 
+      <nav className="border-b-[6px] border-[#09EC92] bg-white dark:bg-gray-800 py-7">
         <Core.Container>
-          <div class="flex items-center justify-between h-16">
-            <div class=" flex items-center">
-              <a class="flex-shrink-0 pr-10" href="/">
-                <img class="w-[130px]" src={logo2} alt="logo" />
+          <div className="flex items-center justify-between h-16">
+            <div className="flex items-center">
+              <a className="flex-shrink-0 pr-10" href="/">
+                <img className="w-[130px]" src={logo2} alt="logo" />
               </a>
-              <div class="hidden md:block">
+              <div className="hidden md:block">
                 <div class="flex items-baseline ml-10 space-x-5">
                   <a class="text-[18px] text-[#09EC92] font-bold py-2" href="/#">
                     Home
@@ -30,7 +37,7 @@ function Header() {
                 </div>
               </div>
             </div>
-            <div class="block">
+            <div className="block">
               <div class="flex items-center gap-x-3 ml-4 md:ml-6">
                 <button type="button" class="w-full text-[16px] font-bold whitespace-nowrap rounded-md px-4 py-2 ">
                   Sign in
@@ -40,20 +47,61 @@ function Header() {
                 </button>
               </div>
             </div>
-            <div class="flex -mr-2 md:hidden">
-              <button class="text-gray-800 dark:text-white hover:text-gray-300 inline-flex items-center justify-center p-2 rounded-md focus:outline-none">
-                <svg width="20" height="20" fill="currentColor" class="w-8 h-8" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M1664 1344v128q0 26-19 45t-45 19h-1408q-26 0-45-19t-19-45v-128q0-26 19-45t45-19h1408q26 0 45 19t19 45zm0-512v128q0 26-19 45t-45 19h-1408q-26 0-45-19t-19-45v-128q0-26 19-45t45-19h1408q26 0 45 19t19 45zm0-512v128q0 26-19 45t-45 19h-1408q-26 0-45-19t-19-45v-128q0-26 19-45t45-19h1408q26 0 45 19t19 45z">
-                  </path>
-                </svg>
-              </button>
+            <div className="flex -mr-2 md:hidden">
+              <div className='w-[60px]'>
+                {mobileMenuOpen ? "" : <button
+                  onClick={toggleMobileMenu}
+                  className="text-dark-blue dark:text-white hover:text-gray-300 text-[24px]"
+                >
+                  <HiMenu />
+                </button>}
+              </div>
             </div>
           </div>
-        </Core.Container> 
+        </Core.Container>
       </nav>
-    </div>
+      {/* Mobile Navigation Drawer */}
+      <div
+        className={`border fixed top-0 left-0 w-64 h-full z-10 transform transition-transform ease-in-out duration-300 ${mobileMenuOpen ? 'translate-x-0' : '-translate-x-full'
+          }`}
+      >
+        <div className="w-full h-screen bg-white dark:bg-gray-800 p-6">
+          <div className='flex justify-between'>
 
-  )
+            <img className="w-[100px]" src={logo2} alt="logo" />
+            {mobileMenuOpen ? <button
+              onClick={toggleMobileMenu}
+              className="text-dark-blue dark:text-white hover:text-gray-300 text-[24px]"
+            >
+              <AiOutlineClose />
+            </button> : ""}
+          </div>
+          <ul className="">
+            <li>
+              <a className="block text-[18px] text-[#09EC92] font-bold py-4" href="/#">
+                Home
+              </a>
+            </li>
+            <li>
+              <a className="block text-[18px] hover:text-[#09EC92] font-normal py-4" href="/#">
+                About Us
+              </a>
+            </li>
+            <li>
+              <a className="block text-[18px] hover:text-[#09EC92] font-normal py-4" href="/#">
+                Features
+              </a>
+            </li>
+            <li>
+              <a className="block text-[18px] hover:text-[#09EC92] font-normal py-4" href="/#">
+                Contact Us
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  );
 }
 
-export default Header
+export default Header;
