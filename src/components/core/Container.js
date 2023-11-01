@@ -1,8 +1,8 @@
 import React from 'react'
 
-function Container({ children }) {
+function Container({ children, wider }) {
     return (
-        <div className="mx-auto max-w-[1170px]">
+        <div className={`mx-auto ${wider ? "max-w-[1460px]" : "max-w-[1170px]"}`}>
             {children}
         </div>
     )

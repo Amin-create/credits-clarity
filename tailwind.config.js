@@ -13,6 +13,10 @@ module.exports = {
         "gr-b-2": "#ffffff63",
         "gr-c-1": "#ffffffab",
         "gr-c-2": "#ffffff63",
+        "white-1": "#F6FEFB",
+      },
+      bgGradientDeg: {
+        50: '50deg',
       }
     },
   },

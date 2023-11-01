@@ -30,7 +30,7 @@ function Header() {
                     <Link to="/about">About Us</Link>
                   </a>
                   <a className="text-[18px] hover:text-[#09EC92] font-normal px-3 py-2" href="/#">
-                    Features
+                    <Link to="/features">Features</Link>
                   </a>
                   <a className="text-[18px] hover:text-[#09EC92] font-normal px-3 py-2" href="/#">
                     Contact Us

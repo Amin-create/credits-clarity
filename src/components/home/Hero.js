@@ -5,7 +5,7 @@ import { Core } from '../../components';
 
 function Hero() {
     return (
-        <section className='w-full relative'>
+        <section className='w-full relative overflow-hidden'>
             <div className='absolute z-[-1] w-full h-[572px] rounded-bl-[300px] bg-gradient-to-r from-gr-a-1 to-gr-a-2'>
             </div>
             <Core.Container>

@@ -36,11 +36,9 @@ function Help() {
                         </p>
                     </div>
                     <div className='flex justify-between items-center gap-x-[20px]'>
-                        {textArray.map((value) => {
-                            return (
-                                <Core.Card key={value.id} card1 data={value} />
-                            )
-                        })}
+                        {textArray.map((value) =>
+                            <Core.Card key={value.id} card1 data={value} />
+                        )}
                     </div>
                     <div className=''>
                         <Core.Button greenIconicLg>Sign up free</Core.Button>

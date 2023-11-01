@@ -29,7 +29,7 @@ function ContentImage() {
                                 Identity theft insurance
                             </li>
                         </ul>
-                        <button type="button" className="w-[226px] flex justify-between items-center text-[#fff] text-[20px] font-bold whitespace-nowrap rounded-full bg-[#09EC92] pl-8 pr-1 py-1  ">
+                        <button type="button" className="w-[226px] flex justify-between items-center text-[#fff] text-[20px] font-bold whitespace-nowrap rounded-full bg-[#09EC92] pl-12 pr-1 py-1  ">
                             Sign up free
                             <div className='flex justify-center items-center w-[48px] h-[48px] rounded-full bg-[#fff]'>
                                 <span className='text-[#09EC92] text-[28px] pl-[5px]'>
