@@ -1,42 +1,17 @@
 import React from 'react'
 import { Footer, Header, About, Home, TopContent } from '../components';
 import team from "../assets/images/team/team.jpg";
+import { contentAbout, topContentAbout } from '../data';
 
-const topContent = {
-    firstHeading: "About Us",
-    secondHeading: "Lorem Ipsum is simply dummy text the printing and typesetting industry",
-    firstText: "Let’s get to know each other! Here is our story.",
-}
-
-const content = [
-    {
-        id: "1",
-        type: "bold-text",
-        text: "We are the next generation productivity software helping sales and revenue teams navigate their daily work with ebb and flow.",
-    },
-    {
-        id: "2",
-        type: "descriptions",
-        leftBlock: [
-            "Loresddm Ipsum is simply dummy text of the printing and typetingde industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged."
-        ],
-        rightBlock: [
-            "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, ",
-            "looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of 'de Finibus Bonorum et Malorum' (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance."
-        ]
-
-    },
-
-]
 
 function AboutPage() {
     return (
         <main className="bg-main">
             <Header />
-            <TopContent data={topContent} />
+            <TopContent data={topContentAbout} />
             <About.OurMission />
             <About.BigImage img={team} />
-            <About.TextContent data={content} />
+            <About.TextContent data={contentAbout} />
             <Home.Cta />
             <Footer />
         </main>

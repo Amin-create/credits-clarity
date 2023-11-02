@@ -33,15 +33,19 @@ function Header() {
                     <Link to="/features">Features</Link>
                   </a>
                   <a className="text-[18px] hover:text-[#09EC92] font-normal px-3 py-2" href="/#">
-                    Contact Us
+                    <Link to="/contact">Contact Us</Link>
                   </a>
                 </div>
               </div>
             </div>
             <div className="block">
               <div className="flex items-center gap-x-3 ml-4 md:ml-6">
-                <Core.Button blackText>Sign in</Core.Button>
-                <Core.Button simpleGreen>Sign up free →</Core.Button>
+                <Core.Button blackText>
+                  <Link to="/login">Sign in</Link>
+                </Core.Button>
+                <Core.Button simpleGreen>
+                  <Link to="/signup">Sign up free →</Link>
+                </Core.Button>
               </div>
             </div>
             <div className="flex -mr-2 md:hidden">

@@ -13,7 +13,7 @@ const FAQItem = ({ item, isOpen, onClick, index }) => (
     </div>
 );
 
-const FAQ = ({ faqData }) => {
+const FAQ = ({ data }) => {
     const [openIndex, setOpenIndex] = useState(null);
 
     const handleToggle = (index) => {
@@ -38,7 +38,7 @@ const FAQ = ({ faqData }) => {
             </div>
             <div className="flex justify-between gap-x-10 mt-8">
                 <div className="flex flex-col justify-start items-start gap-x-4 gap-y-4">
-                    {faqData.map((item, index) => (
+                    {data?.map((item, index) => (
                         <div key={index} className="flex justify-between items-center gap-x-10">
                             <FAQItem item={item} isOpen={openIndex === index} onClick={handleToggle} index={index} />
                         </div>
@@ -51,8 +51,9 @@ const FAQ = ({ faqData }) => {
                                 <TiStarburst />
                             </span>
                             <p className="text-gray-700 text-[24px] leading-[36px] font-regular mt-5">
-                                {faqData[openIndex].answer}
-                            </p></>
+                                {data[openIndex].answer}
+                            </p>
+                        </>
                     )}
                 </div>
             </div>
@@ -60,42 +61,12 @@ const FAQ = ({ faqData }) => {
     );
 };
 
-const faqData = [
-    {
-        question: 'What is Credit Clarity?',
-        answer: '1 Chowdeck is a technology company that provides logistics services to both vendors and consumers. This potentially allows food vendors to deliver meals seamlessly while also providing consumers with an easy platform to order meals from their favourite restaurants in their city.',
-    },
-    {
-        question: 'What locations do we currently deliver to?',
-        answer: '2 Chowdeck is a technology company that provides logistics services to both vendors and consumers. This potentially allows food vendors to deliver meals seamlessly while also providing consumers with an easy platform to order meals from their favourite restaurants in their city.',
-    },
-    {
-        question: 'What is Chowdeck wallet?',
-        answer: '3 Chowdeck is a technology company that provides logistics services to both vendors and consumers. This potentially allows food vendors to deliver meals seamlessly while also providing consumers with an easy platform to order meals from their favourite restaurants in their city.',
-    },
-    {
-        question: 'What is Credit Clarity?',
-        answer: '4 Chowdeck is a technology company that provides logistics services to both vendors and consumers. This potentially allows food vendors to deliver meals seamlessly while also providing consumers with',
-    },
-    {
-        question: 'What is Service fee?',
-        answer: '5 Chowdeck is a technology company that provides logistics services to both vendors and consumers. This potentially allows food vendors to deliver meals seamlessly while also providing consumers with an easy platform to order meals from their favourite restaurants in their city.',
-    },
-    {
-        question: 'Why do we charge Service fee?',
-        answer: '6 Chowdeck is a technology company that provides logistics services to both vendors and consumers. This potentially allows food vendors to deliver meals seamlessly while also providing consumers with an easy platform to order meals from their favourite restaurants in their city.',
-    },
-    {
-        question: 'What is Surge fee?',
-        answer: '7 Chowdeck is a technology company that provides logistics services to both vendors and consumers. This potentially allows food vendors to deliver meals seamlessly while also providing consumers with an easy platform to order meals from their favourite restaurants in their city.',
-    },
-];
 
-function Faq() {
+function Faq({ data }) {
     return (
         <section className='w-full bg-[#E9F9F2]'>
             <Core.Container>
-                <FAQ faqData={faqData} />
+                <FAQ data={data} />
             </Core.Container>
         </section>
     );

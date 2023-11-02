@@ -1,13 +1,16 @@
 
 import "../src/index.css";
- 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import HomePage from "./pages/Home";
-import AboutPage from "./pages/About";
-import FeaturesPage from "./pages/Features";
-// import Blogs from "./pages/Blogs";
-// import Contact from "./pages/Contact";
-// import NoPage from "./pages/NoPage";
+
+import {
+  AboutPage,
+  HomePage,
+  FeaturesPage,
+  ContactPage,
+  LoginPage,
+  SignUpPage,
+
+} from "./pages/index";
 
 function App() {
   return (
@@ -20,11 +23,15 @@ function App() {
             <Route index element={<HomePage />} />
             <Route path="about" element={<AboutPage />} />
             <Route path="features" element={<FeaturesPage />} />
-            {/* <Route path="contact" element={<Contact />} /> */}
+            <Route path="contact" element={<ContactPage />} />
+            <Route path="login" element={<LoginPage />} />
+            <Route path="signup" element={<SignUpPage />} />
+
+
             {/* <Route path="*" element={<NoPage />} /> */}
           </Route>
         </Routes>
-      </BrowserRouter> 
+      </BrowserRouter>
     </>
   );
 }

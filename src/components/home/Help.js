@@ -1,28 +1,9 @@
 import React from 'react'
-import { FiChevronRight } from 'react-icons/fi';
 import { Core } from '../../components';
-const textArray = [
-    {
-        id: "1",
-        title: "Heading 1",
-        description:
-            "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.",
-    },
-    {
-        id: "2",
-        title: "Heading 2",
-        description:
-            "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.",
-    },
-    {
-        id: "3",
-        title: "Heading 3",
-        description:
-            "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.",
-    },
-];
 
-function Help() {
+
+
+function Help({ data }) {
     return (
         <section className='w-full relative'>
             <Core.Container>
@@ -36,7 +17,7 @@ function Help() {
                         </p>
                     </div>
                     <div className='flex justify-between items-center gap-x-[20px]'>
-                        {textArray.map((value) =>
+                        {data?.map((value) =>
                             <Core.Card key={value.id} card1 data={value} />
                         )}
                     </div>

@@ -1,6 +1,5 @@
 import React from 'react'
 import person from "../../assets/images//person.png"
-import { FiChevronRight } from 'react-icons/fi';
 import { Core } from '..';
 
 function OurMission() {
@@ -38,7 +37,6 @@ function OurMission() {
                             </div>
                         </div>
                     </div>
-
                 </div>
             </Core.Container>
         </section>

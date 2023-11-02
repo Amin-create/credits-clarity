@@ -1,14 +1,15 @@
 import React from 'react'
 import { Home, Footer, Header } from '../components';
+import { faqDataHome, textArrayHome } from '../data';
 
 function HomePage() {
     return (
         <main className="bg-main">
             <Header />
             <Home.Hero />
-            <Home.Help />
+            <Home.Help data={textArrayHome} />
             <Home.ContentImage />
-            <Home.Faq />
+            <Home.Faq data={faqDataHome} />
             <Home.Cta />
             <Footer />
         </main>
