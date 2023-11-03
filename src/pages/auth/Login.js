@@ -1,14 +1,14 @@
 import React from 'react'
 import { Footer, Header,   } from '../../components';
+import { LoginForm } from '../../components/login';
  
 
 
 function LoginPage() {
     return (
-        <main className="bg-main">
+        <main className="bg-login">
             <Header />
-            {/* <TopContent data={topContentAbout} /> */}
-            Login
+            <LoginForm  />          
             <Footer />
         </main>
     )

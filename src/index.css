@@ -19,11 +19,12 @@ body {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 } */
-.bg-main {
+.bg-login, .bg-signup {
   position: relative;
 }
 
-.bg-main:before {
+.bg-login:before,
+.bg-signup:before {
   content: "";
   position: absolute;
   left: 0;
@@ -38,7 +39,54 @@ body {
   background-size: cover;
   /* background-position: center; */
 }
+.bg-login:before,
+.bg-signup:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-image: url('./assets/images/bg/bg2.png');
+  /* border: 10px solid red; */
+  background-size: cover;
+  /* background-position: center; */
+}
+.bg-signup:before {
+  transform: rotate(180deg);
+}
+
 .cta-section {
   background-image: url('./assets/images/bg/banner-app-screen.png'); 
   background-size: cover;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+.checkbox {  
+  cursor: pointer; 
+  appearance: none; 
+} 
+
+.checkbox-success, .checkbox-success[checked=false], .checkbox-success  {
+  background-image:""
+}
+
+.checkbox-success:checked, .checkbox-success[checked=true], .checkbox-success[aria-checked=true] {     
+    background-repeat: no-repeat;
+    background-image: url(./assets/images/icon/check.svg);
+    background-size: cover;
+}  
