@@ -4,6 +4,9 @@ import FeaturesPage from "./Features";
 import HomePage from "./Home";
 import LoginPage from "./auth/Login";
 import SignUpPage from "./auth/Signup";
+import TermsAndConditionsPage from "./TermsAndConditionsPage";
+import PrivacyPolicyPage from "./PrivacyPolicyPage";
+
 
 
 export {
@@ -13,4 +16,6 @@ export {
     HomePage,
     LoginPage,
     SignUpPage,
+    TermsAndConditionsPage,
+    PrivacyPolicyPage
 }

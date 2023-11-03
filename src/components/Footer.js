@@ -10,8 +10,8 @@ function Footer() {
                     {/* <!-- Left Column --> */}
                     <div className="flex justify-start gap-x-8">
                         <p className='text-[16px] leading-[24px] font-thin'>© 2023 Credits Clarity</p>
-                        <a href="#" className="text-[16px] leading-[24px] font-thin hover:underline">Terms and Services</a>
-                        <a href="#" className="text-[16px] leading-[24px] font-thin hover:underline">Privacy Policy</a>
+                        <a href="/terms-and-conditions" className="text-[16px] leading-[24px] font-thin hover:underline">Terms and Services</a>
+                        <a href="/privacy-policy" className="text-[16px] leading-[24px] font-thin hover:underline">Privacy Policy</a>
                     </div>
                     {/* <!-- Right Column --> */}
                     <div className="flex items-center gap-x-3">
