@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import { Core } from '..';
 import { FiChevronRight } from 'react-icons/fi';
+import envelope from '../../assets/images/icon/envelope.svg';
+import key from '../../assets/images/icon/key.svg';
 
 function LoginForm() {
 
@@ -19,22 +21,24 @@ function LoginForm() {
                             <h1 className='text-dark-blue text-[52px] leading-[70px] tracking-[-1px] font-bold text-center mx-auto mb-[60px]'>
                                 Sign in
                             </h1>
-                            <div class="grid grid-cols-1 gap-x-16 gap-y-10 sm:grid-cols-6 pb-6">
-                                <div class="col-span-full">
+                            <div className="grid grid-cols-1 gap-x-16 gap-y-10 sm:grid-cols-6 pb-6">
+                                <div className="col-span-full">
                                     <label for="email" className="text-dark-blue text-[18px] leading-[30px] font-medium">Email</label>
-                                    <div class="mt-2">
-                                        <input type="text" name="email" id="email" placeholder='Email' autocomplete="given-name" class="w-full text-dark-blue text-[16px] leading-[30px] rounded-md border-0 ring-1 ring-inset ring-gray-3 outline-none focus:ring-2 focus:ring-inset focus:ring-green px-[15px] py-[15px]" />
+                                    <div className="relative mt-2">
+                                    <img className="absolute left-5 top-[18px]" src={envelope} alt="big image" />
+                                        <input type="text" name="email" id="email" placeholder='name@gmail.com' autocomplete="off" className="w-full text-dark-blue text-[16px] leading-[30px] rounded-md border-0 ring-1 ring-inset ring-gray-3 outline-none focus:ring-2 focus:ring-inset focus:ring-green pl-[60px] pr-[15px] py-[15px]" />
                                     </div>
                                 </div>
-                                <div class="col-span-full">
+                                <div className="col-span-full">
                                     <label for="password" className="text-dark-blue text-[18px] leading-[30px] font-medium">Password</label>
-                                    <div class="mt-2">
-                                        <input type="password" name="password" id="password" placeholder='Password' autocomplete="family-name" class="w-full text-dark-blue text-[16px] leading-[30px] rounded-md border-0 ring-1 ring-inset ring-gray-3 outline-none focus:ring-2 focus:ring-inset focus:ring-green px-[15px] py-[15px]" />
+                                    <div className="relative mt-2">
+                                    <img className="absolute left-5 top-[18px]" src={key} alt="big image" />
+                                       <input type="password" name="password" id="password" placeholder='**********' autocomplete="off" className="w-full text-dark-blue text-[16px] leading-[30px] rounded-md border-0 ring-1 ring-inset ring-gray-3 outline-none focus:ring-2 focus:ring-inset focus:ring-green pl-[60px] pr-[15px] py-[15px]" />
                                     </div>
                                 </div>
                             </div>
-                            <div class="grid grid-cols-1 gap-x-16 gap-y-5 sm:grid-cols-6 pb-10">
-                                <div class="sm:col-span-3">
+                            <div className="grid grid-cols-1 gap-x-16 gap-y-5 sm:grid-cols-6 pb-10">
+                                <div className="sm:col-span-3">
                                     <label className="flex items-center space-x-2 cursor-pointer">
                                         <input
                                             type="checkbox"
@@ -51,7 +55,7 @@ function LoginForm() {
                                         <span className="text-dark-blue text-[14px] leading-[23px] font-semibold">Remember Me</span>
                                     </label>
                                 </div>
-                                <div class="sm:col-span-3 flex justify-end">
+                                <div className="sm:col-span-3 flex justify-end">
                                     <span className="text-dark-blue text-[14px] leading-[23px] font-semibold">Forgot Password?</span>
                                 </div>
                             </div>

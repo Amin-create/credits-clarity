@@ -49,9 +49,11 @@ body {
   background-image: url('./assets/images/bg/banner-app-screen.png'); 
   background-size: cover;
 }
+
  
+
 .checkbox-success:checked, .checkbox-success[checked=true], .checkbox-success[aria-checked=true] {     
     background-repeat: no-repeat;
     background-image: url(./assets/images/icon/check.svg);
     background-size: cover;
-}  
+}   

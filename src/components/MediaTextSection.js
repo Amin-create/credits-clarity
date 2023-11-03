@@ -35,7 +35,7 @@ function MediaTextSection({ value, index, length }) {
                 }
             </div>
             {index !== (length - 1) &&
-                <img class="" src={DashedLines} alt="Separator Line" />
+                <img className="" src={DashedLines} alt="Separator Line" />
             }
         </>
     )
