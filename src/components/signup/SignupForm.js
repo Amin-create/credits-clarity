@@ -65,21 +65,13 @@ function SignupForm() {
                                         <input type="text" name="mobileNumber" id="mobileNumber" placeholder='0000-0000000' autocomplete="family-name" class="w-full text-dark-blue text-[16px] leading-[30px] rounded-md border-0 ring-1 ring-inset ring-gray-3 outline-none focus:ring-2 focus:ring-inset focus:ring-green px-[15px] py-[15px]" />
                                     </div>
                                 </div>
-
-
-
-
-
-
-
-
-
+ 
                                 <div class="col-span-full pb-3">
                                     <div class=" space-y-3">
 
                                         <div class="relative flex gap-x-3">
                                             <div class="flex h-6 items-center">
-                                                <input type="checkbox" className="w-[24px] h-[24px] checkbox checkbox-success border-green border-[1px] rounded-[6px]" />
+                                                <input type="checkbox" className="w-[24px] h-[24px] checkbox checkbox-success cursor-pointer appearance-none border-green border-[1px] rounded-[6px]" />
                                             </div>
                                             <div class="text-sm leading-6">
                                                 <label for="comments" class="text-dark-blue text-[14px] font-bold">I Agree <a href="/terms-and-conditions">Terms & Conditions</a></label>
@@ -88,7 +80,7 @@ function SignupForm() {
 
                                         <div class="relative flex gap-x-3">
                                             <div class="flex h-6 items-center">
-                                                <input type="checkbox" className="w-[24px] h-[24px] checkbox checkbox-success border-green border-[1px] rounded-[6px]" />
+                                                <input type="checkbox" className="w-[24px] h-[24px] checkbox checkbox-success cursor-pointer appearance-none border-green border-[1px] rounded-[6px]" />
                                             </div>
                                             <div class="text-sm leading-6">
                                                 <label for="candidates" class="text-dark-blue text-[14px] font-bold">I Agree <a href="privacy-policy">Privacy Policy</a></label>
