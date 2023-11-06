@@ -16,10 +16,10 @@ function Header() {
     <div>
       <nav className="border-b-[6px] border-[#09EC92] bg-white dark:bg-gray-800 py-7">
         <Core.Container>
-          <div className="flex items-center justify-between h-16">
+          <div className="flex items-center justify-between h-4 md:h-16">
             <div className="flex items-center">
               <a className="flex-shrink-0 pr-10" href="/">
-                <img className="w-[130px]" src={logo2} alt="logo" />
+                <img className="w-[70px] md:w-[130px]" src={logo2} alt="logo" />
               </a>
               <div className="hidden md:block">
                 <div className="flex items-baseline ml-10 space-x-5">
@@ -44,12 +44,12 @@ function Header() {
                   <Link to="/login">Sign in</Link>
                 </Core.Button>
                 <Core.Button simpleGreen>
-                  <Link to="/signup">Sign up free →</Link>
+                  <Link to="/signup">Sign up free&nbsp; →</Link>
                 </Core.Button>
               </div>
             </div>
-            <div className="flex -mr-2 md:hidden">
-              <div className='w-[60px]'>
+            <div className="flex -mr-2 md:hidden justify-end">
+              <div className='w-[60px ]'>
                 {mobileMenuOpen ? "" : <button
                   onClick={toggleMobileMenu}
                   className="text-dark-blue dark:text-white hover:text-gray-300 text-[24px]"

@@ -7,7 +7,7 @@ function ContactForm() {
         <section className='w-full relative'>
             <Core.Container>
 
-                <form className='pt-10 pb-52'>
+                <form className='pt-5 md:pt-10 pb-24 md:pb-52'>
                     <div className="space-y-12">
                         <div className="grid grid-cols-1 gap-x-16 gap-y-8 sm:grid-cols-6">
                             <div className="sm:col-span-3">

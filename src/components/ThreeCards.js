@@ -7,7 +7,7 @@ function ThreeCards({ data }) {
         <section className='w-full relative'>
             <Core.Container>
                 <div className="flex flex-col justify-center items-center gap-y-16 pt-8 pb-16">
-                    <div className='flex justify-between items-center gap-x-[20px]'>
+                    <div className='flex flex-col md:flex-row justify-between items-center gap-[20px]'>
                         {data?.map((value) =>
                             <Core.Card key={value.id} card2 data={value} />
                         )}

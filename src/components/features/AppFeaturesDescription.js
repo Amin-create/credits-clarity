@@ -6,7 +6,7 @@ function AppFeaturesDescription({ data }) {
     return (
         <section className='w-full relative'>
             <Core.Container>
-                <div className="flex flex-col justify-between items-start gap-x-16 pt-14 pb-20">
+                <div className="flex flex-col justify-between items-start gap-x-8 md:gap-x-16 pt-8 md:pt-14 pb-10 md:pb-20">
                     {data?.map((value, index) =>
                         <MediaTextSection key={value * 2} value={value} index={index} length={data?.length} />
                     )}
