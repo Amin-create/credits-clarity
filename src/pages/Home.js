@@ -1,16 +1,16 @@
 import React from 'react'
 import { Home, Footer, Header } from '../components';
-import { faqDataHome, textArrayHome } from '../data';
+import { contentImageDataHome, ctaDataHome, faqDataHome, heroDataHome, textArrayHome } from '../data';
 
 function HomePage() {
     return (
         <main className="bg-main">
             <Header />
-            <Home.Hero />
+            <Home.Hero data={heroDataHome} />
             <Home.Help data={textArrayHome} />
-            <Home.ContentImage />
+            <Home.ContentImage data={contentImageDataHome} />
             <Home.Faq data={faqDataHome} />
-            <Home.Cta />
+            <Home.Cta data={ctaDataHome} />
             <Footer />
         </main>
     )

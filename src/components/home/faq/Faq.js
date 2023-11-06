@@ -32,11 +32,11 @@ const FAQ = ({ data }) => {
                 <h2 className="w-[50%] text-[48px] leading-[56px] font-extrabold">
                     FAQs.
                 </h2>
-                <h2 className="w-[50%] text-[48px] leading-[56px] font-extrabold">
+                <h2 className="hidden lg:block w-[50%] text-[48px] leading-[56px] font-extrabold">
                     Ans.
                 </h2>
             </div>
-            <div className="flex justify-between gap-x-10 mt-8">
+            <div className="flex flex-col lg:flex-row justify-between gap-10 mt-8">
                 <div className="flex flex-col justify-start items-start gap-x-4 gap-y-4">
                     {data?.map((item, index) => (
                         <div key={index} className="flex justify-between items-center gap-x-10">

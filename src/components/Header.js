@@ -23,16 +23,16 @@ function Header() {
               </a>
               <div className="hidden md:block">
                 <div className="flex items-baseline ml-10 space-x-5">
-                  <a className="text-[18px] text-[#09EC92] font-bold py-2" href="/#">
+                  <a className="text-[18px] text-[#09EC92] font-bold py-2">
                     <Link to="/">Home</Link>
                   </a>
-                  <a className="text-[18px] hover:text-[#09EC92] font-normal px-3 py-2" href="/#">
+                  <a className="text-[18px] hover:text-[#09EC92] font-normal px-3 py-2">
                     <Link to="/about">About Us</Link>
                   </a>
-                  <a className="text-[18px] hover:text-[#09EC92] font-normal px-3 py-2" href="/#">
+                  <a className="text-[18px] hover:text-[#09EC92] font-normal px-3 py-2">
                     <Link to="/features">Features</Link>
                   </a>
-                  <a className="text-[18px] hover:text-[#09EC92] font-normal px-3 py-2" href="/#">
+                  <a className="text-[18px] hover:text-[#09EC92] font-normal px-3 py-2">
                     <Link to="/contact">Contact Us</Link>
                   </a>
                 </div>
@@ -79,23 +79,23 @@ function Header() {
           </div>
           <ul className="">
             <li>
-              <a className="block text-[18px] text-[#09EC92] font-bold py-4" href="/#">
-                Home
+              <a className="block text-[18px] text-[#09EC92] font-bold py-4">
+                <Link to="/">Home</Link>
               </a>
             </li>
             <li>
-              <a className="block text-[18px] hover:text-[#09EC92] font-normal py-4" href="/#">
-                About Us
+              <a className="block text-[18px] hover:text-[#09EC92] font-normal py-4">
+                <Link to="/about">About Us</Link>
               </a>
             </li>
             <li>
-              <a className="block text-[18px] hover:text-[#09EC92] font-normal py-4" href="/#">
-                Features
+              <a className="block text-[18px] hover:text-[#09EC92] font-normal py-4">
+                <Link to="/features">Features</Link>
               </a>
             </li>
             <li>
-              <a className="block text-[18px] hover:text-[#09EC92] font-normal py-4" href="/#">
-                Contact Us
+              <a className="block text-[18px] hover:text-[#09EC92] font-normal py-4">
+                <Link to="/contact">Contact Us</Link>
               </a>
             </li>
           </ul>

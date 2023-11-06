@@ -1,7 +1,7 @@
 import React from 'react'
 import { Footer, Header, About, Home, TopContent } from '../components';
 import team from "../assets/images/team/team.jpg";
-import { contentAbout, topContentAbout } from '../data';
+import { contentAbout, ctaDataHome, ourMissionDataAbout, topContentAbout } from '../data';
 
 
 function AboutPage() {
@@ -9,10 +9,10 @@ function AboutPage() {
         <main className="bg-main">
             <Header />
             <TopContent data={topContentAbout} />
-            <About.OurMission />
+            <About.OurMission data={ourMissionDataAbout} />
             <About.BigImage img={team} />
             <About.TextContent data={contentAbout} />
-            <Home.Cta />
+            <Home.Cta data={ctaDataHome} />
             <Footer />
         </main>
     )

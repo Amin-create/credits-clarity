@@ -1,6 +1,6 @@
 import React from 'react'
 import { Home, Footer, Header, TopContent, Contact } from '../components';
-import { topContentContact } from '../data';
+import { ctaDataHome, topContentContact } from '../data';
 
 function ContactPage() {
     return (
@@ -8,8 +8,7 @@ function ContactPage() {
             <Header />
             <TopContent data={topContentContact} />
             <Contact.ContactForm />
-            {/* <About.BigImage img={team} /> */}
-            <Home.Cta />
+            <Home.Cta data={ctaDataHome} />
             <Footer />
         </main>
     )

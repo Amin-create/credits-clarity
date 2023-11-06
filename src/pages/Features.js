@@ -1,7 +1,6 @@
 import React from 'react'
-import { Footer, Header, ThreeCards, TopContent, HorizontalContents, Features } from '../components';
-import { Cta } from '../components/home';
-import { appFeaturesDescriptions, horizontalContents, threeCardsContent, topContent } from '../data';
+import { Footer, Header, ThreeCards, TopContent, HorizontalContents, Features, Home } from '../components';
+import { appFeaturesDescriptions, ctaDataHome, horizontalContents, threeCardsContent, topContent } from '../data';
 
 
 function FeaturesPage() {
@@ -12,7 +11,7 @@ function FeaturesPage() {
             <ThreeCards data={threeCardsContent} />
             <HorizontalContents data={horizontalContents} />
             <Features.AppFeaturesDescription data={appFeaturesDescriptions} />
-            <Cta />
+            <Home.Cta data={ctaDataHome} />
             <Footer />
         </main>
     )

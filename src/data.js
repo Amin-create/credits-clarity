@@ -1,7 +1,9 @@
-import app1 from "./assets/images/app-screens/app1.png"
-import app2 from "./assets/images/app-screens/app2.png"
-import app3 from "./assets/images/app-screens/app3.png"
-
+import app1 from "./assets/images/app-screens/app1.png";
+import app2 from "./assets/images/app-screens/app2.png";
+import app3 from "./assets/images/app-screens/app3.png";
+import threeAppScreens from "./assets/images/three-app-screens.png";
+import twoAppScreens from "./assets/images/two-app-screens.png";
+import person from "./assets/images//person.png";
 // ----------------------------------------------------------------------
 // Home Page Data
 // ----------------------------------------------------------------------
@@ -55,6 +57,25 @@ export const faqDataHome = [
         answer: '7 Chowdeck is a technology company that provides logistics services to both vendors and consumers. This potentially allows food vendors to deliver meals seamlessly while also providing consumers with an easy platform to order meals from their favourite restaurants in their city.',
     },
 ];
+export const heroDataHome = {
+    heading: "Helping you protect, and understand Credit Health",
+    text: "Miro is your team's visual platform to connect, collaborate, and create — together.",
+    image: threeAppScreens
+}
+export const contentImageDataHome = {
+    heading: "Work together, wherever you work",
+    text: "The paragraph you provided is a marketing message for a credit monitoring and protection service. It highlights the key benefits of the service, which are:",
+    ul: [
+        "Daily credit score updates",
+        "Powerful credit management tools",
+        "Credit lock protection",
+        "Identity theft insurance",
+    ],
+    image: twoAppScreens
+}
+export const ctaDataHome = {
+    heading: "Discover Credit Clarity  - Your New Favorite"
+}
 // ----------------------------------------------------------------------
 // About Page Data
 // ----------------------------------------------------------------------
@@ -83,6 +104,16 @@ export const contentAbout = [
     },
 
 ]
+export const ourMissionDataAbout = {
+    image: person,
+    subTitle: "Our mission",
+    heading: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum",
+    text: " Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
+    firstCount: "250+",
+    firstCountText: " Lorem Ipsum is simply dummy",
+    secondCount: "68+",
+    secondCountText: " Lorem Ipsum is simply dummy",
+}
 // ----------------------------------------------------------------------
 // Features Page Data
 // ----------------------------------------------------------------------
