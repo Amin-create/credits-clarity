@@ -11,31 +11,31 @@ function ContactForm() {
                     <div className="space-y-12">
                         <div className="grid grid-cols-1 gap-x-16 gap-y-8 sm:grid-cols-6">
                             <div className="sm:col-span-3">
-                                <label for="first-name" className="text-dark-blue text-[18px] leading-[30px] font-medium">First name</label>
+                                <label for="first-name" className="text-dark-blue text-[14px] md:text-[18px] leading-[20px] md:leading-[30px] font-medium">First name</label>
                                 <div className="mt-2">
                                     <input type="text" name="first-name" id="first-name" placeholder='First name' autocomplete="given-name" className="w-full text-dark-blue text-[16px] leading-[30px] rounded-md border-0 ring-1 ring-inset ring-gray-3 outline-none focus:ring-2 focus:ring-inset focus:ring-green px-[15px] py-[15px]" />
                                 </div>
                             </div>
                             <div className="sm:col-span-3">
-                                <label for="last-name" className="text-dark-blue text-[18px] leading-[30px] font-medium">Last name</label>
+                                <label for="last-name" className="text-dark-blue text-[14px] md:text-[18px] leading-[20px] md:leading-[30px] font-medium">Last name</label>
                                 <div className="mt-2">
                                     <input type="text" name="last-name" id="last-name" placeholder='Last name' autocomplete="family-name" className="w-full text-dark-blue text-[16px] leading-[30px] rounded-md border-0 ring-1 ring-inset ring-gray-3 outline-none focus:ring-2 focus:ring-inset focus:ring-green px-[15px] py-[15px]" />
                                 </div>
                             </div>
                             <div className="sm:col-span-3">
-                                <label for="email" className="text-dark-blue text-[18px] leading-[30px] font-medium">Email</label>
+                                <label for="email" className="text-dark-blue text-[14px] md:text-[18px] leading-[20px] md:leading-[30px] font-medium">Email</label>
                                 <div className="mt-2">
                                     <input id="email" name="email" type="email" placeholder='Email' autocomplete="email" className="w-full text-dark-blue text-[16px] leading-[30px] rounded-md border-0 ring-1 ring-inset ring-gray-3 outline-none focus:ring-2 focus:ring-inset focus:ring-green px-[15px] py-[15px]" />
                                 </div>
                             </div>
                             <div className="sm:col-span-3">
-                                <label for="phone" className="text-dark-blue text-[18px] leading-[30px] font-medium">Phone Number</label>
+                                <label for="phone" className="text-dark-blue text-[14px] md:text-[18px] leading-[20px] md:leading-[30px] font-medium">Phone Number</label>
                                 <div className="mt-2">
                                     <input id="phone" name="phone" type="text" placeholder='Phone Number' autocomplete="phone" className="w-full text-dark-blue text-[16px] leading-[30px] rounded-md border-0 ring-1 ring-inset ring-gray-3 outline-none focus:ring-2 focus:ring-inset focus:ring-green px-[15px] py-[15px]" />
                                 </div>
                             </div>
                             <div className="col-span-full">
-                                <label for="about" className="text-dark-blue text-[18px] leading-[30px] font-medium">Message</label>
+                                <label for="about" className="text-dark-blue text-[14px] md:text-[18px] leading-[20px] md:leading-[30px] font-medium">Message</label>
                                 <div className="mt-2">
                                     <textarea id="about" name="about" rows="4" placeholder='Message' className="w-full text-dark-blue text-[16px] leading-[30px] rounded-md border-0 ring-1 ring-inset ring-gray-3 outline-none focus:ring-2 focus:ring-inset focus:ring-green px-[15px] py-[15px]"></textarea>
                                 </div>

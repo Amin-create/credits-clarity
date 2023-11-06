@@ -1,125 +1,130 @@
 import React, { useState } from 'react'
 import { Core } from '..';
-import { FiChevronRight } from 'react-icons/fi';
-import envelope from '../../assets/images/icon/envelope.svg';
-import key from '../../assets/images/icon/key.svg';
-import user from '../../assets/images/icon/user.svg';
-import card from '../../assets/images/icon/card.svg';
-import mobile from '../../assets/images/icon/mobile.svg';
-import calander from '../../assets/images/icon/calander.svg';
 
 function SignupForm() {
 
-    const [isChecked, setIsChecked] = useState(false);
-
-    const handleCheckboxChange = () => {
-        setIsChecked(!isChecked);
-    };
+    const [email, setEmail] = useState("");
+    const [password, setPassword] = useState("");
+    const [confirmPassword, setConfirmPassword] = useState("");
+    const [calender, setcalender] = useState("");
+    const [fullName, setFullName] = useState("");
+    const [mobileNumber, setMobileNumber] = useState("");
+    const [ssn, setSsn] = useState("");
+    console.log("email", email)
+    console.log("password", password)
+    console.log("confirmPassword", confirmPassword)
+    console.log("fullName", fullName)
+    console.log("calender", calender)
+    console.log("mobileNumber", mobileNumber)
+    console.log("ssn", ssn)
 
     return (
         <section className='w-full relative'>
             <Core.Container wider>
-                <div className="flex justify-center items-center pt-28 pb-72">
-                    <div className='w-full max-w-[700px] rounded-[30px] bg-white px-24 pt-14 pb-12'>
+                <div className="flex justify-center items-center pt-14 md:pt-28 pb-20 md:pb-72">
+                    <div className='w-full max-w-[700px] rounded-[30px] bg-white px-6 md:px-24 pt-8 md:pt-14 pb-6 md:pb-12'>
                         <form>
-                            <h1 className='text-dark-blue text-[52px] leading-[70px] tracking-[-1px] font-bold text-center mx-auto mb-[60px]'>
+                            <h1 className='text-dark-blue text-[40px] md:text-[52px] leading-[50px] md:leading-[70px] tracking-[-1px] font-bold text-center mx-auto mb-[20px] md:mb-[60px]'>
                                 Sign up
                             </h1>
-                            <div className="grid grid-cols-1 gap-x-16 gap-y-6 sm:grid-cols-6 pb-6">
+                            <div className="grid grid-cols-1 gap-x-4 md:gap-x-16 gap-y-4 md:gap-y-10 sm:grid-cols-6 pb-6">
+                                <Core.InputWithLabel
+                                    setState={setFullName}
+                                    name="fullName"
+                                />
+                                <Core.InputWithLabel
+                                    setState={setEmail}
+                                    name="email"
+                                />
+                                <Core.InputWithLabel
+                                    setState={setPassword}
+                                    name="password"
+                                />
+                                <Core.InputWithLabel
+                                    setState={setConfirmPassword}
+                                    name="confirmPassword"
+                                />
+                                <Core.InputWithLabel
+                                    setState={setcalender}
+                                    name="calender"
+                                />
+                                <Core.InputWithLabel
+                                    setState={setSsn}
+                                    name="ssn"
+                                />
+                                <Core.InputWithLabel
+                                    setState={setMobileNumber}
+                                    name="mobileNumber"
+                                />
 
-                                <div className="col-span-full">
-                                    <label for="fullName" className="text-dark-blue text-[18px] leading-[30px] font-medium">Full Name</label>
-                                    <div className="relative mt-2">
-                                        <img className="absolute left-5 top-[18px]" src={user} alt="big image" />
-                                        <input type="text" name="fullName" id="fullName" placeholder='Full Name' autocomplete="given-name" className="w-full text-dark-blue text-[16px] leading-[30px] rounded-md border-0 ring-1 ring-inset ring-gray-3 outline-none focus:ring-2 focus:ring-inset focus:ring-green pl-[60px] pr-[15px] py-[15px]" />
-                                    </div>
-                                </div>
-
-
-                                <div className="col-span-full">
-                                    <label for="email" className="text-dark-blue text-[18px] leading-[30px] font-medium">Email</label>
+                                {/* <div className="col-span-full">
+                                    <label for="email" className="text-dark-blue text-[14px] md:text-[18px] leading-[20px] md:leading-[30px] font-medium">Email</label>
                                     <div className="relative mt-2">
                                         <img className="absolute left-5 top-[18px]" src={envelope} alt="big image" />
                                         <input type="text" name="email" id="email" placeholder='name@gmail.com' autocomplete="given-name" className="w-full text-dark-blue text-[16px] leading-[30px] rounded-md border-0 ring-1 ring-inset ring-gray-3 outline-none focus:ring-2 focus:ring-inset focus:ring-green pl-[60px] pr-[15px] py-[15px]" />
                                     </div>
                                 </div>
                                 <div className="col-span-full">
-                                    <label for="password" className="text-dark-blue text-[18px] leading-[30px] font-medium">Password</label>
+                                    <label for="password" className="text-dark-blue text-[14px] md:text-[18px] leading-[20px] md:leading-[30px] font-medium">Password</label>
                                     <div className="relative mt-2">
                                         <img className="absolute left-5 top-[18px]" src={key} alt="big image" />
                                         <input type="password" name="password" id="password" placeholder='**********' autocomplete="family-name" className="w-full text-dark-blue text-[16px] leading-[30px] rounded-md border-0 ring-1 ring-inset ring-gray-3 outline-none focus:ring-2 focus:ring-inset focus:ring-green pl-[60px] pr-[15px] py-[15px]" />
                                     </div>
-                                </div>
-                                <div className="col-span-full">
-                                    <label for="confirmPassword" className="text-dark-blue text-[18px] leading-[30px] font-medium">Confirm Password</label>
+                                </div> */}
+                                {/* <div className="col-span-full">
+                                    <label for="confirmPassword" className="text-dark-blue text-[14px] md:text-[18px] leading-[20px] md:leading-[30px] font-medium">Confirm Password</label>
                                     <div className="relative mt-2">
                                         <img className="absolute left-5 top-[18px]" src={key} alt="big image" />
                                         <input type="password" name="confirmPassword" id="confirmPassword" placeholder='**********' autocomplete="family-name" className="w-full text-dark-blue text-[16px] leading-[30px] rounded-md border-0 ring-1 ring-inset ring-gray-3 outline-none focus:ring-2 focus:ring-inset focus:ring-green pl-[60px] pr-[15px] py-[15px]" />
                                     </div>
-                                </div>
-                                <div className="col-span-full">
-                                    <label for="dbo" className="text-dark-blue text-[18px] leading-[30px] font-medium">DBO</label>
+                                </div> */}
+                                {/* <div className="col-span-full">
+                                    <label for="dbo" className="text-dark-blue text-[14px] md:text-[18px] leading-[20px] md:leading-[30px] font-medium">DBO</label>
                                     <div className="relative mt-2">
-                                        <img className="absolute left-5 top-[18px]" src={calander} alt="big image" />
+                                        <img className="absolute left-5 top-[18px]" src={calender} alt="big image" />
                                         <input type="date" name="dbo" id="dbo" placeholder='Date of birth' autocomplete="family-name" className="w-full text-dark-blue text-[16px] leading-[30px] rounded-md border-0 ring-1 ring-inset ring-gray-3 outline-none focus:ring-2 focus:ring-inset focus:ring-green pl-[60px] pr-[15px] py-[15px]" />
                                     </div>
-                                </div>
-                                <div className="col-span-full">
-                                    <label for="ssn" className="text-dark-blue text-[18px] leading-[30px] font-medium">SSN</label>
+                                </div> */}
+                                {/* <div className="col-span-full">
+                                    <label for="ssn" className="text-dark-blue text-[14px] md:text-[18px] leading-[20px] md:leading-[30px] font-medium">SSN</label>
                                     <div className="relative mt-2">
                                         <img className="absolute left-5 top-[18px]" src={card} alt="big image" />
                                         <input type="password" name="ssn" id="ssn" placeholder='AAA-GG-SSSS' autocomplete="family-name" className="w-full text-dark-blue text-[16px] leading-[30px] rounded-md border-0 ring-1 ring-inset ring-gray-3 outline-none focus:ring-2 focus:ring-inset focus:ring-green pl-[60px] pr-[15px] py-[15px]" />
                                     </div>
-                                </div>
-                                <div className="col-span-full">
-                                    <label for="mobileNumber" className="text-dark-blue text-[18px] leading-[30px] font-medium">Mobile Number</label>
+                                </div> */}
+                                {/* <div className="col-span-full">
+                                    <label for="mobileNumber" className="text-dark-blue text-[14px] md:text-[18px] leading-[20px] md:leading-[30px] font-medium">Mobile Number</label>
                                     <div className="relative mt-2">
                                         <img className="absolute left-5 top-[18px]" src={mobile} alt="big image" />
                                         <input type="text" name="mobileNumber" id="mobileNumber" placeholder='0000-0000000' autocomplete="family-name" className="w-full text-dark-blue text-[16px] leading-[30px] rounded-md border-0 ring-1 ring-inset ring-gray-3 outline-none focus:ring-2 focus:ring-inset focus:ring-green pl-[60px] pr-[15px] py-[15px]" />
                                     </div>
-                                </div>
-
+                                </div> */}
                                 <div className="col-span-full pb-3">
                                     <div className=" space-y-3">
 
                                         <div className="relative flex gap-x-3">
                                             <div className="flex h-6 items-center">
-                                                <input type="checkbox" className="w-[24px] h-[24px] checkbox checkbox-success cursor-pointer appearance-none border-green border-[1px] rounded-[6px]" />
+                                                <input type="checkbox" className="w-[18px] md:w-[24px] h-[18px] md:h-[24px] checkbox checkbox-success cursor-pointer appearance-none border-green border-[1px] rounded-[4px] md:rounded-[6px]" />
                                             </div>
-                                            <div className="text-sm leading-6">
-                                                <label for="comments" className="text-dark-blue text-[14px] font-bold">I Agree <a href="/terms-and-conditions">Terms & Conditions</a></label>
+                                            <div className="">
+                                                <label for="comments" className="text-dark-blue text-[12px] md:text-[14px] font-bold">I Agree <a href="/terms-and-conditions">Terms & Conditions</a></label>
                                             </div>
                                         </div>
 
                                         <div className="relative flex gap-x-3">
                                             <div className="flex h-6 items-center">
-                                                <input type="checkbox" className="w-[24px] h-[24px] checkbox checkbox-success cursor-pointer appearance-none border-green border-[1px] rounded-[6px]" />
+                                                <input type="checkbox" className="w-[18px] md:w-[24px] h-[18px] md:h-[24px] checkbox checkbox-success cursor-pointer appearance-none border-green border-[1px] rounded-[4px] md:rounded-[6px]" />
                                             </div>
-                                            <div className="text-sm leading-6">
-                                                <label for="candidates" className="text-dark-blue text-[14px] font-bold">I Agree <a href="privacy-policy">Privacy Policy</a></label>
+                                            <div className="">
+                                                <label for="candidates" className="text-dark-blue text-[12px] md:text-[14px] font-bold">I Agree <a href="privacy-policy">Privacy Policy</a></label>
                                             </div>
                                         </div>
 
                                     </div>
                                 </div>
-
-
-
-
-
-
-
-
                             </div>
-                            <button type="button" className="w-full flex justify-between items-center  text-[#fff] text-[25px] font-bold whitespace-nowrap rounded-full bg-[#09EC92] pl-12 pr-1 py-1">
-                                Create Account
-                                <div className='flex justify-center items-center w-[60px] h-[60px] rounded-full bg-[#fff]'>
-                                    <span className='text-[#09EC92] text-[35px] pl-[5px]'>
-                                        <FiChevronRight />
-                                    </span>
-                                </div>
-                            </button>
-                            <p className='text-dark-blue text-[16px] leading-[20px] font-regular text-center pt-8'>
+                            <Core.Button greenIconicLg wider>Create Account</Core.Button>
+                            <p className='text-dark-blue text-[12px] md:text-[16px] leading-[14px] md:leading-[20px] font-regular text-center pt-4 md:pt-8'>
                                 Do you have an account? <strong>Sign In</strong>
                             </p>
                         </form>

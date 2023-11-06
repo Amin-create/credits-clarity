@@ -9,7 +9,7 @@ function Hero({ data }) {
             <Core.Container>
                 <div className="flex justify-between items-start h-[460px] md:h-[720px] pt-[40px] md:pt-[130px]">
                     <div>
-                        <h1 className="max-w-full md:max-w-[540px] text-[40px] md:text-[52px] text-[#fff] font-bold leading-[50px] md:leading-[70px]">
+                        <h1 className="max-w-full md:max-w-[540px] text-[#fff] text-[40px] md:text-[52px] leading-[50px] md:leading-[70px] font-bold ">
                             {data?.heading}
                         </h1>
                         <p className='max-w-[520px] text-[20px] text-[#fff] leading-[30px] pt-4 pb-6'>

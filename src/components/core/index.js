@@ -1,8 +1,9 @@
-import Container from "./Container";
 import Button from "./Button";
 import Card from "./Card";
+import Container from "./Container";
+import InputWithLabel from "./InputWithLabel";
 
 
 export {
-    Container, Button,Card
+    Container, Card, Button, InputWithLabel
 }

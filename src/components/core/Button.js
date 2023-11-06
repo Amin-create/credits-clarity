@@ -1,7 +1,7 @@
 import React from 'react';
 import { FiChevronRight } from 'react-icons/fi';
 
-function Button({ children, simpleGreen, blackText, greenIconicSm, greenIconicMd, greenIconicLg }) {
+function Button({ children, wider, simpleGreen, blackText, greenIconicSm, greenIconicMd, greenIconicLg, }) {
     return (
         <>
             {/* {simpleGreen &&
@@ -45,7 +45,9 @@ function Button({ children, simpleGreen, blackText, greenIconicSm, greenIconicMd
                 ${greenIconicLg && 'w-[180px] md:w-[311px] text-[18px] leading-[20px] md:text-[25px] md:leading-[32px] font-bold pl-6 md:pl-12 pr-1 py-1'}
                 ${greenIconicMd && 'w-[170px] md:w-[250px] text-[18px] leading-[20px] md:text-[25px] md:leading-[32px] font-bold pl-6 md:pl-12 pr-1 py-1'}
                 ${greenIconicSm && 'w-[160px] md:w-[226px] text-[16px] leading-[18px] md:text-[20px] md:leading-[26px] font-bold pl-5 md:pl-12 pr-1 py-1'}
+                ${wider && 'w-full'}
                 ${simpleGreen && 'text-[12px] md:text-[16px] font-medium px-3 md:px-6 py-1.5 md:py-3'}
+                
                  flex justify-between items-center text-[#fff] whitespace-nowrap rounded-full bg-[#09EC92] 
                 `}>
                     {children}

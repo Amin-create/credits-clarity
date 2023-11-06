@@ -1,0 +1,102 @@
+import React from 'react';
+import envelope from '../../assets/images/icon/envelope.svg';
+import key from '../../assets/images/icon/key.svg';
+import user from '../../assets/images/icon/user.svg';
+import card from '../../assets/images/icon/card.svg';
+import mobile from '../../assets/images/icon/mobile.svg';
+import calender from '../../assets/images/icon/calender.svg';
+
+function InputWithLabel({ name, setState
+}) {
+
+    const label = (name) => {
+        switch (name) {
+            case "fullName":
+                return "Full Name";
+            case "email":
+                return "Email";
+            case "password":
+                return "Password";
+            case "confirmPassword":
+                return "Confirm Password";
+            case "calender":
+                return "DOB";
+            case "ssn":
+                return "SSN";
+            case "mobileNumber":
+                return "Mobile Number";
+            default:
+                return "Label";
+        }
+    }
+
+    const icon = (name) => {
+        switch (name) {
+            case "email":
+                return envelope;
+            case "password":
+            case "confirmPassword":
+                return key;
+            case "fullName":
+                return user;
+            case "calender":
+                return calender;
+            case "ssn":
+                return card;
+            case "mobileNumber":
+                return mobile;
+            default:
+                return mobile;
+        }
+    }
+
+    const type = (name) => {
+        switch (name) {
+            case "email":
+            case "fullName":
+            case "ssn":
+            case "mobileNumber":
+                return "text";
+            case "password":
+            case "confirmPassword":
+                return "password";
+            case "calender":
+                return "date";
+            default:
+                return "text";
+        }
+    }
+
+    const placeholder = (name) => {
+        switch (name) {
+            case "email":
+                return "name@gmail.com";
+            case "fullName":
+                return "Full Name";
+            case "password":
+            case "confirmPassword":
+                return "********";
+            case "ssn":
+                return "AAA-GG-SSSS";
+            case "mobileNumber":
+                return "0000-0000000";
+            default:
+                return "";
+        }
+    }
+
+
+    return (
+        <div className="col-span-full">
+            <label for={name} className="text-dark-blue text-[14px] md:text-[18px] leading-[20px] md:leading-[30px] font-medium">{label(name)}</label>
+            <div className="relative mt-1 md:mt-2">
+                <img className="absolute w-[16px] md:w-[auto] left-3 md:left-5 top-[12px] md:top-[18px]" src={icon(name)} alt="big image" />
+                <input onChange={(e) => setState(e.target.value)} type={type(name)} name={name} id={name} placeholder={placeholder(name)} autocomplete="off" className="w-full text-dark-blue text-[12px] md:text-[16px] leading-[18px] md:leading-[30px] rounded-md border-0 ring-1 ring-inset ring-gray-3 outline-none focus:ring-2 focus:ring-inset focus:ring-green pl-[35px] md:pl-[60px] pr-[8px] md:pr-[15px] py-[12px] md:py-[15px]" />
+            </div>
+        </div>
+    )
+}
+
+export default InputWithLabel
+
+
