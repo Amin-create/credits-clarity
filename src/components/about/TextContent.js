@@ -9,7 +9,7 @@ function BigImage({ data }) {
                     {data?.map((value) =>
                         <>
                             {value.type === "bold-text" &&
-                                <h3 className="max-w-[866px] text-blue text-[28px] md:text-[36px] leading-[30px] md:leading-[40px] font-bold">
+                                <h3 data-aos="fade-up" className="max-w-[866px] text-blue text-[28px] md:text-[36px] leading-[30px] md:leading-[40px] font-bold">
                                     We are the next generation productivity software helping sales and revenue teams navigate their daily work with ebb and flow.
                                 </h3>
                             }
@@ -18,7 +18,7 @@ function BigImage({ data }) {
                                     <div className='w-[50%]'>
                                         <div className='flex flex-col justify-start gap-y-0 md:gap-y-6 pr-0 md:pr-8'>
                                             {value.leftBlock.map((value) =>
-                                                <p className="text-blue text-[14px] md:text-[18px] leading-[24px] md:leading-[30px] font-regular">
+                                                <p data-aos="fade-right" className="text-blue text-[14px] md:text-[18px] leading-[24px] md:leading-[30px] font-regular">
                                                     {value}
                                                 </p>)}
                                         </div>
@@ -26,7 +26,7 @@ function BigImage({ data }) {
                                     <div className='w-[50%]'>
                                         <div className='flex flex-col justify-start gap-y-0 md:gap-y-6 pl-2 md:pl-8'>
                                             {value.rightBlock.map((value) =>
-                                                <p className="text-blue text-[14px] md:text-[18px] leading-[24px] md:leading-[30px] font-regular">
+                                                <p data-aos="fade-left" className="text-blue text-[14px] md:text-[18px] leading-[24px] md:leading-[30px] font-regular">
                                                     {value}
                                                 </p>
                                             )}

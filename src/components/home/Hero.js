@@ -7,9 +7,9 @@ function Hero({ data }) {
             <div className='absolute z-[-1] w-full h-[420px] md:h-[572px] rounded-bl-[120px] md:rounded-bl-[300px] bg-gradient-to-r from-gr-a-1 to-gr-a-2'>
             </div>
             <Core.Container>
-                <div className="flex justify-between items-start h-[460px] md:h-[720px] pt-[40px] md:pt-[130px]">
+                <div className="flex justify-between items-start h-[460px] md:h-[620px] 2xl:h-[720px] pt-[40px] xl:pt-[80px] 2xl:pt-[130px]">
                     <div>
-                        <h1 className="max-w-full md:max-w-[540px] text-[#fff] text-[40px] md:text-[52px] leading-[50px] md:leading-[70px] font-bold ">
+                        <h1 className="max-w-full md:max-w-[620px] 2xl:max-w-[540px] text-[#fff] text-[40px] md:text-[52px] leading-[60px]  2xl:leading-[70px] font-bold ">
                             {data?.heading}
                         </h1>
                         <p className='max-w-[520px] text-[20px] text-[#fff] leading-[30px] pt-4 pb-6'>
@@ -17,8 +17,8 @@ function Hero({ data }) {
                         </p>
                         <Core.Button greenIconicLg>Sign up free</Core.Button>
                     </div>
-                    <div className='mr-[-120px] 2xl:mr-[-200px] hidden lg:block'>
-                        <img data-aos="zoom-in" className="scale-[0.7] 2xl:scale-[1] mt-[-140px] 2xl:mt-[-60px]" src={data?.image} alt="logo" />
+                    <div data-aos="zoom-in" className='mr-[-120px] 2xl:mr-[-200px] hidden lg:block'>
+                        <img className="scale-[0.75] 2xl:scale-[1] mt-[-100px] 2xl:mt-[-60px]" src={data?.image} alt="logo" />
                     </div>
                 </div>
             </Core.Container>

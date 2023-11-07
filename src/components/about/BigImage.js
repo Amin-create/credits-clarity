@@ -6,7 +6,7 @@ function BigImage({ img }) {
         <section className='w-full relative'>
             <Core.Container wider>
                 <div className="flex justify-center items-center py-2 md:py-10">
-                    <img className="w-full" src={img} alt="big image" />
+                    <img data-aos="zoom-in" className="w-full" src={img} alt="big image" />
                 </div>
             </Core.Container>
         </section>
