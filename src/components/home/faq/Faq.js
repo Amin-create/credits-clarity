@@ -3,7 +3,7 @@ import { TiStarburst } from 'react-icons/ti';
 import { Core } from '../../../components';
 
 const FAQItem = ({ item, isOpen, onClick, index }) => (
-    <div data-aos="fade-right" className={`flex justify-between items-center w-full md:w-[564px] h-[40px] md:h-[70px] cursor-pointer rounded-[8px] ${isOpen && 'bg-dark-blue'} ${!isOpen && 'bg-gradient-to-b from-[#ffffffab] to-[#ffffff63] hover:bg-green transition-all'} px-3 md:px-5`} onClick={() => onClick(index)}>
+    <div className={`flex justify-between items-center w-full md:w-[564px] h-[40px] md:h-[70px] cursor-pointer rounded-[8px] ${isOpen && 'bg-dark-blue'} ${!isOpen && 'bg-gradient-to-b from-[#ffffffab] to-[#ffffff63] hover:bg-green transition-all'} px-3 md:px-5`} onClick={() => onClick(index)}>
         <h2 className={`${isOpen && 'text-[#fff]'} ${!isOpen && 'text-dark-blue'} text-[14px] md:text-[18px] leading-[20px] md:leading-[28px] font-extrabold`}>{item.question}</h2>
         {isOpen && (
             <span className='text-[#09EC92] text-[20px] md:text-[30px]'>
@@ -17,7 +17,7 @@ const FAQ = ({ data }) => {
     const [openIndex, setOpenIndex] = useState(0);
 
     const handleToggle = (index) => {
-        if (openIndex !== index)   {
+        if (openIndex !== index) {
             // Clicked on a closed FAQ, so open it.
             setOpenIndex(index);
         }
