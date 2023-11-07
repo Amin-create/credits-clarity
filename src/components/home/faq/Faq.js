@@ -23,7 +23,7 @@ const FAQ = ({ data }) => {
     };
 
     return (
-        <div className='pt-8 sm:pt-14 md:pt-24 pb-20 md:pb-28'>
+        <div className='pt-8 sm:pt-14 md:pt-24 pb-10 sm:pb-20 md:pb-28'>
             <div className="flex justify-between items-center gap-x-10 gap-y-5">
                 <h2 className="w-[50%] text-[28px] sm:text-[48px] leading-[34px] sm:leading-[56px] font-extrabold">
                     FAQs.

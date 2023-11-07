@@ -4,10 +4,10 @@ import { Core } from '../../components';
 function Hero({ data }) {
     return (
         <section className='w-full relative overflow-hidden'>
-            <div className='absolute z-[-1] w-full h-[360px] sm:h-[340px] md:h-[572px] rounded-bl-[70px] sm:rounded-bl-[90px] md:rounded-bl-[300px] bg-gradient-to-r from-gr-a-1 to-gr-a-2'>
+            <div className='absolute z-[-1] w-full h-[310px] sm:h-[340px] md:h-[572px] rounded-bl-[50px] sm:rounded-bl-[90px] md:rounded-bl-[300px] bg-gradient-to-r from-gr-a-1 to-gr-a-2'>
             </div>
             <Core.Container>
-                <div className="flex justify-between items-start h-[400px] sm:h-[390px] md:h-[620px] 2xl:h-[720px] pt-[40px] xl:pt-[80px] 2xl:pt-[130px]">
+                <div className="flex justify-between items-start h-[340px] sm:h-[390px] md:h-[620px] 2xl:h-[720px] pt-[40px] xl:pt-[80px] 2xl:pt-[130px]">
                     <div>
                         <h1 className="max-w-full md:max-w-[620px] 2xl:max-w-[540px] text-[#fff] text-[30px] sm:text-[40px] md:text-[52px] leading-[40px] sm:leading-[50px] md:leading-[60px]  2xl:leading-[70px] font-bold ">
                             {data?.heading}
