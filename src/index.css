@@ -83,3 +83,11 @@ nav a a.active {
   color: #09EC92;
   font-weight: bold;
 }
+
+@media(max-width: 400px) {
+
+  .bg-main:before {
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+  }
+}

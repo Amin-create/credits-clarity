@@ -7,7 +7,7 @@ function Help({ data }) {
             <Core.Container>
                 <div className="flex flex-col justify-center items-center gap-y-10 md:gap-y-16 pb-10 md:pb-16">
                     <div className='flex flex-col justify-center items-center'>
-                        <h2 data-aos="fade-in" className='text-dark-blue text-[35px] md:text-[48px] leading-[40px] md:leading-[70px] font-bold mx-auto mb-3 md:mb-0'>
+                        <h2 data-aos="fade-in" className='text-dark-blue text-[28px] sm:text-[35px] md:text-[48px] leading-[32px] sm:leading-[40px] md:leading-[70px] font-bold mx-auto mb-3 md:mb-0'>
                             How can we help?
                         </h2>
                         <p data-aos="fade-in" className='text-[#000000] text-[14px] md:text-[18px] text-center leading-[24px] md:leading-[36.5px] font-normal'>
