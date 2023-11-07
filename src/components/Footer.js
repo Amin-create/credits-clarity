@@ -1,6 +1,9 @@
 import React from 'react'
 import playStore from "../assets/images/play-store.png";
 import appStore from "../assets/images/appstore.png";
+import { Link } from "react-router-dom";
+import styles from '../style';
+
 
 function Footer() {
     return (
@@ -10,16 +13,25 @@ function Footer() {
                     {/* <!-- Left Column --> */}
                     <div className="flex flex-col md:flex-row justify-start gap-x-8 gap-y-4 md:gap-y-0">
                         <p className='text-[16px] leading-[24px] font-thin'>© 2023 Credits Clarity</p>
-                        <a href="/terms-and-conditions" className="text-[16px] leading-[24px] font-thin hover:underline">Terms and Services</a>
-                        <a href="/privacy-policy" className="text-[16px] leading-[24px] font-thin hover:underline">Privacy Policy</a>
+                        <a className={`text-[16px] leading-[24px] font-thin ${styles.linkHover1}`}>
+                        {/* hover:underline transition-all */}
+                            <Link to="/terms-and-conditions">
+                                Terms and Services
+                            </Link>
+                        </a>
+                        <a className={`text-[16px] leading-[24px] font-thin ${styles.linkHover1}`}>
+                            <Link to="/privacy-policy">
+                                Privacy Policy
+                            </Link>
+                        </a>
                     </div>
                     {/* <!-- Right Column --> */}
                     <div className="flex items-center gap-x-3">
-                        <a href="#" className="  hover:underline">
-                            <img src={playStore} alt="Google Play Store" />
+                        <a className="hover:underline hover:scale-105 transition-all">
+                            <Link to="#"><img src={playStore} alt="Google Play Store" /></Link>
                         </a>
-                        <a href="#" className="  hover:underline">
-                            <img src={appStore} alt="App Store" />
+                        <a className="hover:underline hover:scale-105 transition-all">
+                            <Link to="#"><img src={appStore} alt="App Store" /></Link>
                         </a>
                     </div>
                 </div>

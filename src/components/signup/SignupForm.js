@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
 import { Core } from '..';
+import styles from '../../style';
+import { Link } from 'react-router-dom';
 
 function SignupForm() {
 
@@ -56,7 +58,6 @@ function SignupForm() {
                                     setState={setMobileNumber}
                                     name="mobileNumber"
                                 />
-
                                 {/* <div className="col-span-full">
                                     <label for="email" className="text-dark-blue text-[14px] md:text-[18px] leading-[20px] md:leading-[30px] font-medium">Email</label>
                                     <div className="relative mt-2">
@@ -107,7 +108,9 @@ function SignupForm() {
                                                 <input type="checkbox" className="w-[18px] md:w-[24px] h-[18px] md:h-[24px] checkbox checkbox-success cursor-pointer appearance-none border-green border-[1px] rounded-[4px] md:rounded-[6px]" />
                                             </div>
                                             <div className="">
-                                                <label for="comments" className="text-dark-blue text-[12px] md:text-[14px] font-bold">I Agree <a href="/terms-and-conditions">Terms & Conditions</a></label>
+                                                <label for="comments" className="text-dark-blue text-[12px] md:text-[14px] font-bold">I Agree <a className={`${styles.linkHover1}`} > <Link to="/terms-and-conditions">
+                                                    Terms and Services
+                                                </Link></a></label>
                                             </div>
                                         </div>
 
@@ -116,7 +119,9 @@ function SignupForm() {
                                                 <input type="checkbox" className="w-[18px] md:w-[24px] h-[18px] md:h-[24px] checkbox checkbox-success cursor-pointer appearance-none border-green border-[1px] rounded-[4px] md:rounded-[6px]" />
                                             </div>
                                             <div className="">
-                                                <label for="candidates" className="text-dark-blue text-[12px] md:text-[14px] font-bold">I Agree <a href="privacy-policy">Privacy Policy</a></label>
+                                                <label for="candidates" className="text-dark-blue text-[12px] md:text-[14px] font-bold">I Agree <a className={`${styles.linkHover1}`} > <Link to="/privacy-policy">
+                                                    Privacy Policy
+                                                </Link></a></label>
                                             </div>
                                         </div>
 
@@ -125,13 +130,19 @@ function SignupForm() {
                             </div>
                             <Core.Button greenIconicLg wider>Create Account</Core.Button>
                             <p className='text-dark-blue text-[12px] md:text-[16px] leading-[14px] md:leading-[20px] font-regular text-center pt-4 md:pt-8'>
-                                Do you have an account? <strong>Sign In</strong>
+                                Do you have an account? <strong className='inline-block'>
+                                    <a className={` ${styles.linkHover1}`}>
+                                        <Core.Button blackText>
+                                            <Link to="/login">Sign in</Link>
+                                        </Core.Button>
+                                    </a>
+                                </strong>
                             </p>
                         </form>
                     </div>
-                </div>
-            </Core.Container>
-        </section>
+                </div >
+            </Core.Container >
+        </section >
     )
 }
 

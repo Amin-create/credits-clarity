@@ -4,6 +4,7 @@ import { Core } from '../components';
 import { AiOutlineClose } from 'react-icons/ai';
 import { HiMenu } from 'react-icons/hi';
 import { Link } from "react-router-dom";
+import styles from '../style';
 
 function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -26,13 +27,13 @@ function Header() {
                   <a className="text-[18px] text-[#09EC92] font-bold py-2">
                     <Link to="/">Home</Link>
                   </a>
-                  <a className="text-[18px] hover:text-[#09EC92] font-normal px-3 py-2">
+                  <a className={`text-[18px] ${styles.linkHover1} font-normal px-3 py-2`}>
                     <Link to="/about">About Us</Link>
                   </a>
-                  <a className="text-[18px] hover:text-[#09EC92] font-normal px-3 py-2">
+                  <a className={`text-[18px] ${styles.linkHover1} font-normal px-3 py-2`}>
                     <Link to="/features">Features</Link>
                   </a>
-                  <a className="text-[18px] hover:text-[#09EC92] font-normal px-3 py-2">
+                  <a className={`text-[18px] ${styles.linkHover1} font-normal px-3 py-2`}>
                     <Link to="/contact">Contact Us</Link>
                   </a>
                 </div>
@@ -40,12 +41,16 @@ function Header() {
             </div>
             <div className="block">
               <div className="flex items-center gap-x-3 ml-4 lg:ml-6">
-                <Core.Button blackText>
-                  <Link to="/login">Sign in</Link>
-                </Core.Button>
-                <Core.Button simpleGreen>
-                  <Link to="/signup">Sign up free&nbsp; →</Link>
-                </Core.Button>
+                <a className={` ${styles.linkHover1}  `}>
+                  <Core.Button blackText>
+                    <Link to="/login">Sign in</Link>
+                  </Core.Button>
+                </a>
+                <a className={` ${styles.linkHover1}  `}>
+                  <Core.Button simpleGreen>
+                    <Link to="/signup">Sign up free&nbsp; →</Link>
+                  </Core.Button>
+                </a>
               </div>
             </div>
             <div className="flex -mr-2 lg:hidden justify-end">
@@ -84,17 +89,17 @@ function Header() {
               </a>
             </li>
             <li>
-              <a className="block text-[18px] hover:text-[#09EC92] font-normal py-4">
+              <a className={`block text-[18px] ${styles.linkHover1} font-normal py-4`}>
                 <Link to="/about">About Us</Link>
               </a>
             </li>
             <li>
-              <a className="block text-[18px] hover:text-[#09EC92] font-normal py-4">
+              <a className={`block text-[18px] ${styles.linkHover1} font-normal py-4`}>
                 <Link to="/features">Features</Link>
               </a>
             </li>
             <li>
-              <a className="block text-[18px] hover:text-[#09EC92] font-normal py-4">
+              <a className={`block text-[18px] ${styles.linkHover1} font-normal py-4`}>
                 <Link to="/contact">Contact Us</Link>
               </a>
             </li>
