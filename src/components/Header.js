@@ -3,7 +3,8 @@ import logo2 from "../assets/images/logo/logo.svg";
 import { Core } from '../components';
 import { AiOutlineClose } from 'react-icons/ai';
 import { HiMenu } from 'react-icons/hi';
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import styles from '../style';
 
 function Header() {
@@ -15,7 +16,7 @@ function Header() {
 
   return (
     <div>
-      <nav className="border-b-[6px] border-[#09EC92] bg-white dark:bg-gray-800 py-7">
+      <nav className="border-b-[6px] border-[#09EC92] bg-white py-7">
         <Core.Container>
           <div className="flex items-center justify-between h-4 lg:h-16">
             <div className="flex items-center">
@@ -24,17 +25,17 @@ function Header() {
               </a>
               <div className="hidden lg:block">
                 <div className="flex items-baseline ml-10 space-x-5">
-                  <a className="text-[18px] text-[#09EC92] font-bold py-2">
-                    <Link to="/">Home</Link>
+                  <a className={`text-[18px] ${styles.linkHover1} font-normal px-3 py-2`}>
+                    <NavLink to="/">Home</NavLink>
                   </a>
                   <a className={`text-[18px] ${styles.linkHover1} font-normal px-3 py-2`}>
-                    <Link to="/about">About Us</Link>
+                    <NavLink to="/about">About Us</NavLink>
                   </a>
                   <a className={`text-[18px] ${styles.linkHover1} font-normal px-3 py-2`}>
-                    <Link to="/features">Features</Link>
+                    <NavLink to="/features">Features</NavLink>
                   </a>
                   <a className={`text-[18px] ${styles.linkHover1} font-normal px-3 py-2`}>
-                    <Link to="/contact">Contact Us</Link>
+                    <NavLink to="/contact">Contact Us</NavLink>
                   </a>
                 </div>
               </div>
@@ -57,7 +58,7 @@ function Header() {
               <div className='w-[60px ]'>
                 {mobileMenuOpen ? "" : <button
                   onClick={toggleMobileMenu}
-                  className="text-dark-blue dark:text-white hover:text-gray-300 text-[24px]"
+                  className="text-dark-blue hover:text-gray-300 text-[24px]"
                 >
                   <HiMenu />
                 </button>}
@@ -71,13 +72,13 @@ function Header() {
         className={`border fixed top-0 left-0 w-64 h-full z-10 transform transition-transform ease-in-out duration-300 ${mobileMenuOpen ? 'translate-x-0' : '-translate-x-full'
           }`}
       >
-        <div className="w-full h-screen bg-white dark:bg-gray-800 p-6">
+        <div className="w-full h-screen bg-white p-6">
           <div className='flex justify-between'>
 
             <img className="w-[100px]" src={logo2} alt="logo" />
             {mobileMenuOpen ? <button
               onClick={toggleMobileMenu}
-              className="text-dark-blue dark:text-white hover:text-gray-300 text-[24px]"
+              className="text-dark-blue hover:text-gray-300 text-[24px]"
             >
               <AiOutlineClose />
             </button> : ""}

@@ -7,11 +7,11 @@ function HorizontalContents({ data }) {
         <section className='w-full relative'>
             <Core.Container>
                 <div className="flex flex-col justify-center items-center gap-y-0 md:gap-y-2 pt-4 md:pt-8 pb-3 md:pb-6">
-                    {data?.heading && <h1 className="text-[28px] md:text-[36px] leading-[30px] md:leading-[40px] font-bold text-center pb-4">
+                    {data?.heading && <h1 data-aos="fade-up" className="text-[28px] md:text-[36px] leading-[30px] md:leading-[40px] font-bold text-center pb-4">
                         {data?.heading}
                     </h1>}
                     {data?.texts.map((value) =>
-                        <p key={value * 2} className='text-dark-blue text-[14px] md:text-[18px] leading-[20px] md:leading-[30px] font-regular text-center pt-6'>
+                        <p data-aos="fade-up" key={value * 2} className='text-dark-blue text-[14px] md:text-[18px] leading-[20px] md:leading-[30px] font-regular text-center pt-6'>
                             {value}
                         </p>
                     )}

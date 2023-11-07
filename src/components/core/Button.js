@@ -40,7 +40,7 @@ function Button({ children, wider, simpleGreen, blackText, greenIconicSm, greenI
                 </button>
             }
             {(greenIconicLg || greenIconicSm || greenIconicMd || simpleGreen) &&
-                <button type="button" className={`
+                <button data-aos="fade-right" type="button" className={`
                 ${greenIconicLg && 'w-[180px] md:w-[311px] text-[18px] leading-[20px] md:text-[25px] md:leading-[32px] font-bold pl-6 md:pl-12 pr-1 py-1'}
                 ${greenIconicMd && 'w-[170px] md:w-[250px] text-[18px] leading-[20px] md:text-[25px] md:leading-[32px] font-bold pl-6 md:pl-12 pr-1 py-1'}
                 ${greenIconicSm && 'w-[160px] md:w-[226px] text-[16px] leading-[18px] md:text-[20px] md:leading-[26px] font-bold pl-5 md:pl-8 pr-1 py-1'}

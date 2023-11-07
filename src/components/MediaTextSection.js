@@ -10,12 +10,12 @@ function MediaTextSection({ value, index, length }) {
                     <>
                         <div className='relative flex justify-center items-center w-full md:w-[40%]'>
                             <div className={`absolute z-[-1] w-full h-full max-w-[356px] max-h-[356px] rounded-[300px] bg-gradient-to-br from-green to-[#ffffff00] opacity-[0.4] ${index === 0 && "left-8"}`}></div>
-                            <img className="" src={value.img} alt="big image" />
+                            <img data-aos="fade-right" className="" src={value.img} alt="big image" />
                         </div>
                         <div className='flex justify-start items-center w-full md:w-[60%] pr-0 md:pr-24'>
                             <div>
-                                <h4 className="text-dark-blue text-[22px] leading-[70px] tracking-[-1px] font-bold">{value?.heading}</h4>
-                                {value?.texts.map((value) => <p className="text-dark-blue text-[16px] md:text-[18px] leading-[24px] md:leading-[30px] font-regular mb-4">{value}</p>)}
+                                <h4 data-aos="fade-left" className="text-dark-blue text-[22px] leading-[70px] tracking-[-1px] font-bold">{value?.heading}</h4>
+                                {value?.texts.map((value) => <p data-aos="fade-left" className="text-dark-blue text-[16px] md:text-[18px] leading-[24px] md:leading-[30px] font-regular mb-4">{value}</p>)}
                             </div>
                         </div>
                     </>
@@ -23,13 +23,13 @@ function MediaTextSection({ value, index, length }) {
                     <>
                         <div className='flex justify-start items-center w-full md:w-[60%] pr-0 md:pr-24'>
                             <div>
-                                <h4 className="text-dark-blue text-[22px] leading-[70px] tracking-[-1px] font-bold">{value?.heading}</h4>
-                                {value?.texts.map((value) => <p className="text-dark-blue text-[16px] md:text-[18px] leading-[24px] md:leading-[30px] font-regular mb-4">{value}</p>)}
+                                <h4 data-aos="fade-right" className="text-dark-blue text-[22px] leading-[70px] tracking-[-1px] font-bold">{value?.heading}</h4>
+                                {value?.texts.map((value) => <p data-aos="fade-right" className="text-dark-blue text-[16px] md:text-[18px] leading-[24px] md:leading-[30px] font-regular mb-4">{value}</p>)}
                             </div>
                         </div>
                         <div className='relative flex justify-center items-center w-full md:w-[40%]'>
                             <div className='absolute z-[-1] w-full h-full max-w-[356px] max-h-[356px] rounded-[300px] bg-gradient-to-br from-green to-[#ffffff00] opacity-[0.4]'></div>
-                            <img className="" src={value.img} alt="big image" />
+                            <img data-aos="fade-left" className="" src={value.img} alt="big image" />
                         </div>
                     </>
                 }

@@ -18,7 +18,7 @@ function Hero({ data }) {
                         <Core.Button greenIconicLg>Sign up free</Core.Button>
                     </div>
                     <div className='mr-[-120px] 2xl:mr-[-200px] hidden lg:block'>
-                        <img className="scale-[0.7] 2xl:scale-[1] mt-[-140px] 2xl:mt-[-60px]" src={data?.image} alt="logo" />
+                        <img data-aos="zoom-in" className="scale-[0.7] 2xl:scale-[1] mt-[-140px] 2xl:mt-[-60px]" src={data?.image} alt="logo" />
                     </div>
                 </div>
             </Core.Container>

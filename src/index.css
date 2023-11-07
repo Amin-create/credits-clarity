@@ -16,7 +16,6 @@ body {
   position: relative;
 }
 
-
 .bg-main:before {
   content: "";
   position: absolute;
@@ -32,7 +31,6 @@ body {
   background-size: cover;
   /* background-position: center; */
 }
-
 
 .bg-login:before,
 .bg-signup:before {
@@ -73,12 +71,15 @@ body {
   background-size: cover;
 }
 
-
-
 .checkbox-success:checked,
 .checkbox-success[checked=true],
 .checkbox-success[aria-checked=true] {
   background-repeat: no-repeat;
   background-image: url(./assets/images/icon/check.svg);
   background-size: cover;
+}
+
+nav a a.active {
+  color: #09EC92;
+  font-weight: bold;
 }
