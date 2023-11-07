@@ -44,12 +44,12 @@ function Header() {
               <div className="flex items-center gap-x-3 ml-4 lg:ml-6">
                 <a className={` ${styles.linkHover1}  `}>
                   <Core.Button blackText>
-                    <Link to="/login">Sign in</Link>
+                    <NavLink to="/login">Sign in</NavLink>
                   </Core.Button>
                 </a>
                 <a className={` ${styles.linkHover1}  `}>
                   <Core.Button simpleGreen>
-                    <Link to="/signup">Sign up free&nbsp; →</Link>
+                    <NavLink to="/signup">Sign up free&nbsp; →</NavLink>
                   </Core.Button>
                 </a>
               </div>
@@ -69,13 +69,12 @@ function Header() {
       </nav>
       {/* Mobile Navigation Drawer */}
       <div
-        className={`border fixed top-0 left-0 w-64 h-full z-10 transform transition-transform ease-in-out duration-300 ${mobileMenuOpen ? 'translate-x-0' : '-translate-x-full'
+        className={`border fixed top-0 left-0 w-full h-full z-10 transform transition-transform ease-in-out duration-300 ${mobileMenuOpen ? 'translate-x-0' : '-translate-x-full'
           }`}
       >
-        <div className="w-full h-screen bg-white p-6">
-          <div className='flex justify-between'>
-
-            <img className="w-[100px]" src={logo2} alt="logo" />
+        <div className="w-full h-screen bg-white p-5">
+          <div className='flex justify-between items-start'>
+            <img className="w-[70px]" src={logo2} alt="logo" />
             {mobileMenuOpen ? <button
               onClick={toggleMobileMenu}
               className="text-dark-blue hover:text-gray-300 text-[24px]"
@@ -83,25 +82,25 @@ function Header() {
               <AiOutlineClose />
             </button> : ""}
           </div>
-          <ul className="">
+          <ul className="pt-10">
             <li>
-              <a className="block text-[18px] text-[#09EC92] font-bold py-4">
-                <Link to="/">Home</Link>
+              <a className="block text-[18px] ${styles.linkHover1} font-normal py-2">
+                <NavLink to="/">Home</NavLink>
               </a>
             </li>
             <li>
-              <a className={`block text-[18px] ${styles.linkHover1} font-normal py-4`}>
-                <Link to="/about">About Us</Link>
+              <a className={`block text-[18px] ${styles.linkHover1} font-normal py-2`}>
+                <NavLink to="/about">About Us</NavLink>
               </a>
             </li>
             <li>
-              <a className={`block text-[18px] ${styles.linkHover1} font-normal py-4`}>
-                <Link to="/features">Features</Link>
+              <a className={`block text-[18px] ${styles.linkHover1} font-normal py-2`}>
+                <NavLink to="/features">Features</NavLink>
               </a>
             </li>
             <li>
-              <a className={`block text-[18px] ${styles.linkHover1} font-normal py-4`}>
-                <Link to="/contact">Contact Us</Link>
+              <a className={`block text-[18px] ${styles.linkHover1} font-normal py-2`}>
+                <NavLink to="/contact">Contact Us</NavLink>
               </a>
             </li>
           </ul>

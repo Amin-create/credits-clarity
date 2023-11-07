@@ -79,7 +79,8 @@ body {
   background-size: cover;
 }
 
-nav a a.active {
+nav a a.active,
+ul li a a.active {
   color: #09EC92;
   font-weight: bold;
 }
