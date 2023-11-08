@@ -1,5 +1,6 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react';
 import { Core } from '..';
+import checkWhiteCheck from '../../assets/images/icon/check-white-circle.svg';
 
 function ContactForm() {
     const [fullName, setFullName] = useState("");
@@ -7,13 +8,44 @@ function ContactForm() {
     const [message, setMessage] = useState("");
     const [email, setEmail] = useState("");
     const [phoneNumber, setPhoneNumber] = useState("");
+    const [toggleThankyouModal, setToggleThankyouModal] = useState(false);
     console.log("fullName", fullName)
     console.log("lastName", lastName)
     console.log("email", email)
     console.log("phoneNumber", phoneNumber)
     console.log("message", message)
+
+    useEffect(() => {
+        // After 4 seconds (4000 milliseconds), set toggleThankyouModal to false
+        const timeoutId = setTimeout(() => {
+            setToggleThankyouModal(false);
+        }, 4000);
+
+        // Clear the timeout to prevent memory leaks when the component unmounts
+        return () => clearTimeout(timeoutId);
+    }, [toggleThankyouModal]); // The empty dependency array ensures this effect runs once on component mount
+
+
+
+    const Overlay = ({ children }) => {
+        return (
+            <div className="fixed top-0 left-0 w-screen h-screen bg-black bg-opacity-50 flex justify-center items-center z-50">
+                {children}
+            </div>
+        );
+    };
+
     return (
         <section className='w-full relative'>
+            {toggleThankyouModal &&
+                <Overlay>
+                    <div className="flex flex-col justify-center items-center bg-green -3 rounded-lg shadow-lg p-16">
+                        <img className="w-[80px]" src={checkWhiteCheck} alt="big image" />
+                        <h1 className="text-white text-[35px] font-bold">Thank you for contacting us!</h1>
+                        <p className='text-white '>Lorem Ipsum is simply dummy text the printing and typesetting industry   text the printing</p>
+                    </div>
+                </Overlay>
+            }
             <Core.Container>
                 <form className='pt-3 sm:pt-5 md:pt-10 pb-8 sm:pb-12 sm:pb-24 md:pb-52'>
                     <div className="space-y-12">
@@ -71,7 +103,7 @@ function ContactForm() {
                         </div>
                     </div>
                     <div className="mt-3 sm:mt-6 flex items-center justify-start gap-x-6">
-                        <Core.Button greenIconicMd>Submit</Core.Button>
+                        <Core.Button greenIconicMd toggle={setToggleThankyouModal}>Submit</Core.Button>
                     </div>
                 </form>
             </Core.Container>
