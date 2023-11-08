@@ -9,7 +9,7 @@ import {
   ContactPage,
   LoginPage,
   SignUpPage,
-  TermsAndConditionsPage,
+  TermsOfConditionsPage,
   PrivacyPolicyPage
 } from "./pages/index";
 
@@ -26,7 +26,7 @@ function App() {
           <Route path="contact" element={<ContactPage />} />
           <Route path="login" element={<LoginPage />} />
           <Route path="signup" element={<SignUpPage />} />
-          <Route path="terms-and-conditions" element={<TermsAndConditionsPage />} />
+          <Route path="terms-of-conditions" element={<TermsOfConditionsPage />} />
           <Route path="privacy-policy" element={<PrivacyPolicyPage />} />
           <Route path="forgot-password" element={<ForgotPasswordPage />} />
           {/* <Route path="*" element={<NoPage />} /> */}

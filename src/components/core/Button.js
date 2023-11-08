@@ -14,7 +14,6 @@ function Button({ children, wider, simpleGreen, blackText, greenIconicSm, greenI
                         
                         flex justify-between items-center text-[#fff] whitespace-nowrap rounded-full bg-green hover:bg-green-2 active:bg-green-3 transition-all group
                         `}
-            onClick={() => toggle(true)}
         >
             {children}
             {!simpleGreen &&
@@ -39,12 +38,14 @@ function Button({ children, wider, simpleGreen, blackText, greenIconicSm, greenI
                 </NavLink>
             }
             {(greenIconicLg || greenIconicSm || greenIconicMd || simpleGreen) &&
-                (to ?
-                    <NavLink to={to}>
-                        {buttonTag}
-                    </NavLink>
-                    :
-                    <>{buttonTag}</>)
+                (to ? (
+                    <NavLink to={to}>{buttonTag}</NavLink>
+                ) : (
+                    toggle ?
+                        <a onClick={() => toggle(true)} >{buttonTag}</a>
+                        :
+                        <a>{buttonTag}</a>
+                ))
 
             }
         </>

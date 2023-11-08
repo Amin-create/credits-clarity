@@ -108,8 +108,8 @@ function SignupForm() {
                                                 <input type="checkbox" className="w-[18px] md:w-[24px] h-[18px] md:h-[24px] checkbox checkbox-success cursor-pointer appearance-none border-green border-[1px] rounded-[4px] md:rounded-[6px]" />
                                             </div>
                                             <div className="">
-                                                <label for="comments" className="text-dark-blue text-[12px] md:text-[14px] font-bold">I Agree <a className={`${styles.linkHover1}`} > <Link to="/terms-and-conditions">
-                                                    Terms and Services
+                                                <label for="comments" className="text-dark-blue text-[12px] md:text-[14px] font-bold">I Agree <a className={`${styles.linkHover1}`} > <Link to="/terms-of-conditions">
+                                                    Terms of Services
                                                 </Link></a></label>
                                             </div>
                                         </div>

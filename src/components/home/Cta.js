@@ -1,5 +1,4 @@
-import React from 'react'
-import { FiChevronRight } from 'react-icons/fi';
+import React from 'react';
 import { Core } from '../../components';
 
 function Cta({ data }) {

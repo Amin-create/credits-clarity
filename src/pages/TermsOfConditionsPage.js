@@ -1,15 +1,15 @@
 import React from 'react'
-import { topContentTermsAndConditions } from '../data';
+import { topContentTermsOfConditions } from '../data';
 import { Footer, Header, TopContent } from '../components';
 
-function TermsAndConditionsPage() {
+function TermsOfConditionsPage() {
     return (
         <main className="bg-main">
             <Header />
-            <TopContent data={topContentTermsAndConditions} />
+            <TopContent data={topContentTermsOfConditions} />
             <Footer />
         </main>
     )
 }
 
-export default TermsAndConditionsPage
+export default TermsOfConditionsPage

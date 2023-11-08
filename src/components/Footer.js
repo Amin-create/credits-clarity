@@ -15,8 +15,8 @@ function Footer() {
                         <p className='text-[16px] leading-[24px] font-thin'>© 2023 Credits Clarity</p>
                         <a className={`text-[16px] leading-[24px] font-thin ${styles.linkHover1}`}>
                         {/* hover:underline transition-all */}
-                            <Link to="/terms-and-conditions">
-                                Terms and Services
+                            <Link to="/terms-of-conditions">
+                                Terms of Services
                             </Link>
                         </a>
                         <a className={`text-[16px] leading-[24px] font-thin ${styles.linkHover1}`}>

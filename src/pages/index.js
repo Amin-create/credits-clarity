@@ -5,7 +5,7 @@ import ForgotPasswordPage from "./ForgotPassword";
 import HomePage from "./Home";
 import LoginPage from "./auth/Login";
 import SignUpPage from "./auth/Signup";
-import TermsAndConditionsPage from "./TermsAndConditionsPage";
+import TermsOfConditionsPage from "./TermsOfConditionsPage";
 import PrivacyPolicyPage from "./PrivacyPolicyPage";
 
 
@@ -18,6 +18,6 @@ export {
     HomePage,
     LoginPage,
     SignUpPage,
-    TermsAndConditionsPage,
+    TermsOfConditionsPage,
     PrivacyPolicyPage
 }
