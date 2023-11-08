@@ -24,7 +24,7 @@ function Header() {
                 <img className="w-[50px] sm:w-[70px] lg:w-[130px]" src={logo2} alt="logo" />
               </a>
               <div className="hidden lg:block">
-                <div className="flex items-baseline ml-10 space-x-5">
+                <div className="menu flex items-baseline ml-10 space-x-5">
                   <a className={`text-[18px] ${styles.linkHover1} font-normal px-3 py-2`}>
                     <NavLink to="/">Home</NavLink>
                   </a>

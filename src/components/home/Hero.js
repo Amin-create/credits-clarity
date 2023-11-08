@@ -15,7 +15,7 @@ function Hero({ data }) {
                         <p className='max-w-[520px] text-[16px] sm:text-[20px] text-[#fff] leading-[22px] sm:leading-[30px] pt-4 pb-6'>
                             {data?.text}
                         </p>
-                        <Core.Button greenIconicLg>Sign up free</Core.Button>
+                        <Core.Button greenIconicLg to="/signup">Sign up free</Core.Button>
                     </div>
                     <div data-aos="zoom-in" className='mr-[-120px] 2xl:mr-[-200px] hidden lg:block'>
                         <img className="scale-[0.75] 2xl:scale-[1] mt-[-100px] 2xl:mt-[-60px]" src={data?.image} alt="logo" />

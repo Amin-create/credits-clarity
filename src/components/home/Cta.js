@@ -10,7 +10,7 @@ function Cta({ data }) {
                     <h1 data-aos="fade-right" className="max-w-[450px] text-[#fff] text-[28px] sm:text-[36px] md:text-[48px] leading-[30px] sm:leading-[40px] md:leading-[56px] font-bold">
                         {data?.heading}
                     </h1>
-                    <Core.Button greenIconicLg>Sign up free</Core.Button>
+                    <Core.Button greenIconicLg to="/signup">Sign up free</Core.Button>
                 </div>
             </Core.Container>
         </section>

@@ -20,7 +20,7 @@ function Help({ data }) {
                         )}
                     </div>
                     <div className=''>
-                        <Core.Button greenIconicLg>Sign up free</Core.Button>
+                        <Core.Button greenIconicLg to="/signup">Sign up free</Core.Button>
                     </div>
                 </div>
             </Core.Container>

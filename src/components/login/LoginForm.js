@@ -19,7 +19,7 @@ function LoginForm() {
                             <h1 className='text-dark-blue text-[28px] sm:text-[40px] md:text-[52px] leading-[35px] sm:leading-[50px] md:leading-[70px] tracking-[-1px] font-bold text-center mx-auto mb-[10px] sm:mb-[20px] md:mb-[60px]'>
                                 Sign in
                             </h1>
-                            <div className="grid grid-cols-1 gap-x-4 md:gap-x-16 gap-y-5 md:gap-y-10 sm:grid-cols-6 pb-6">
+                            <div className="grid grid-cols-1 gap-x-4 md:gap-x-16 gap-y-4 md:gap-y-5 sm:grid-cols-6 pb-6">
                                 <Core.InputWithLabel
                                     setState={setEmail}
                                     name="email"

@@ -23,7 +23,7 @@ function ContentImage({ data }) {
                                 )
                             })}
                         </ul>                      
-                        <Core.Button greenIconicSm>Sign up free</Core.Button>
+                        <Core.Button greenIconicSm to="/signup">Sign up free</Core.Button>
                     </div>
                     <div className='pr-14 pb-8'>
                         <img data-aos="fade-left" className=" scale-[1] mt-[-60px]" src={data?.image} alt="logo" />

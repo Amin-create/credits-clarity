@@ -39,6 +39,7 @@ function InputWithLabel({ name, setState }) {
     }
 
     const icon = (name) => {
+        console.log("name",name)
         switch (name) {
             case "email":
                 return envelope;
