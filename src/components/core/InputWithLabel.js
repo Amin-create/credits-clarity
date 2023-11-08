@@ -8,8 +8,7 @@ import calender from '../../assets/images/icon/calender.svg';
 import eye_close from '../../assets/images/icon/eye-close.svg';
 import eye_open from '../../assets/images/icon/eye-open.svg';
 
-function InputWithLabel({ name, setState
-}) {
+function InputWithLabel({ name, setState }) {
     const [passwordVisible, setPasswordVisible] = useState(false);
     const [inputType, setInputType] = useState('text');
 
@@ -111,7 +110,7 @@ function InputWithLabel({ name, setState
                     className="w-full text-dark-blue text-[12px] md:text-[16px] leading-[18px] md:leading-[30px] rounded-md border-0 ring-1 ring-inset ring-gray-3 outline-none focus:ring-2 focus:ring-inset focus:ring-green pl-[35px] md:pl-[60px] pr-[8px] md:pr-[15px] py-[12px] md:py-[15px]" />
                 {isPasswordInput &&
                     <img
-                        className="absolute w-[16px] md:w-[auto] right-3 md:right-5 top-[12px] md:top-[18px] cursor-pointer"
+                        className="absolute w-[16px] md:w-[auto] right-3 md:right-5 top-[16px] sm:top-[14px] md:top-[20px] cursor-pointer"
                         src={passwordVisible ? eye_open : eye_close}
                         onClick={togglePasswordVisibility}
                         alt="eye icon"

@@ -16,12 +16,12 @@ function Header() {
 
   return (
     <div>
-      <nav className="border-b-[6px] border-[#09EC92] bg-white py-7">
+      <nav className="border-b-[2px] sm:border-b-[4px] md:border-b-[6px] border-[#09EC92] bg-white py-5 sm:py-7">
         <Core.Container>
-          <div className="flex items-center justify-between h-4 lg:h-16">
+          <div className="flex items-center justify-between h-2 sm:h-4 lg:h-16">
             <div className="flex items-center">
               <a className="flex-shrink-0 pr-10" href="/">
-                <img className="w-[70px] lg:w-[130px]" src={logo2} alt="logo" />
+                <img className="w-[50px] sm:w-[70px] lg:w-[130px]" src={logo2} alt="logo" />
               </a>
               <div className="hidden lg:block">
                 <div className="flex items-baseline ml-10 space-x-5">
@@ -41,7 +41,7 @@ function Header() {
               </div>
             </div>
             <div className="block">
-              <div className="flex items-center gap-x-3 ml-4 lg:ml-6">
+              <div className="flex items-center gap-x-1 sm:gap-x-3 ml-4 lg:ml-6">
                 <a className={` ${styles.linkHover1}  `}>
                   <Core.Button blackText>
                     <NavLink to="/login">Sign in</NavLink>
@@ -58,7 +58,7 @@ function Header() {
               <div className='w-[60px ]'>
                 {mobileMenuOpen ? "" : <button
                   onClick={toggleMobileMenu}
-                  className="text-dark-blue hover:text-gray-300 text-[24px]"
+                  className="text-dark-blue hover:text-gray-300 text-[20px] mt-1"
                 >
                   <HiMenu />
                 </button>}
