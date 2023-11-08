@@ -5,12 +5,12 @@ function TopContent({ data }) {
     return (
         <section className='w-full relative'>
             <Core.Container>
-                <div className={`pt-8 md:pt-16 ${data?.simpleParagraphs ? "pb-[80px] md:pb-[340px]" : "pb-8"}`}>
-                    <h6 data-aos="fade" className={`text-gray-1 text-[22px] md:text-[32px] leading-[58px] md:leading-[70px] tracking-[-1px] font-bold ${data?.simpleParagraphs ? "pb-0 md:pb-6" : ""}`}>
+                <div className={`pt-2 sm:pt-8 md:pt-16 ${data?.simpleParagraphs ? "pb-[80px] md:pb-[340px]" : "pb-3 sm:pb-8"}`}>
+                    <h6 data-aos="fade" className={`text-gray-1 text-[18px] sm:text-[22px] md:text-[32px] leading-[48px] sm:leading-[58px] md:leading-[70px] tracking-[-1px] font-bold ${data?.simpleParagraphs ? "pb-0 md:pb-6" : ""}`}>
                         {data?.firstHeading}
                     </h6>
                     {data?.secondHeading &&
-                        <h1 data-aos="fade" className={`text-dark-blue text-[34px] md:text-[52px] leading-[40px] md:leading-[68px] font-bold text-center pt-3 md:pt-14 ${data?.firstText && "pb-8 md:pb-14"}`}>
+                        <h1 data-aos="fade" className={`text-dark-blue text-[26px] sm:text-[34px] md:text-[52px] leading-[30px] sm:leading-[40px] md:leading-[68px] font-bold text-center pt-1 sm:pt-3 md:pt-14 ${data?.firstText && "pb-5 sm:pb-8 md:pb-14"}`}>
                             {data?.secondHeading}
                         </h1>
                     }
