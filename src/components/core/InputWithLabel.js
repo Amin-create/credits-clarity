@@ -25,6 +25,8 @@ function InputWithLabel({ name, setState }) {
                 return "Email";
             case "password":
                 return "Password";
+            case "newPassword":
+                return "New Password";
             case "confirmPassword":
                 return "Confirm Password";
             case "calender":
@@ -39,11 +41,12 @@ function InputWithLabel({ name, setState }) {
     }
 
     const icon = (name) => {
-        console.log("name",name)
+        console.log("name", name)
         switch (name) {
             case "email":
                 return envelope;
             case "password":
+            case "newPassword":
             case "confirmPassword":
                 return key;
             case "fullName":
@@ -67,6 +70,7 @@ function InputWithLabel({ name, setState }) {
             case "mobileNumber":
                 return "text";
             case "password":
+            case "newPassword":
             case "confirmPassword":
                 return "password";
             case "calender":
@@ -83,6 +87,7 @@ function InputWithLabel({ name, setState }) {
             case "fullName":
                 return "Full Name";
             case "password":
+            case "newPassword":
             case "confirmPassword":
                 return "********";
             case "ssn":
@@ -94,7 +99,7 @@ function InputWithLabel({ name, setState }) {
         }
     }
 
-    const isPasswordInput = name === "password" || name === "confirmPassword" ? true : false;
+    const isPasswordInput = name === "password" || name === "confirmPassword" || name === "newPassword" ? true : false;
 
     return (
         <div className="col-span-full">

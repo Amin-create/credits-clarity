@@ -5,7 +5,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import {
   AboutPage,
   HomePage,
-  FeaturesPage,
+  FeaturesPage, ForgotPasswordPage,
   ContactPage,
   LoginPage,
   SignUpPage,
@@ -28,6 +28,7 @@ function App() {
           <Route path="signup" element={<SignUpPage />} />
           <Route path="terms-and-conditions" element={<TermsAndConditionsPage />} />
           <Route path="privacy-policy" element={<PrivacyPolicyPage />} />
+          <Route path="forgot-password" element={<ForgotPasswordPage />} />
           {/* <Route path="*" element={<NoPage />} /> */}
         </Route>
       </Routes>

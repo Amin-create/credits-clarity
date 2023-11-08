@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { Core } from '..';
 import styles from '../../style';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 function SignupForm() {
 
@@ -132,9 +132,7 @@ function SignupForm() {
                             <p className='text-dark-blue text-[12px] md:text-[16px] leading-[14px] md:leading-[20px] font-regular text-center pt-4 md:pt-8'>
                                 Do you have an account? <strong className='inline-block'>
                                     <a className={` ${styles.linkHover1}`}>
-                                        <Core.Button blackText>
-                                            <Link to="/login">Sign in</Link>
-                                        </Core.Button>
+                                        <NavLink to="/login">Sign in</NavLink>
                                     </a>
                                 </strong>
                             </p>

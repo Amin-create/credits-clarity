@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { Core } from '..';
+import { NavLink } from 'react-router-dom';
 
 function LoginForm() {
     const [isChecked, setIsChecked] = useState(false);
@@ -48,12 +49,14 @@ function LoginForm() {
                                     </label>
                                 </div>
                                 <div className="w-[50%] flex justify-end">
-                                    <span className="text-dark-blue text-[11px] md:text-[14px] leading-[16px] md:leading-[23px] font-semibold">Forgot Password?</span>
+                                    <NavLink to={"/forgot-password"}>
+                                        <span className="text-dark-blue text-[11px] md:text-[14px] leading-[16px] md:leading-[23px] font-semibold">Forgot Password?</span>
+                                    </NavLink>
                                 </div>
                             </div>
                             <Core.Button greenIconicLg wider>Sign in</Core.Button>
                             <p className='text-dark-blue text-[12px] md:text-[16px] leading-[14px] md:leading-[20px] font-regular text-center pt-4 md:pt-8'>
-                                Don’t have any account? <strong>Create Account</strong>
+                                Don’t have any account? <NavLink to="/signup"><strong>Create an Account</strong></NavLink>
                             </p>
                         </form>
                     </div>

@@ -9,13 +9,16 @@ export * as About from "./about";
 export * as Home from "./home";
 export * as Features from "./features";
 export * as Contact from "./contact";
+export * as Login from "./login";
+export * as Signup from "./signup";
+export * as ForgotPassword from "./forgot_password";
 
 
 export {
     Header,
     Footer,
     HorizontalContents,
-    MediaTextSection, 
+    MediaTextSection,
     TopContent,
     ThreeCards,
 }

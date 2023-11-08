@@ -1,12 +1,11 @@
 import React from 'react'
-import { Footer, Header, } from '../../components';
-import { SignupForm } from '../../components/signup';
+import { Footer, Header, Signup } from '../../components';
 
 function SignUpPage() {
     return (
         <main className="bg-signup">
             <Header />
-            <SignupForm />
+            <Signup.SignupForm />
             <Footer />
         </main>
     )
