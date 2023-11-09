@@ -85,10 +85,30 @@ ul li a a.active {
   font-weight: bold;
 }
 
-@media(max-width: 400px) {
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 
+.fade-in-keyframe {
+  opacity: 0;
+    transition: opacity .15s linear;
+  /* animation: fadeIn 2s ease-in-out; */
+}
+.fade-in-keyframe.show {
+  opacity: 1;
+}
+
+@media(max-width: 400px) {
   .bg-main:before {
     background-size: 100% 100%;
     background-repeat: no-repeat;
+  }
+  .cta-section {
+    background-position: 37% 0;
   }
 }

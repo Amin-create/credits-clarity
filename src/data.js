@@ -30,15 +30,15 @@ export const textArrayHome = [
 export const faqDataHome = [
     {
         question: 'What is Credit Clarity?',
-        answer: 'Credits Clarity is a technology company that provides logistics services to both vendors and consumers. This potentially allows food vendors to deliver meals seamlessly while also providing consumers with an easy platform to order meals from their favourite restaurants in their city.',
+        answer: 'Credits Clarity is a technology company that provides logistics services to both vendors and consumers. This potentially allows food vendors to deliver meals seamlessly while also providing consumers meals from their favourite restaurants in their city.',
     },
     {
         question: 'What locations do we currently deliver to?',
-        answer: 'Credits Clarity is a technology company that provides logistics services to both vendors and consumers. This potentially allows food vendors to deliver meals seamlessly while also providing consumers with an easy platform to order meals from their favourite restaurants in their city.',
+        answer: 'Credits Clarity is a technology company that provides logistics services to both vendors and consumers. This potentially allows food vendors to deliver meals seamlessly while also providing consumers with an easy platform to order meals from restaurants in their city.',
     },
     {
         question: 'What is Credits Clarity wallet?',
-        answer: 'Credits Clarity is a technology company that provides logistics services to both vendors and consumers. This potentially allows food vendors to deliver meals seamlessly while also providing consumers with an easy platform to order meals from their favourite restaurants in their city.',
+        answer: 'Credits Clarity is a technology company that provides logistics services to both vendors and consumers. This potentially allows food vendors to deliver meals seamlessly while also providing consumers with an platform to order meals from their favourite in their city.',
     },
     {
         question: 'What is Credit Clarity?',
@@ -46,7 +46,7 @@ export const faqDataHome = [
     },
     {
         question: 'What is Service fee?',
-        answer: 'Credits Clarity is a technology company that provides logistics services to both vendors and consumers. This potentially allows food vendors to deliver meals seamlessly while also providing consumers with an easy platform to order meals from their favourite restaurants in their city.',
+        answer: 'Credits Clarity is a technology company that provides logistics services to both vendors and consumers. This potentially allows meals seamlessly while also providing consumers with an easy platform to order meals from their favourite restaurants in their city.',
     },
     {
         question: 'Why do we charge Service fee?',
@@ -176,10 +176,10 @@ export const topContentContact = {
     secondText: "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical making it over 2000 years old. ichard McClintock, a Latin professor at Hampden-Sydney College in Virginia,",
 }
 // ----------------------------------------------------------------------
-// Terms of Conditions Page Data
+// Terms of Services Page Data
 // ----------------------------------------------------------------------
 export const topContentTermsOfConditions = {
-    firstHeading: "Terms of Conditions",
+    firstHeading: "Terms of Services",
     simpleParagraphs: [
         { id: "1", type: "paragraph", text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer non augue tortor. Phasellus a ultrices tellus. Curabitur mollis pharetra augue, bibendum sodales augue tempus sit amet. Vestibulum sit amet metus nisi. Aenean ut nibh pellentesque, rhoncus leo quis, dignissim tortor. Pellentesque dapibus facilisis quam, a blandit ipsum maximus nec. Quisque elit nisi, euismod vel nisi ac, pellentesque lacinia lacus. Praesent vehicula neque vitae accumsan fermentum. Suspendisse risus turpis, dapibus sit amet nisi ac, blandit cursus lacus. Aenean ultricies pulvinar eleifend. Fusce varius ex vel turpis tempor egestas. Donec lobortis dapibus ullamcorper. Sed ante purus, interdum sit amet suscipit nec, tempus vel dui. Cras malesuada massa vel erat interdum hendrerit. Quisque imperdiet nibh non felis malesuada ultrices. Nunc finibus facilisis lacus ut luctus. Aenean suscipit est ac sem porta tristique. Nullam auctor leo eros, vitae tincidunt ligula viverra ut. Fusce pellentesque suscipit dolor eget blandit. Praesent quis condimentum est, porttitor tempus eros. Praesent ut volutpat leo. Quisque lobortis condimentum gravida.", },
         { id: "2", type: "paragraph", text: "In commodo placerat quam eget maximus. Proin ut dolor non massa dapibus rutrum. Vestibulum volutpat condimentum velit, eu laoreet justo consequat sit amet. Aliquam erat neque, congue eu luctus a, viverra et dolor. Donec finibus augue mauris, non imperdiet enim feugiat nec. Aliquam metus lectus, laoreet vel risus eu, elementum aliquet ex. Praesent aliquam lorem sem, ut consequat leo cursus sed. Mauris volutpat, orci bibendum scelerisque pharetra, neque augue convallis nulla, ut iaculis nunc felis eu quam. Proin condimentum risus eu molestie laoreet. Nunc purus odio, consequat ac lacus non, convallis ultricies velit. Aenean vitae pretium tortor.", },

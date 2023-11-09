@@ -3,7 +3,7 @@ import { TiStarburst } from 'react-icons/ti';
 import { Core } from '../../../components';
 
 const FAQItem = ({ item, isOpen, onClick, index }) => (
-    <div className={`flex justify-between items-center w-full md:w-[564px] h-[40px] md:h-[70px] cursor-pointer rounded-[8px] ${isOpen && 'bg-dark-blue'} ${!isOpen && 'bg-gradient-to-b from-[#ffffffab] to-[#ffffff63] hover:bg-green transition-all'} px-3 md:px-5`} onClick={() => onClick(index)}>
+    <div className={`flex justify-between items-center w-full md:w-[564px] h-[40px] md:h-[70px] cursor-pointer rounded-[8px] ${isOpen && 'bg-dark-blue'} ${!isOpen && 'bg-gradient-to-b from-[#ffffffab] to-[#ffffff63] hover:bg-green transition-all duration-500'} px-3 md:px-5`} onClick={() => onClick(index)}>
         <h2 className={`${isOpen && 'text-[#fff]'} ${!isOpen && 'text-dark-blue'} text-[14px] md:text-[18px] leading-[20px] md:leading-[28px] font-extrabold`}>{item.question}</h2>
         {isOpen && (
             <span className='text-[#09EC92] text-[20px] md:text-[30px]'>
@@ -15,10 +15,13 @@ const FAQItem = ({ item, isOpen, onClick, index }) => (
 
 const FAQ = ({ data }) => {
     const [openIndex, setOpenIndex] = useState(0);
+    const [fadeIn, setFadeIn] = useState(Boolean);
 
     const handleToggle = (index) => {
+        // setFadeIn(!fadeIn);
         if (openIndex !== index) {
             setOpenIndex(index);
+            setFadeIn(true);
         }
     };
 
@@ -46,7 +49,7 @@ const FAQ = ({ data }) => {
                             <span className='text-dark-blue text-[20px] md:text-[30px]'>
                                 <TiStarburst />
                             </span>
-                            <p className="text-gray-700 text-[14px] sm:text-[18px] md:text-[24px] leading-[22px] sm:leading-[28px] md:leading-[36px] font-regular mt-2 sm:marker:mt-5 transition-all">
+                            <p className={`text-gray-700 text-[14px] sm:text-[18px] md:text-[24px] leading-[22px] sm:leading-[28px] md:leading-[36px] font-regular mt-2 sm:marker:mt-5 transition-all fade-in-keyframe ${fadeIn ? "show" : "hide"}`}>
                                 {data[openIndex].answer}
                             </p>
                         </>

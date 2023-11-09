@@ -1,7 +1,61 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Core } from '..';
 
 function OurMission({ data }) {
+    const [firstCount, setFirstCount] = useState(0);
+    const [secondCount, setSecondCount] = useState(0);
+
+    const handleScroll = () => {
+        const section = document.getElementById('counting_section');
+
+        // Check if the section element exists before accessing its properties
+        if (section) {
+            const sectionTop = section.offsetTop;
+            const sectionHeight = section.offsetHeight;
+            const windowHeight = window.innerHeight;
+            const scrollPosition = window.scrollY;
+
+            if (scrollPosition > sectionTop - windowHeight + sectionHeight / 2) {
+                animateCount(250, setFirstCount);
+                animateCount(68, setSecondCount);
+
+                // Remove scroll event listener once the animation is triggered
+                window.removeEventListener('scroll', handleScroll);
+            }
+        }
+    };
+    const animateCount = (endValue, setStateFunction) => {
+        let startValue = 0;
+        const duration = 2000; // Adjust the duration in milliseconds
+        const startTime = performance.now();
+
+        const updateCount = (currentTime) => {
+            const elapsed = currentTime - startTime;
+            const progress = elapsed / duration;
+
+            if (progress < 1) {
+                const value = Math.ceil(easeInOut(progress) * endValue);
+                setStateFunction(value);
+                requestAnimationFrame(updateCount);
+            } else {
+                setStateFunction(endValue);
+            }
+        };
+
+        updateCount(startTime);
+    };
+
+    const easeInOut = (t) => t < 0.5 ? 2 * t * t : -1 + (4 - 2 * t) * t;
+
+    useEffect(() => {
+        // Attach scroll event listener when the component mounts
+        window.addEventListener('scroll', handleScroll);
+
+        // Detach scroll event listener when the component unmounts
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
     return (
         <section className='w-full relative'>
             <Core.Container>
@@ -21,15 +75,15 @@ function OurMission({ data }) {
                         <p data-aos="fade-left" className='text-dark-blue text-[14px] md:text-[18px] leading-[20px] md:leading-[30px] font-regular'>
                             {data?.text}
                         </p>
-                        <div className='flex justify-start'>
+                        <div id="counting_section" className='flex justify-start'>
                             <div className='w-[50%]'>
-                                <h2 data-aos="fade-left" className="text-green text-[40px] md:text-[52px] leading-[] font-bold">{data?.firstCount}</h2>
+                                <h2 data-aos="fade-left" className="text-green text-[40px] md:text-[52px] leading-[] font-bold">{firstCount}+</h2>
                                 <p data-aos="fade-left" className='text-dark-blue text-[14px] md:text-[18px] leading-[20px] md:leading-[30px] font-regular'>
                                     {data?.firstCountText}
                                 </p>
                             </div>
                             <div className='w-[50%]'>
-                                <h2 data-aos="fade-left" className="text-green text-[40px] md:text-[52px] leading-[] font-bold">{data?.secondCount}</h2>
+                                <h2 data-aos="fade-left" className="text-green text-[40px] md:text-[52px] leading-[] font-bold">{secondCount}+</h2>
                                 <p data-aos="fade-left" className='text-dark-blue text-[14px] md:text-[18px] leading-[20px] md:leading-[30px] font-regular'>
                                     {data?.secondCountText}
                                 </p>
