@@ -35,10 +35,10 @@ const FAQ = ({ data }) => {
                     Ans.
                 </h2>
             </div>
-            <div className="flex flex-col lg:flex-row justify-between gap-5 md:gap-10 mt-4 sm:mt-8">
-                <div className="flex flex-col justify-start items-start gap-x-4 gap-y-2 md:gap-y-4">
+            <div className="flex flex-col-reverse md:flex-col lg:flex-row justify-between gap-5 md:gap-10 mt-4 sm:mt-8">
+                <div className="questions-div flex flex-row md:flex-col justify-start items-start gap-x-4 gap-y-2 md:gap-y-4 overflow-x-scroll sm-overflow-x-unset pb-3 md:pb-0">
                     {data?.map((item, index) => (
-                        <div key={index} className="flex justify-between items-center w-full gap-x-5 md:gap-x-10">
+                        <div key={index} className="flex justify-between items-center flex-wrap min-w-max md:w-full gap-x-5 md:gap-x-10">
                             <FAQItem item={item} isOpen={openIndex === index} onClick={handleToggle} index={index} />
                         </div>
                     ))}

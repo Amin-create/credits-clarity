@@ -61,9 +61,9 @@ function OurMission({ data }) {
             <Core.Container>
                 <div className="flex flex-col md:flex-row justify-between items-start gap-x-16 pt-8 md:pt-14 pb-10 md:pb-20">
                     <div className='relative flex justify-center items-center w-full md:w-[45%] pr-0 md:pr-14 pb-8'>
-                        <div className='absolute bottom-0 z-[-1] w-full h-[250px] md:h-[42%] rounded-bl-[80px] sm:rounded-bl-[110px] bg-gradient-to-r from-gr-a-1 to-gr-a-2'>
+                        <div className='absolute bottom-[10px] md:bottom-0 z-[-1] w-[90%] md:w-full h-[250px] md:h-[42%] rounded-bl-[80px] sm:rounded-bl-[110px] bg-gradient-to-r from-gr-a-1 to-gr-a-2'>
                         </div>
-                        <img data-aos="fade-up" className="w-[85%] md:w-full" src={data?.image} alt="logo" />
+                        <img data-aos="fade-up" className="w-[76%] md:w-full" src={data?.image} alt="logo" />
                     </div>
                     <div className='flex flex-col gap-y-4 sm:gap-y-8 w-full md:w-[55%]'>
                         <h6 data-aos="fade-left" className="text-gray-1 text-[16px] sm:text-[18px] leading-[] font-bold mt-5"
