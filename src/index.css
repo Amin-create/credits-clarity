@@ -123,8 +123,6 @@ ul li a a.active {
   }
 }
 
-
-
 .questions-div::-webkit-scrollbar {
   width: 6px;
   border-radius: 10px;
