@@ -13,8 +13,7 @@ function Footer() {
                     {/* <!-- Left Column --> */}
                     <div className="flex flex-col md:flex-row justify-start gap-x-8 gap-y-4 md:gap-y-0">
                         <p className='text-[16px] leading-[24px] font-thin'>© 2023 Credits Clarity</p>
-                        <a className={`text-[16px] leading-[24px] font-thin ${styles.linkHover1}`}>
-                        {/* hover:underline transition-all */}
+                        <a className={`text-[16px] leading-[24px] font-thin ${styles.linkHover1}`}>                   
                             <Link to="/terms-of-conditions">
                                 Terms of Services
                             </Link>

@@ -7,10 +7,8 @@ const FAQ = ({ faqData }) => {
 
     const handleToggle = (index) => {
         if (openIndex === index) {
-            // Clicked on an already open FAQ, so close it.
             setOpenIndex(null);
         } else {
-            // Clicked on a closed FAQ, so open it.
             setOpenIndex(index);
         }
     };
@@ -29,7 +27,6 @@ const FAQ = ({ faqData }) => {
                 {faqData.map((item, index) => (
                     <div key={index} className="flex justify-between items-center gap-x-10">
                         {/* 1st */}
-                        {/*  */}
                         <div
                             className={`
                             border-[red] border-[5px]
@@ -92,17 +89,8 @@ const faqData = [
 function Faq() {
     return (
         <section className='w-full bg-[#E9F9F2]'>
-
             <Core.Container>
-
-                {/* <div>
-                        */}
                 <FAQ faqData={faqData} />
-                {/* </div >
-                <div>
-                      
-                    </div> */}
-
             </Core.Container>
         </section >
     );

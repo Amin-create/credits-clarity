@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 function InputWithLabel({ name, setState, errorMessage, setErrorMessage }) {
-    
+
     const label = (name) => {
         switch (name) {
             case "fullName":
@@ -72,7 +72,6 @@ function InputWithLabel({ name, setState, errorMessage, setErrorMessage }) {
     const handleInputChange = (e) => {
         const { name, value } = e.target;
         setState(value);
-        // Validate input and set error message
         const validationError = validateInput(name, value);
         setErrorMessage(validationError);
     };
@@ -84,7 +83,6 @@ function InputWithLabel({ name, setState, errorMessage, setErrorMessage }) {
                 {name !== "message" &&
                     <>
                         <input
-                            // onChange={(e) => setState(e.target.value)}
                             onChange={handleInputChange}
                             type={type(name)}
                             name={name}
@@ -96,18 +94,18 @@ function InputWithLabel({ name, setState, errorMessage, setErrorMessage }) {
                         {errorMessage && <p className='text-[red] text-[12px] leading-[14px] pt-2 pl-1'>{errorMessage}</p>}
                     </>
                 }
-                {name === "message" && <>
-                    <textarea
-                        // onChange={(e) => setState(e.target.value)}
-                        onChange={handleInputChange}
-                        id={name}
-                        name={name}
-                        rows="4"
-                        placeholder={placeholder(name)}
-                        className="w-full text-dark-blue last:text-[16px] leading-[30px] rounded-md border-0 ring-1 ring-inset ring-gray-3 outline-none focus:ring-2 focus:ring-inset focus:ring-green px-[15px] py-[15px]"
-                    ></textarea>
-                    {errorMessage && <p className='text-[red] text-[12px] leading-[14px] pt-2 pl-1'>{errorMessage}</p>}
-                </>
+                {name === "message" &&
+                    <>
+                        <textarea
+                            onChange={handleInputChange}
+                            id={name}
+                            name={name}
+                            rows="4"
+                            placeholder={placeholder(name)}
+                            className="w-full text-dark-blue last:text-[16px] leading-[30px] rounded-md border-0 ring-1 ring-inset ring-gray-3 outline-none focus:ring-2 focus:ring-inset focus:ring-green px-[15px] py-[15px]"
+                        ></textarea>
+                        {errorMessage && <p className='text-[red] text-[12px] leading-[14px] pt-2 pl-1'>{errorMessage}</p>}
+                    </>
                 }
             </div>
         </div>

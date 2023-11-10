@@ -6,11 +6,26 @@ function LoginForm() {
     const [isChecked, setIsChecked] = useState(false);
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
+
+
+    const [emailError, setEmailError] = useState("");
+    const [passwordError, setPasswordError] = useState("");
+
     const handleCheckboxChange = () => {
         setIsChecked(!isChecked);
     };
     console.log("email", email)
     console.log("password", password)
+
+    const isFormValid = () => {
+        return (
+            !emailError &&
+            !passwordError &&
+            email.trim() !== "" &&
+            password.trim() !== ""
+        );
+    };
+
     return (
         <section className='w-full relative'>
             <Core.Container wider>
@@ -21,13 +36,19 @@ function LoginForm() {
                                 Sign in
                             </h1>
                             <div className="grid grid-cols-1 gap-x-4 md:gap-x-16 gap-y-4 md:gap-y-5 sm:grid-cols-6 pb-6">
-                                <Core.InputWithLabel
+                                <Core.InputLabel
                                     setState={setEmail}
+                                    setErrorMessage={setEmailError}
+                                    errorMessage={emailError}
                                     name="email"
+                                    auth
                                 />
-                                <Core.InputWithLabel
+                                <Core.InputLabel
                                     setState={setPassword}
+                                    setErrorMessage={setPasswordError}
+                                    errorMessage={passwordError}
                                     name="password"
+                                    auth
                                 />
                             </div>
                             <div className="flex gap-x-2 md:gap-x-16 gap-y-5 sm:grid-cols-6 pb-10">
@@ -54,7 +75,9 @@ function LoginForm() {
                                     </NavLink>
                                 </div>
                             </div>
-                            <Core.Button greenIconicLg wider>Sign in</Core.Button>
+                            <Core.Button greenIconicLg wider
+                                // onclick={handleSubmit} 
+                                disabled={!isFormValid()}>Sign in</Core.Button>
                             <p className='text-dark-blue text-[12px] md:text-[16px] leading-[14px] md:leading-[20px] font-regular text-center pt-4 md:pt-8'>
                                 Don’t have any account? <NavLink to="/signup"><strong>Create an Account</strong></NavLink>
                             </p>

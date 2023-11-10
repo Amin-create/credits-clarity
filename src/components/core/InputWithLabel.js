@@ -33,7 +33,7 @@ function InputWithLabel({ name, setState }) {
                 return "DOB";
             case "ssn":
                 return "SSN";
-            case "mobileNumber":
+            case "phoneNumber":
                 return "Mobile Number";
             default:
                 return "Label";
@@ -55,7 +55,7 @@ function InputWithLabel({ name, setState }) {
                 return calender;
             case "ssn":
                 return card;
-            case "mobileNumber":
+            case "phoneNumber":
                 return mobile;
             default:
                 return mobile;
@@ -67,7 +67,7 @@ function InputWithLabel({ name, setState }) {
             case "email":
             case "fullName":
             case "ssn":
-            case "mobileNumber":
+            case "phoneNumber":
                 return "text";
             case "password":
             case "newPassword":
@@ -92,7 +92,7 @@ function InputWithLabel({ name, setState }) {
                 return "********";
             case "ssn":
                 return "AAA-GG-SSSS";
-            case "mobileNumber":
+            case "phoneNumber":
                 return "0000-0000000";
             default:
                 return "";
