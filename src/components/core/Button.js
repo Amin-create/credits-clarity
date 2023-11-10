@@ -2,7 +2,7 @@ import React from 'react';
 import { FiChevronRight } from 'react-icons/fi';
 import { NavLink } from 'react-router-dom';
 
-function Button({ children, wider, simpleGreen, blackText, greenIconicSm, greenIconicMd, greenIconicLg, to, toggle }) {
+function Button({ children, wider, disabled, simpleGreen, blackText, greenIconicSm, greenIconicMd, greenIconicLg, to, onclick }) {
     console.log("to", to)
     const buttonTag =
         <button type="button" className={`
@@ -12,8 +12,9 @@ function Button({ children, wider, simpleGreen, blackText, greenIconicSm, greenI
                         ${wider && 'w-full md:w-full'}
                         ${simpleGreen && 'text-[12px] md:text-[16px] font-medium px-3 md:px-6 py-1.5 md:py-3'}
                         
-                        flex justify-between items-center text-[#fff] whitespace-nowrap rounded-full bg-green hover:bg-green-2 active:bg-green-3 transition-all group
+                        flex justify-between items-center text-[#fff] whitespace-nowrap rounded-full bg-green hover:bg-green-2 active:bg-green-3 disabled:bg-green disabled:opacity-[0.6] transition-all group
                         `}
+            disabled={disabled}
         >
             {children}
             {!simpleGreen &&
@@ -41,8 +42,8 @@ function Button({ children, wider, simpleGreen, blackText, greenIconicSm, greenI
                 (to ? (
                     <NavLink to={to}>{buttonTag}</NavLink>
                 ) : (
-                    toggle ?
-                        <a onClick={() => toggle(true)} >{buttonTag}</a>
+                    onclick ?
+                        <a onClick={() => onclick(true)} >{buttonTag}</a>
                         :
                         <a>{buttonTag}</a>
                 ))

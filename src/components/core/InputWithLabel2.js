@@ -1,7 +1,7 @@
-import React from 'react';
+import React, { useState } from 'react';
 
-function InputWithLabel({ name, setState }) {
-
+function InputWithLabel({ name, setState, errorMessage, setErrorMessage }) {
+    
     const label = (name) => {
         switch (name) {
             case "fullName":
@@ -18,7 +18,6 @@ function InputWithLabel({ name, setState }) {
                 return "Label";
         }
     }
-
 
     const type = (name) => {
         switch (name) {
@@ -50,23 +49,65 @@ function InputWithLabel({ name, setState }) {
         }
     }
 
+    const validateInput = (name, value) => {
+        switch (name) {
+            case "fullName":
+                return value.trim() === "" ? "Please enter your full name" : !/\w+/.test(value) ? "Please enter at least one word" : "";
+            case "lastName":
+                return value.trim() === "" ? "Please enter your last name" : !/\w+/.test(value) ? "Please enter at least one word" : "";
+            case "email":
+                const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                return !emailRegex.test(value) ? "Please enter a valid email address" : "";
+            case "phoneNumber":
+                // const phoneRegex = /^\d{4}-\d{7}$/;
+                const phoneRegex = /^[\d-]{1,18}$/;
+                return !phoneRegex.test(value) ? "Please enter a valid phone number" : "";
+            case "message":
+                return value.trim() === "" ? "Please enter your message" : "";
+            default:
+                return "";
+        }
+    }
+
+    const handleInputChange = (e) => {
+        const { name, value } = e.target;
+        setState(value);
+        // Validate input and set error message
+        const validationError = validateInput(name, value);
+        setErrorMessage(validationError);
+    };
+
     return (
         <div className="col-span-full">
             <label for={name} className="text-dark-blue text-[12px] sm:text-[14px] md:text-[18px] leading-[18px] sm:leading-[20px] md:leading-[30px] font-medium">{label(name)}</label>
             <div className="mt-1 sm:mt-2">
                 {name !== "message" &&
-                    <input
-                        onChange={(e) => setState(e.target.value)}
-                        type={type(name)}
-                        name={name}
-                        id={name}
-                        placeholder={placeholder(name)}
-                        autocomplete="off"
-                        className="w-full text-dark-blue text-[12px] md:text-[16px] leading-[18px] md:leading-[30px] rounded-md border-0 ring-1 ring-inset ring-gray-3 outline-none focus:ring-2 focus:ring-inset focus:ring-green px-[15px] py-[12px] md:py-[15px]"
-                    />
+                    <>
+                        <input
+                            // onChange={(e) => setState(e.target.value)}
+                            onChange={handleInputChange}
+                            type={type(name)}
+                            name={name}
+                            id={name}
+                            placeholder={placeholder(name)}
+                            autocomplete="off"
+                            className="w-full text-dark-blue text-[12px] md:text-[16px] leading-[18px] md:leading-[30px] rounded-md border-0 ring-1 ring-inset ring-gray-3 outline-none focus:ring-2 focus:ring-inset focus:ring-green px-[15px] py-[12px] md:py-[15px]"
+                        />
+                        {errorMessage && <p className='text-[red] text-[12px] leading-[14px] pt-2 pl-1'>{errorMessage}</p>}
+                    </>
                 }
-                {name === "message" &&
-                    <textarea id={name} name={name} rows="4" placeholder={placeholder(name)} className="w-full text-dark-blue text-[16px] leading-[30px] rounded-md border-0 ring-1 ring-inset ring-gray-3 outline-none focus:ring-2 focus:ring-inset focus:ring-green px-[15px] py-[15px]"></textarea>
+                {name === "message" && <>
+                    <textarea
+                        // onChange={(e) => setState(e.target.value)}
+                        onChange={handleInputChange}
+                        id={name}
+                        name={name}
+                        rows="4"
+                        placeholder={placeholder(name)}
+                        className="w-full text-dark-blue last:text-[16px] leading-[30px] rounded-md border-0 ring-1 ring-inset ring-gray-3 outline-none focus:ring-2 focus:ring-inset focus:ring-green px-[15px] py-[15px]"
+                    ></textarea>
+                    {errorMessage && <p className='text-[red] text-[12px] leading-[14px] pt-2 pl-1'>{errorMessage}</p>}
+                </>
                 }
             </div>
         </div>
