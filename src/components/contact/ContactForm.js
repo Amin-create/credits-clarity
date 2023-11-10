@@ -43,48 +43,48 @@ function ContactForm() {
     // Function to handle form submission
     const handleSubmit = () => {
         // Perform validation
-        let isValid = true;
+        // let isValid = true;
 
-        if (!fullName) {
-            setFullNameError("Please enter your full name");
-            isValid = false;
-        } else {
-            setFullNameError("");
-        }
+        // if (!fullName) {
+        //     setFullNameError("Please enter your full name");
+        //     isValid = false;
+        // } else {
+        //     setFullNameError("");
+        // }
 
-        if (!lastName) {
-            setLastNameError("Please enter your last name");
-            isValid = false;
-        } else {
-            setLastNameError("");
-        }
+        // if (!lastName) {
+        //     setLastNameError("Please enter your last name");
+        //     isValid = false;
+        // } else {
+        //     setLastNameError("");
+        // }
 
-        if (!email || !validateEmail(email)) {
-            setEmailError("Please enter a valid email address");
-            isValid = false;
-        } else {
-            setEmailError("");
-        }
+        // if (!email || !validateEmail(email)) {
+        //     setEmailError("Please enter a valid email address");
+        //     isValid = false;
+        // } else {
+        //     setEmailError("");
+        // }
 
-        if (!phoneNumber || !validatePhoneNumber(phoneNumber)) {
-            setPhoneNumberError("Please enter a valid phone number");
-            isValid = false;
-        } else {
-            setPhoneNumberError("");
-        }
+        // if (!phoneNumber || !validatePhoneNumber(phoneNumber)) {
+        //     setPhoneNumberError("Please enter a valid phone number");
+        //     isValid = false;
+        // } else {
+        //     setPhoneNumberError("");
+        // }
 
-        if (!message) {
-            setMessageError("Please enter your message");
-            isValid = false;
-        } else {
-            setMessageError("");
-        }
+        // if (!message) {
+        //     setMessageError("Please enter your message");
+        //     isValid = false;
+        // } else {
+        //     setMessageError("");
+        // }
 
         // If all inputs are valid, submit the form
-        if (isValid) {
-            // Perform form submission logic
-            setToggleThankyouModal(true);
-        }
+        // if (isValid) {
+        // Perform form submission logic
+        setToggleThankyouModal(true);
+        // }
     };
 
 
@@ -129,7 +129,7 @@ function ContactForm() {
             message.trim() !== ""
         );
     };
-     
+
     return (
         <section className='w-full relative'>
             {toggleThankyouModal &&
