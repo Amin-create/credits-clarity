@@ -2,8 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { TiStarburst } from 'react-icons/ti';
 import { Core } from '../../../components';
 
-const FAQItem = ({ item, isOpen, onClick, index }) => (
-    <div className={`flex justify-between items-center w-full md:w-[564px] h-[40px] md:h-[70px] cursor-pointer rounded-[8px] ${isOpen && 'bg-dark-blue'} ${!isOpen && 'bg-gradient-to-b from-[#ffffffab] to-[#ffffff63] hover:bg-green transition-all duration-500'} px-3 md:px-5`} onClick={() => onClick(index)}>
+const FAQItem = ({ item, isOpen, onClick, index }) => ( 
+    <div className={`flex justify-between items-center w-[auto ] lg:w-[564px] h-[40px] md:h-[70px] cursor-pointer rounded-[8px] ${isOpen && 'bg-dark-blue'} ${!isOpen && 'bg-gradient-to-b from-[#ffffffab] to-[#ffffff63] hover:bg-green transition-all duration-500'} px-3 md:px-5`} onClick={() => onClick(index)}>
         <h2 className={`${isOpen && 'text-[#fff]'} ${!isOpen && 'text-dark-blue'} text-[14px] md:text-[18px] leading-[20px] md:leading-[28px] font-extrabold`}>{item.question}</h2>
         {isOpen && (
             <span className='text-[#09EC92] text-[20px] md:text-[30px]'>
@@ -18,7 +18,6 @@ const FAQ = ({ data }) => {
     const [fadeIn, setFadeIn] = useState(Boolean);
 
     const handleToggle = (index) => {
-        // setFadeIn(!fadeIn);
         if (openIndex !== index) {
             setOpenIndex(index);
             setFadeIn(true);
@@ -34,8 +33,8 @@ const FAQ = ({ data }) => {
                     Ans.
                 </h2>
             </div>
-            <div className="flex flex-col-reverse md:flex-col lg:flex-row justify-between gap-5 md:gap-10 mt-4 sm:mt-8">
-                <div className="questions-div flex flex-row md:flex-col justify-start items-start gap-x-4 gap-y-2 md:gap-y-4 overflow-x-scroll sm-overflow-x-unset pb-3 md:pb-0">
+            <div className="flex flex-col-reverse lg:flex-row justify-between gap-5 md:gap-10 mt-4 sm:mt-8">
+                <div className="questions-div flex flex-row lg:flex-col justify-start items-start gap-x-4 gap-y-2 md:gap-y-4 overflow-x-scroll lg-overflow-x-unset pb-3 lg:pb-0">
                     {data?.map((item, index) => (
                         <div key={index} className="flex justify-between items-center flex-wrap min-w-max md:w-full gap-x-5 md:gap-x-10">
                             <FAQItem item={item} isOpen={openIndex === index} onClick={handleToggle} index={index} />

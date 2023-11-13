@@ -116,8 +116,8 @@ ul li a a.active {
   }
 }
 
-@media(min-width: 768px) {
-  .sm-overflow-x-unset {
+@media(min-width: 991px) {
+  .lg-overflow-x-unset {
     overflow-x: unset;
   }
 }
