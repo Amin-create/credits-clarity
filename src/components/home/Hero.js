@@ -4,7 +4,7 @@ import { Core } from '../../components';
 function Hero({ data }) {
     return (
         <section className='w-full relative overflow-hidden'>
-            <div className='absolute z-[-1] w-full h-[310px] sm:h-[340px] md:h-[472px] 2xl:h-[572px] rounded-bl-[50px] sm:rounded-bl-[90px] md:rounded-bl-[140px] 2xl:rounded-bl-[300px] bg-gradient-to-r from-gr-a-1 to-gr-a-2'>
+            <div className='absolute z-[-1] w-full h-[310px] sm:h-[340px] md:h-[542px] 2xl:h-[572px] rounded-bl-[50px] sm:rounded-bl-[90px] md:rounded-bl-[140px] 2xl:rounded-bl-[300px] bg-gradient-to-r from-gr-a-1 to-gr-a-2'>
             </div>
             <Core.Container>
                 <div className="flex justify-between items-start h-[340px] sm:h-[390px] md:h-[620px] 2xl:h-[720px] pt-[30px] sm:pt-[40px] xl:pt-[80px] 2xl:pt-[130px]">
@@ -17,8 +17,8 @@ function Hero({ data }) {
                         </p>
                         <Core.Button greenIconicLg to="/signup">Sign up free</Core.Button>
                     </div>
-                    <div data-aos="zoom-in" className='mr-[-120px] 2xl:mr-[-200px] hidden lg:block'>
-                        <img className="scale-[0.75] md:scale-[0.8] 2xl:scale-[1] mt-[-100px] md:mt-[-50px] 2xl:mt-[-60px]" src={data?.image} alt="logo" />
+                    <div data-aos="zoom-in" className='sm:w-[600px] lg:w-[auto] mr-[-120px] sm:mr-[-40px] lg:mr-[-120px] 2xl:mr-[-200px] hidden sm:block'>
+                        <img className="scale-[0.75] md:scale-[0.8] 2xl:scale-[1] mt-[-100px] sm:mt-[30px] lg:mt-[-50px] 2xl:mt-[-60px]" src={data?.image} alt="logo" />
                     </div>
                 </div>
             </Core.Container>
