@@ -144,6 +144,7 @@ function InputLabel({
                 return value.trim() === "" ? "Please enter your Message" : "";
             case "password":
             case "confirmPassword":
+            case "newPassword":
                 return value.length < 8 ? "Password must be at least 8 characters long" : "";
             default:
                 return "";

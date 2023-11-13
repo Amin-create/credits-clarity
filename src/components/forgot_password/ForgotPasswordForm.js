@@ -5,6 +5,11 @@ function ForgotPasswordForm() {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const [confirmPassword, setConfirmPassword] = useState("");
+
+    const [emailError, setEmailError] = useState("");
+    const [newPasswordError, setNewPasswordError] = useState("");
+    const [confirmPasswordError, setConfirmEmailError] = useState("");
+
     console.log("email", email)
     console.log("password", password)
     console.log("confirmPassword", confirmPassword)
@@ -18,17 +23,26 @@ function ForgotPasswordForm() {
                                 Forgot Password
                             </h1>
                             <div className="grid grid-cols-1 gap-x-4 md:gap-x-16 gap-y-4 md:gap-y-5 sm:grid-cols-6 pb-6">
-                                <Core.InputWithLabel
+                                <Core.InputLabel
                                     setState={setEmail}
+                                    setErrorMessage={setEmailError}
+                                    errorMessage={emailError}
                                     name="email"
+                                    auth
                                 />
-                                <Core.InputWithLabel
+                                <Core.InputLabel
                                     setState={setPassword}
+                                    setErrorMessage={setNewPasswordError}
+                                    errorMessage={newPasswordError}
                                     name="newPassword"
+                                    auth
                                 />
-                                <Core.InputWithLabel
+                                <Core.InputLabel
                                     setState={setConfirmPassword}
+                                    setErrorMessage={setConfirmEmailError}
+                                    errorMessage={confirmPasswordError}
                                     name="confirmPassword"
+                                    auth
                                 />
                             </div>
                             <Core.Button greenIconicLg wider to="#">Reset Password</Core.Button>

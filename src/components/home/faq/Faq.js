@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { TiStarburst } from 'react-icons/ti';
 import { Core } from '../../../components';
 
@@ -24,7 +24,6 @@ const FAQ = ({ data }) => {
             setFadeIn(true);
         }
     };
-
     return (
         <div className='pt-8 sm:pt-14 md:pt-24 pb-10 sm:pb-20 md:pb-28'>
             <div className="flex justify-between items-center gap-x-10 gap-y-5">

@@ -66,12 +66,6 @@ function ContactForm() {
                     <div className="space-y-12">
                         <div className="grid grid-cols-1 gap-x-16 gap-y-3 sm:gap-y-8 sm:grid-cols-6">
                             <div className="sm:col-span-3">
-                                {/* <Core.InputWithLabel2
-                                    setState={setFullName}
-                                    setErrorMessage={setFullNameError}
-                                    errorMessage={fullNameError}
-                                    name="fullName"
-                                /> */}
                                 <Core.InputLabel
                                     setState={setFullName}
                                     setErrorMessage={setFullNameError}
@@ -81,12 +75,6 @@ function ContactForm() {
                                 />
                             </div>
                             <div className="sm:col-span-3">
-                                {/* <Core.InputWithLabel2
-                                    setState={setLastName}
-                                    setErrorMessage={setLastNameError}
-                                    errorMessage={lastNameError}
-                                    name="lastName"
-                                /> */}
                                 <Core.InputLabel
                                     setState={setLastName}
                                     setErrorMessage={setLastNameError}
@@ -96,12 +84,6 @@ function ContactForm() {
                                 />
                             </div>
                             <div className="sm:col-span-3">
-                                {/* <Core.InputWithLabel2
-                                    setState={setEmail}
-                                    setErrorMessage={setEmailError}
-                                    errorMessage={emailError}
-                                    name="email"
-                                /> */}
                                 <Core.InputLabel
                                     setState={setEmail}
                                     setErrorMessage={setEmailError}
@@ -111,12 +93,6 @@ function ContactForm() {
                                 />
                             </div>
                             <div className="sm:col-span-3">
-                                {/* <Core.InputWithLabel2
-                                    setState={setPhoneNumber}
-                                    setErrorMessage={setPhoneNumberError}
-                                    errorMessage={phoneNumberError}
-                                    name="phoneNumber"
-                                /> */}
                                 <Core.InputLabel
                                     setState={setPhoneNumber}
                                     setErrorMessage={setPhoneNumberError}
@@ -126,12 +102,6 @@ function ContactForm() {
                                 />
                             </div>
                             <div className="col-span-full">
-                                {/* <Core.InputWithLabel2
-                                    setState={setMessage}
-                                    setErrorMessage={setMessageError}
-                                    errorMessage={messageError}
-                                    name="message"
-                                /> */}
                                 <Core.InputLabel
                                     setState={setMessage}
                                     setErrorMessage={setMessageError}
