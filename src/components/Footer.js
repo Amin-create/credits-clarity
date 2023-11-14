@@ -12,7 +12,7 @@ function Footer() {
                 <div className='lg:h-[165px] flex flex-col lg:flex-row justify-between items-start md:items-center gap-y-10 lg:gap-y-0 py-10 lg:py-0'>
                     {/* <!-- Left Column --> */}
                     <div className="flex flex-col md:flex-row justify-start gap-x-8 gap-y-4 md:gap-y-0">
-                        <p className='text-[16px] leading-[24px] font-thin'>© 2023  Clarity</p>
+                        <p className='text-[16px] leading-[24px] font-thin'>© 2023 Credit Clarity</p>
                         <a className={`text-[16px] leading-[24px] font-thin ${styles.linkHover1}`}>                   
                             <Link to="/terms-of-conditions">
                                 Terms of Services
