@@ -1,10 +1,9 @@
 import React, { useState } from 'react';
-import logo2 from "../assets/images/logo/logo.svg";
+import logo from "../assets/images/logo/logo3.png";
 import { Core } from '../components';
 import { AiOutlineClose } from 'react-icons/ai';
 import { HiMenu } from 'react-icons/hi';
-// import { Link } from "react-router-dom";
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import styles from '../style';
 
 function Header() {
@@ -21,7 +20,7 @@ function Header() {
           <div className="flex items-center justify-between h-2 sm:h-4 lg:h-16">
             <div className="flex items-center">
               <a className="flex-shrink-0 pr-10" href="/">
-                <img className="w-[50px] sm:w-[70px] lg:w-[130px]" src={logo2} alt="logo" />
+                <img className="w-[50px] sm:w-[70px] lg:w-[130px]" src={logo} alt="logo" />
               </a>
               <div className="hidden lg:block">
                 <div className="menu flex items-baseline ml-10 space-x-5">
@@ -74,7 +73,7 @@ function Header() {
       >
         <div className="w-full h-screen bg-white p-5">
           <div className='flex justify-between items-start'>
-            <img className="w-[70px]" src={logo2} alt="logo" />
+            <img className="w-[70px]" src={3} alt="logo" />
             {mobileMenuOpen ? <button
               onClick={toggleMobileMenu}
               className="text-dark-blue hover:text-gray-300 text-[24px]"
