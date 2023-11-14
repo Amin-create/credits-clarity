@@ -111,7 +111,7 @@ function InputLabel({
             case "password":
             case "newPassword":
             case "confirmPassword":
-                return "********";
+                return "••••••••••";
             case "ssn":
                 return "AAA-GG-SSSS";
             case "phoneNumber":
