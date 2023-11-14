@@ -73,7 +73,7 @@ function Header() {
       >
         <div className="w-full h-screen bg-white p-5">
           <div className='flex justify-between items-start'>
-            <img className="w-[70px]" src={3} alt="logo" />
+            <img className="w-[70px]" src={logo} alt="logo" />
             {mobileMenuOpen ? <button
               onClick={toggleMobileMenu}
               className="text-dark-blue hover:text-gray-300 text-[24px]"
