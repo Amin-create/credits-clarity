@@ -203,5 +203,13 @@ export const topContentPrivacyPolicy = {
         { id: "7", type: "paragraph", text: "Curabitur cursus nisi eget sollicitudin finibus. Suspendisse ut arcu vel ante maximus varius. Suspendisse potenti. Duis congue massa fermentum diam maximus iaculis. Integer aliquet ex non ipsum semper vehicula. Aliquam fermentum, neque a rutrum semper, diam elit gravida nisi, ac aliquam nisl justo non est. Nulla pharetra ultricies tortor eget feugiat. Curabitur sollicitudin, felis non elementum aliquam, nisl mi volutpat tortor, eget scelerisque erat nisl non tortor. Pellentesque eu mi nisl. Vestibulum congue erat sagittis, varius velit ut, ultricies nisi. Nam cursus nulla at hendrerit iaculis. Nunc ac orci in augue gravida tristique sit amet in erat. Mauris sed sodales nibh. Morbi malesuada dolor enim. Vestibulum consectetur vestibulum rutrum.", },
     ]
 }
+// ----------------------------------------------------------------------
+// Dashboard Dashboard
+// ----------------------------------------------------------------------
 
-
+export const dashboardCard = {
+    id: "1",
+    title: "Credit Clarity",
+    description:
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release.",
+} 

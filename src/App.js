@@ -10,8 +10,10 @@ import {
   LoginPage,
   SignUpPage,
   TermsOfConditionsPage,
-  PrivacyPolicyPage
+  PrivacyPolicyPage,
+  Dashboard
 } from "./pages/index";
+import { DashboardLayout } from "./components/layout";
 
 function App() {
   return (
@@ -31,6 +33,17 @@ function App() {
           <Route path="forgot-password" element={<ForgotPasswordPage />} />
           {/* <Route path="*" element={<NoPage />} /> */}
         </Route>
+        
+        <Route path="dashboard/*" element={<DashboardLayout />}>
+          <Route index element={<Dashboard />} />
+          {/* 
+            Add other dashboard routes here, 
+            nested under the "dashboard" path 
+          */}
+          {/* Example: */}
+          {/* <Route path="manage-profile" element={<ManageProfile />} /> */}
+        </Route>
+
       </Routes>
     </BrowserRouter>
   );

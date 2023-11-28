@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from '../../style';
 
-function Card({ data, card1, card2 }) {
+function Card({ data, card1, card2, card3 }) {
     return (
         <>
             {card1 &&
@@ -16,6 +16,16 @@ function Card({ data, card1, card2 }) {
             }
             {card2 &&
                 <div data-aos="fade-up" className={`w-full ld:w-[33%] rounded-tr-[35px] md:rounded-tr-[60px] rounded-bl-[35px] md:rounded-bl-[60px] bg-white-1 py-10 md:py-16 px-6 md:px-10 ${styles.cardHover}`}>
+                    <p className='text-[14px] md:text-[16px] leading-[24px] md:leading-[28px] font-regular'>
+                        {data?.description}
+                    </p>
+                </div>
+            }
+            {card3 &&
+                <div data-aos="fade-up" className={`w-full ld:w-[33%] rounded-[6px] md:rounded-[6px] bg-white-1 pt-10 md:pt-[30px] pb-10 md:pb-[50px] px-6 md:px-[65px] ${styles.cardHover}`}>
+                    <h3 className='text-[32px] leading-[70px] font-bold'>
+                        {data?.title}
+                    </h3>
                     <p className='text-[14px] md:text-[16px] leading-[24px] md:leading-[28px] font-regular'>
                         {data?.description}
                     </p>
