@@ -1,8 +1,6 @@
-
-import { Icons, } from '../../components';
 import logo from "../../assets/images/logo/logo.png"
 import { NavLink, useLocation } from 'react-router-dom';
-// import Icon from '../icon';
+import Icons from '../../components/icons';
 
 const NavItem = ({ value, slug }) => {
     const pathParts = slug.split('/');
@@ -11,7 +9,9 @@ const NavItem = ({ value, slug }) => {
         <li className='pb-2'>
             <NavLink
                 to={value?.path}
-                className={`flex justify-start items-center gap-x-2  ${value?.path === _slug ? "text-white bg-gradient-to-r from-purple-4 to-purple-3" : "text-gray-6"} hover:text-white text-[14px] hover:bg-gradient-to-r hover:from-purple-4 hover:to-purple-3 transition-all rounded-[8px] px-3 py-[10px]`}
+                className={`flex justify-start items-center gap-x-2  ${value?.path === _slug ? "text-green bg-dark-blue border-r-[5px] border-green" : "text-gray-6 border-[transparent]"} text-[16px] border-r-[5px]
+                 hover:text-green hover:bg-dark-blue hover:border-r-[5px] hover:border-green
+                   transition-all rounded-tl-[12px] rounded-bl-[12px] rounded-tr-none rounded-br-none px-3 py-[16px]`}
             >
                 <span className='text-[18px]'>{value?.icon}</span>
                 <span className='leading-[19px]'>{value?.name}</span>
@@ -34,14 +34,14 @@ function Sidebar({ isSidebarOpen, toggleSidebar, menu }) {
             `}
         >
             <div className="flex flex-col justify-start h-[86%]">
-                <div className="relative pt-6 pb-6 px-2">
+                <div className="relative bg-gradient-to-b from-blue-500 to-green-400 h-[124px] pt-6 pb-6 px-2">
                     <img src={logo} className='max-w-[200 px]' alt="logo" />
                     <span className={`absolute top-[18px] right-[-13px] ${isSidebarOpen ? 'block' : 'hidden'}  md:hidden text-white text-[20px] cursor-pointer border-[5px] border-white rounded-full bg-purple-1`}
                         onClick={toggleSidebar}>
-                        {/* <Icons.GoChevronLeft /> */}icon
+                        {/* <Icons.GoChevronLeft /> */}
                     </span>
                 </div>
-                <ul className="max-h-[610px] overflow-y-scroll scrollbar p-4">
+                <ul className="max-h-[610px] overflow-y-scrol l scrollba r p-4 pr-0">
                     {menu.map((value) => {
                         return (
                             <NavItem key={value * 2} value={value} slug={location?.pathname} />
@@ -55,8 +55,7 @@ function Sidebar({ isSidebarOpen, toggleSidebar, menu }) {
                     className='flex justify-start items-center gap-x-2 text-gray-6 hover:text-white text-[14px] hover:bg-gradient-to-r hover:from-purple-4 hover:to-purple-3 transition-all rounded-[8px] px-3 py-[10px]'
                 >
                     <span className='text-[18px]'>
-                        {/* <Icon name="Logout" /> */}
-                        icon
+                        <Icons name="Logout" />
                     </span>
                     <span>Logout</span>
                 </NavLink>

@@ -3,53 +3,30 @@ import { Core } from '..';
 import { NavLink, Outlet } from 'react-router-dom';
 import Sidebar from './Sidebar';
 import Header from './Header';
+import Icons from '../icons';
 
 const menu = [
     {
-        // icon: <Icon name="App" />,
+        icon: <Icons name="App" />,
         path: "dashboard",
-        name: "Dashboard",
+        name: "Home",
     },
     {
-        // icon: <Icon name="User" />,
-        path: "manage-profile",
-        name: "Manage Profile",
+        icon: <Icons name="User" />,
+        path: "credit-reports",
+        name: "Credit Reports",
     },
     {
-        // icon: <Icon name="Briefcase" />,
-        path: "manage-jobs",
-        name: "Manage Jobs",
-    },
-    {
-        // icon: <Icon name="Users" />,
-        path: "manage-candidates",
-        name: "Manage Candidates",
-    },
-    {
-        // icon: <Icon name="SmsNotification" />,
-        path: "manage-subscription",
-        name: "Manage Subscription",
-    },
-    {
-        // icon: <Icon name="Chat1" size="19" />,
-        path: "hat",
-        name: "Chat",
-    },
-    {
-        // icon: <Icon name="Bell1" />,
+        icon: <Icons name="Briefcase" />,
         path: "notification",
         name: "Notification",
     },
     {
-        // icon: <Icon name="Envelope" />,
-        path: "manage-email",
-        name: "Manage Email",
+        icon: <Icons name="Users" />,
+        path: "setting",
+        name: "Setting",
     },
-    {
-        // icon: <Icon name="DocumentText" />,
-        path: "manage-questionnaire",
-        name: "Manage Questionnaire",
-    },
+
 ]
 
 
