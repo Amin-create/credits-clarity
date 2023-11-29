@@ -4,14 +4,16 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import {
   AboutPage,
-  HomePage,
-  FeaturesPage, ForgotPasswordPage,
+  CompanyDetails,
   ContactPage,
+  Dashboard,
+  FeaturesPage, 
+  ForgotPasswordPage,
+  HomePage,
   LoginPage,
+  PrivacyPolicyPage,
   SignUpPage,
   TermsOfConditionsPage,
-  PrivacyPolicyPage,
-  Dashboard
 } from "./pages/index";
 import { DashboardLayout } from "./components/layout";
 
@@ -36,12 +38,7 @@ function App() {
         
         <Route path="dashboard/*" element={<DashboardLayout />}>
           <Route index element={<Dashboard />} />
-          {/* 
-            Add other dashboard routes here, 
-            nested under the "dashboard" path 
-          */}
-          {/* Example: */}
-          {/* <Route path="manage-profile" element={<ManageProfile />} /> */}
+          <Route path=":companyName/details" element={<CompanyDetails />} />
         </Route>
 
       </Routes>

@@ -1,5 +1,6 @@
 import AboutPage from "./About";
 import ContactPage from "./Contact";
+import CompanyDetails from "./dashboard/company/details";
 import Dashboard from "./dashboard/dashboard/main";
 import FeaturesPage from "./Features";
 import ForgotPasswordPage from "./ForgotPassword";
@@ -14,6 +15,7 @@ import PrivacyPolicyPage from "./PrivacyPolicyPage";
 export {
     AboutPage,
     ContactPage,
+    CompanyDetails,
     Dashboard,
     FeaturesPage,
     ForgotPasswordPage,

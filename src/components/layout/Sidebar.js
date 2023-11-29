@@ -1,4 +1,4 @@
-import logo from "../../assets/images/logo/logo.png"
+import logo from "../../assets/images/logo/logo-white.png"
 import { NavLink, useLocation } from 'react-router-dom';
 import Icons from '../../components/icons';
 
@@ -34,11 +34,14 @@ function Sidebar({ isSidebarOpen, toggleSidebar, menu }) {
             `}
         >
             <div className="flex flex-col justify-start h-[86%]">
-                <div className="relative bg-gradient-to-b from-blue-500 to-green-400 h-[124px] pt-6 pb-6 px-2">
-                    <img src={logo} className='max-w-[200 px]' alt="logo" />
-                    <span className={`absolute top-[18px] right-[-13px] ${isSidebarOpen ? 'block' : 'hidden'}  md:hidden text-white text-[20px] cursor-pointer border-[5px] border-white rounded-full bg-purple-1`}
+                <div className="flex justify-center items-center relative h-[124px] pt-6 pb-6 px-2">
+                    <div class="absolute  left-0 top-0 w-full h-full bg-gradient-to-b from-blue-500 to-gr-a-2 contrast-75"></div>
+                    <img src={logo} className='relative max-w-[200px]' alt="logo" />
+                    <span className={`absolute top-[18px] right-[15px] ${isSidebarOpen ? 'block' : 'hidden'}  md:hidden text-white text-[20px] cursor-pointer bg-purple-1`}
                         onClick={toggleSidebar}>
                         {/* <Icons.GoChevronLeft /> */}
+                        <Icons name="BurgerMenu" />
+
                     </span>
                 </div>
                 <ul className="max-h-[610px] overflow-y-scrol l scrollba r p-4 pr-0">

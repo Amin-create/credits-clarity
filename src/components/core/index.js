@@ -1,9 +1,14 @@
 import Button from "./Button";
+import Breadcrumb from "./Breadcrumb";
 import Card from "./Card";
 import Container from "./Container";
 import InputLabel from "./InputLabel";
 
 
 export {
-    Container, Card, Button, InputLabel,
+    Button,
+    Breadcrumb,
+    Container,
+    Card,
+    InputLabel,
 }

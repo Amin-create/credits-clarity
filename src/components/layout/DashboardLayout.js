@@ -7,22 +7,22 @@ import Icons from '../icons';
 
 const menu = [
     {
-        icon: <Icons name="App" />,
-        path: "dashboard",
+        icon: <Icons name="Home" />,
+        path: "/dashboard",
         name: "Home",
     },
     {
-        icon: <Icons name="User" />,
+        icon: <Icons name="Graph" />,
         path: "credit-reports",
         name: "Credit Reports",
     },
     {
-        icon: <Icons name="Briefcase" />,
+        icon: <Icons name="Bell3" />,
         path: "notification",
         name: "Notification",
     },
     {
-        icon: <Icons name="Users" />,
+        icon: <Icons name="Setting2" />,
         path: "setting",
         name: "Setting",
     },
