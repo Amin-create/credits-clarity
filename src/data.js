@@ -212,4 +212,222 @@ export const dashboardCard = {
     title: "Credit Clarity",
     description:
         "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release.",
-} 
+}
+
+
+export const TransUnionCreditScoreAndFactors = {
+    creditScore: {
+        title: "Credit Score",
+        score: "875",
+        points: "8",
+    },
+    creditFactors: {
+        title: "Credit Factors",
+        description: "Dig into your credit card and payment history to improve those factors more efficiently",
+        factors: [
+            {
+                title: "Payment History",
+                status: "Excellent  |  High Impact",
+                value: "50%",
+            },
+            {
+                title: "Credit Card Use",
+                status: "Good  |  Low Impact",
+                value: "100%",
+            },
+            {
+                title: "Derogatory Marks",
+                status: "Very Good  |  Medium Impact",
+                value: "0%",
+            },
+            {
+                title: "Credit Age",
+                status: "Excellent  |  Medium Impact",
+                value: "17",
+            },
+            {
+                title: "Total Accounts",
+                status: "Very Good  |  Medium Impact",
+                value: "15 years",
+            },
+            {
+                title: "Head Inquiries",
+                status: "Very Good  |  Medium Impact",
+                value: "15 years",
+            }
+        ]
+    },
+}
+
+// ----------------------------------------------------------------------
+// Dashboard Credit Reports
+// ----------------------------------------------------------------------
+
+export const TransUnionCreditReports = {
+    creditReport: {
+        title: "Transunion Credit Report",
+        score: "540",
+    },
+    personalInformation: {
+        fullName: "David Derrick",
+        dob: "Feb-17-1990",
+        address: "986 Blake Pines, Vickieland, Missouri, 48348-5730",
+        openAccounts: "8",
+        creditUsage: "4",
+        amount: "25000",
+        totalBalance: "856,874",
+        accountsBalance: [
+            {
+                title: "Bank of America",
+                date: "Oct-02-23",
+                amount: "7,568",
+            },
+            {
+                title: "Capital One",
+                date: "Oct-02-23",
+                amount: "10,365",
+            },
+            {
+                title: "U.S. Bancorp",
+                date: "Oct-02-23",
+                amount: "35,486",
+            },
+
+        ]
+    },
+}
+
+export const EquifaxCreditReports = {
+    creditReport: {
+        title: "Equifax Credit Report",
+        score: "540",
+    },
+    personalInformation: {
+        fullName: "David Derrick",
+        dob: "Feb-17-1990",
+        address: "986 Blake Pines, Vickieland, Missouri, 48348-5730",
+        openAccounts: "8",
+        creditUsage: "4",
+        amount: "25000",
+        totalBalance: "856,874",
+        accountsBalance: [
+            {
+                title: "Bank of America",
+                date: "Oct-02-23",
+                amount: "7,568",
+            },
+            {
+                title: "Capital One",
+                date: "Oct-02-23",
+                amount: "10,365",
+            },
+            {
+                title: "U.S. Bancorp",
+                date: "Oct-02-23",
+                amount: "35,486",
+            },
+
+        ]
+    },
+}
+
+export const ExperianCreditReports = {
+    creditReport: {
+        title: "Experian Credit Report",
+        score: "540",
+    },
+    personalInformation: {
+        fullName: "David Derrick",
+        dob: "Feb-17-1990",
+        address: "986 Blake Pines, Vickieland, Missouri, 48348-5730",
+        openAccounts: "8",
+        creditUsage: "4",
+        amount: "25000",
+        totalBalance: "856,874",
+        accountsBalance: [
+            {
+                title: "Bank of America",
+                date: "Oct-02-23",
+                amount: "7,568",
+            },
+            {
+                title: "Capital One",
+                date: "Oct-02-23",
+                amount: "10,365",
+            },
+            {
+                title: "U.S. Bancorp",
+                date: "Oct-02-23",
+                amount: "35,486",
+            },
+
+        ]
+    },
+}
+
+export const TransunionReportDetails = {
+
+    bank: {
+        title: "Bank of America",
+        status: "Late Payment",
+        percentage: "4%",
+        amount: "2,548",
+        balance: "7,568",
+        date: "Oct-02-23",
+        creditLimit: "100,000",
+    },
+    accountInformation1:
+    {
+        title: "Account Information 1",
+        dataList: [
+            {
+                title: "Account Number",
+                value: "071904779",
+            }, {
+                title: "Open/ Closed",
+                value: "Open",
+            }, {
+                title: "Date Opened",
+                value: "Jan-10-19",
+            }, {
+                title: "Account Type",
+                value: "Credit Card",
+            },
+        ],
+    },
+    accountInformation2:
+    {
+        title: "Account Information 2",
+        dataList: [
+            {
+                title: "Status",
+                value: "Open",
+            }, {
+                title: "Status Updated",
+                value: "Sept 2023",
+            }, {
+                title: "Highest Balance",
+                value: "55",
+            }, {
+                title: "Monthly Payment",
+                value: "55",
+            }, {
+                title: "Last Payment Date",
+                value: "Sept 2023",
+            },
+        ],
+    },
+    contactInformation:
+    {
+        title: "Contact Info",
+        dataList: [
+            {
+                title: "Address",
+                value: "100 North Tryon Street, Charlotte, NC 28255",
+            }, {
+                title: "Phone Number",
+                value: "+1 503-279-3445",
+            },
+        ],
+    },
+}

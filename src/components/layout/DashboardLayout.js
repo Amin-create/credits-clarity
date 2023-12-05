@@ -9,7 +9,7 @@ const menu = [
     {
         icon: <Icons name="Home" />,
         path: "/dashboard",
-        name: "Home",
+        name: "Dashboard",
     },
     {
         icon: <Icons name="Graph" />,

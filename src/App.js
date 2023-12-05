@@ -7,10 +7,11 @@ import {
   CompanyDetails,
   ContactPage,
   Dashboard,
-  FeaturesPage, 
+  FeaturesPage,
   ForgotPasswordPage,
   HomePage,
   LoginPage,
+  MainCreditReports,
   PrivacyPolicyPage,
   SignUpPage,
   TermsOfConditionsPage,
@@ -35,10 +36,11 @@ function App() {
           <Route path="forgot-password" element={<ForgotPasswordPage />} />
           {/* <Route path="*" element={<NoPage />} /> */}
         </Route>
-        
+
         <Route path="dashboard/*" element={<DashboardLayout />}>
           <Route index element={<Dashboard />} />
           <Route path=":companyName/details" element={<CompanyDetails />} />
+          <Route path="credit-reports" element={<MainCreditReports />} />
         </Route>
 
       </Routes>

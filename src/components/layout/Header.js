@@ -10,7 +10,7 @@ function Header({ toggleSidebar }) {
                     onClick={toggleSidebar}>
                     <Icons name="BurgerMenu" />
                 </span>
-                <h6 className='text-gray-6 text-[20px] leading-[20px] font-semibold'>Welcome, David Derrick</h6>
+                <h6 className='text-dark-blue text-[22px] leading-[20px] font-semibold'>Welcome, David Derrick</h6>
             </div>
             <div className='flex justify-end items-center gap-x-7'>
                 ..

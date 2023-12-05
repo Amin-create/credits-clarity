@@ -16,7 +16,7 @@ function Help({ data }) {
                     </div>
                     <div className='flex flex-col lg:flex-row justify-between items-center gap-[20px]'>
                         {data?.map((value) =>
-                            <Core.Card key={value.id} card1 data={value} />
+                            <Core.Card key={value.id} cardNumber={1} data={value} />
                         )}
                     </div>
                     <div className=''>

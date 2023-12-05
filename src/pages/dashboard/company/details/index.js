@@ -1,7 +1,7 @@
 import React from 'react'
 import { useParams } from 'react-router-dom';
 import { Card } from '../../../../components/core'
-import { dashboardCard } from '../../../../data'
+import { TransUnionCreditScoreAndFactors, dashboardCard } from '../../../../data'
 import StatsDetailCards from '../../../../components/stats_detail_cards/StatsDetailCards'
 import { Core } from '../../../../components';
 
@@ -27,17 +27,52 @@ function CompanyDetails() {
         { label: _companyName },
         { label: "Details" },
     ];
-    const statsDetails ={
-        creditScore:[],
-        creditFactors:[],
-    }
+    // const statsDetails = {
+    //     creditScore: [],
+    //     creditFactors: {
+    //         title: "Credit Factors",
+    //         description: "Dig into your credit card and payment history to improve those factors more efficiently",
+    //         factors: [
+    //             {
+    //                 title: "Payment History",
+    //                 status: "Excellent  |  High Impact",
+    //                 value: "50%",
+    //             },
+    //             {
+    //                 title: "Credit Card Use",
+    //                 status: "Good  |  Low Impact",
+    //                 value: "100%",
+    //             },
+    //             {
+    //                 title: "Derogatory Marks",
+    //                 status: "Very Good  |  Medium Impact",
+    //                 value: "0%",
+    //             },
+    //             {
+    //                 title: "Credit Age",
+    //                 status: "Excellent  |  Medium Impact",
+    //                 value: "17",
+    //             },
+    //             {
+    //                 title: "Total Accounts",
+    //                 status: "Very Good  |  Medium Impact",
+    //                 value: "15 years",
+    //             },
+    //             {
+    //                 title: "Head Inquiries",
+    //                 status: "Very Good  |  Medium Impact",
+    //                 value: "15 years",
+    //             }
+    //         ]
+    //     },
+    // }
     return (
         <>
             <Core.Breadcrumb
                 heading="Credit Clarity"
                 breadcrumb={breadcrumb}
             />
-            <StatsDetailCards data={statsDetails} />
+            <StatsDetailCards data={TransUnionCreditScoreAndFactors} />
         </>
     )
 }

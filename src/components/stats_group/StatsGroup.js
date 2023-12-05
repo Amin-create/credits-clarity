@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Card } from '../core';
+import { Core } from '..';
 
 function StatsGroup({ data }) {
     // const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -12,7 +13,7 @@ function StatsGroup({ data }) {
         <div className='flex flex-col gap-y-4 mt-4'>
             {data?.map(value => {
                 return (
-                    <Card key={value.id} card4 data={value} />
+                    <Core.Card key={value.id} cardNumber={4} data={value} />
                 )
             })}
         </div>

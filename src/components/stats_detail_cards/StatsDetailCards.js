@@ -1,12 +1,12 @@
-import React, { useState } from 'react';
-import { Card } from '../core';
+import React from 'react';
+import { Core } from '..';
 
 function StatsDetailCards({ data }) {
-    console.log("data", data)
+    console.log("data", data.creditScore)
     return (
-        <div className='flex gap-x-4'> 
-            <Card card5 data={data.creditScore} />
-            <Card card6 data={data.creditFactors} />
+        <div className='flex gap-x-4'>
+            <Core.Card cardNumber={5} data={data.creditScore} />
+            <Core.Card cardNumber={6} data={data.creditFactors} />
         </div>
     );
 }

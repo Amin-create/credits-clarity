@@ -3,7 +3,7 @@ import Breadcrumb from "./Breadcrumb";
 import Card from "./Card";
 import Container from "./Container";
 import InputLabel from "./InputLabel";
-
+import Slider from "./Slider";
 
 export {
     Button,
@@ -11,4 +11,5 @@ export {
     Container,
     Card,
     InputLabel,
+    Slider,
 }

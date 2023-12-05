@@ -6,6 +6,7 @@ import FeaturesPage from "./Features";
 import ForgotPasswordPage from "./ForgotPassword";
 import HomePage from "./Home";
 import LoginPage from "./auth/Login";
+import MainCreditReports from "./dashboard/credit_reports/main";
 import SignUpPage from "./auth/Signup";
 import TermsOfConditionsPage from "./TermsOfConditionsPage";
 import PrivacyPolicyPage from "./PrivacyPolicyPage";
@@ -21,6 +22,7 @@ export {
     ForgotPasswordPage,
     HomePage,
     LoginPage,
+    MainCreditReports,
     SignUpPage,
     TermsOfConditionsPage,
     PrivacyPolicyPage

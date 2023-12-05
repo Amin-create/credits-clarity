@@ -110,6 +110,24 @@ const Icon = ({ name, size, ...props }) => {
                 <path d="M6.91209 13.9167H6.91957" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
             </svg>
         ),
+        Calender2: (
+            <svg
+                {...props}
+                width={size ? size : "18"}
+                height={size ? size : "16"}
+                viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10.2832 3.12354V6.74821" stroke="currentColor" stroke-width="1.81234" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M19.9487 3.12354V6.74821" stroke="currentColor" stroke-width="1.81234" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M4.84619 11.6898H25.386" stroke="currentColor" stroke-width="1.81234" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M25.9898 10.9769V21.2468C25.9898 24.8715 24.1774 27.288 19.9486 27.288H10.2828C6.05404 27.288 4.2417 24.8715 4.2417 21.2468V10.9769C4.2417 7.35224 6.05404 4.93579 10.2828 4.93579H19.9486C24.1774 4.93579 25.9898 7.35224 25.9898 10.9769Z" stroke="currentColor" stroke-width="1.81234" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M19.5799 17.2596H19.5908" stroke="currentColor" stroke-width="2.41645" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M19.5799 20.8844H19.5908" stroke="currentColor" stroke-width="2.41645" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M15.1107 17.2596H15.1215" stroke="currentColor" stroke-width="2.41645" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M15.1107 20.8844H15.1215" stroke="currentColor" stroke-width="2.41645" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M10.6385 17.2596H10.6493" stroke="currentColor" stroke-width="2.41645" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M10.6385 20.8844H10.6493" stroke="currentColor" stroke-width="2.41645" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+        ),
         Cross: (
             <svg
                 {...props}
@@ -128,7 +146,7 @@ const Icon = ({ name, size, ...props }) => {
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M6.67257 0.41107C6.99801 0.736507 6.99801 1.26414 6.67257 1.58958L2.26183 6.00033L6.67257 10.4111C6.99801 10.7365 6.99801 11.2641 6.67257 11.5896C6.34713 11.915 5.8195 11.915 5.49406 11.5896L0.199432 6.29495C0.0367131 6.13223 0.0367129 5.86842 0.199431 5.7057L5.49406 0.41107C5.8195 0.0856329 6.34713 0.0856329 6.67257 0.41107Z" fill="url(#paint0_linear_2452_28216)" />
                 <defs>
                     <linearGradient id="paint0_linear_2452_28216" x1="0.0773926" y1="6.00033" x2="6.91665" y2="6.00033" gradientUnits="userSpaceOnUse">
-                        <stop offset="0.109423" stop-color="#8913FF" />
+                        <stop offset="0.109423" stop-color="currentColor" />
                         <stop offset="1" stop-color="#7312F7" />
                     </linearGradient>
                 </defs>
@@ -140,9 +158,8 @@ const Icon = ({ name, size, ...props }) => {
                 {...props}
                 width={size ? size : "18"}
                 height={size ? size : "16"}
-
                 viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.327329 0.41107C0.00189281 0.736507 0.00189281 1.26414 0.327329 1.58958L4.73807 6.00033L0.327329 10.4111C0.00189281 10.7365 0.00189281 11.2641 0.327329 11.5896C0.652766 11.915 1.1804 11.915 1.50584 11.5896L6.80047 6.29495C6.96319 6.13223 6.96319 5.86842 6.80047 5.7057L1.50584 0.41107C1.1804 0.0856329 0.652766 0.0856329 0.327329 0.41107Z" fill="#8913FF" />
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.327329 0.41107C0.00189281 0.736507 0.00189281 1.26414 0.327329 1.58958L4.73807 6.00033L0.327329 10.4111C0.00189281 10.7365 0.00189281 11.2641 0.327329 11.5896C0.652766 11.915 1.1804 11.915 1.50584 11.5896L6.80047 6.29495C6.96319 6.13223 6.96319 5.86842 6.80047 5.7057L1.50584 0.41107C1.1804 0.0856329 0.652766 0.0856329 0.327329 0.41107Z" fill="currentColor" />
             </svg>
 
 
@@ -246,6 +263,18 @@ const Icon = ({ name, size, ...props }) => {
                 <path d="M5.85 8.65039L2.5 12.0004L5.85 15.3504" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
             </svg>
 
+        ),
+        LineCard: (
+            <svg
+                {...props}
+                width={size ? size : "26"}
+                height={size ? size : "26"}
+                viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M2.19656 9.75757H24.1914" stroke="white" stroke-width="1.79958" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M6.59553 18.5554H8.79501" stroke="white" stroke-width="1.79958" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M11.5444 18.5554H15.9433" stroke="white" stroke-width="1.79958" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M7.07942 4.25891H19.2976C23.2126 4.25891 24.1914 5.22668 24.1914 9.08678V18.1157C24.1914 21.9758 23.2126 22.9435 19.3086 22.9435H7.07942C3.17533 22.9545 2.19656 21.9868 2.19656 18.1267V9.08678C2.19656 5.22668 3.17533 4.25891 7.07942 4.25891Z" stroke="white" stroke-width="1.79958" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
         ),
         Message: (
             <svg

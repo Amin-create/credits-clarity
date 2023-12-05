@@ -168,7 +168,54 @@ button:disabled {
   cursor: not-allowed;
   user-select: none;
 }
+ 
 
-div.layout {
-  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Slider.css */
+
+/* Track styles */
+.slider {
+  /* Before the thumb */
+  --track-before-color: #4caf50;
+  /* After the thumb */
+  --track-after-color: #f44336;
+  /* For WebKit (Chrome, Safari) */
+  --webkit-slider-runnable-track-color: var(--track-after-color);
+  /* For Firefox */
+  --moz-range-track-color: var(--track-after-color);
+}
+
+/* Thumb styles */
+.slider::-webkit-slider-thumb {
+  /* Thumb border */
+  border: 2px solid blue;
+  /* Thumb color */
+  background-color: #ffffff;
+  /* For Firefox */
+  cursor: pointer;
+}
+
+/* Tooltip styles */
+.tooltip {
+  /* border: 3px solid green; */
+  background: linear-gradient(red, blue);
+  padding: 4px;
+   
 }

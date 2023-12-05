@@ -9,7 +9,7 @@ function ThreeCards({ data }) {
                 <div className="flex flex-col justify-center items-center gap-y-16 pt-4 sm:pt-8 pb-8 sm:pb-16">
                     <div className='flex flex-col md:flex-row justify-between items-center gap-[10px] sm:gap-[20px]'>
                         {data?.map((value) =>
-                            <Core.Card key={value.id} card2 data={value} />
+                            <Core.Card key={value.id} cardNumber={2} data={value} />
                         )}
                     </div>
                 </div>
