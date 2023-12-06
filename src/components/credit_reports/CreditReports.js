@@ -46,14 +46,10 @@ function CreditReports({ data }) {
                             </ul>
                             <div className="w-full">
                                 <div className={`${activeTab === 'tab1' ? 'block' : 'hidden'}`}>
-
-
                                     <div className='flex gap-x-5'>
                                         <Core.Card cardNumber={7} data={TransUnionCreditReports.creditReport} />
                                         <Core.Card cardNumber={8} data={TransUnionCreditReports.personalInformation} />
                                     </div>
-
-
                                 </div>
                                 <div className={`${activeTab === 'tab2' ? 'block' : 'hidden'}`}>
                                     <div className='flex gap-x-5'>

@@ -3,7 +3,7 @@ import "../src/index.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import {
-  AboutPage,
+  AboutPage, BankDetails,
   CompanyDetails,
   ContactPage,
   Dashboard,
@@ -12,6 +12,7 @@ import {
   HomePage,
   LoginPage,
   MainCreditReports,
+  Notification,
   PrivacyPolicyPage,
   SignUpPage,
   TermsOfConditionsPage,
@@ -41,6 +42,8 @@ function App() {
           <Route index element={<Dashboard />} />
           <Route path=":companyName/details" element={<CompanyDetails />} />
           <Route path="credit-reports" element={<MainCreditReports />} />
+          <Route path="credit-reports/:companyName/details" element={<BankDetails />} />
+          <Route path="notification" element={<Notification />} />
         </Route>
 
       </Routes>

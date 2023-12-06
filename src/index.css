@@ -219,3 +219,14 @@ button:disabled {
   padding: 4px;
    
 }
+
+
+.hs-accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out; /* Adjust timing as needed */
+}
+
+.hs-accordion-content.w-full {
+  max-height: 500px; /* Set a specific max-height value */
+}

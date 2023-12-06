@@ -431,3 +431,137 @@ export const TransunionReportDetails = {
         ],
     },
 }
+
+export const CapitalOneReportDetails = {
+
+    bank: {
+        title: "Capital One",
+        status: "Late Payment",
+        percentage: "4%",
+        amount: "2,548",
+        balance: "7,568",
+        date: "Oct-02-23",
+        creditLimit: "100,000",
+    },
+    accountInformation1:
+    {
+        title: "Account Information 1",
+        dataList: [
+            {
+                title: "Account Number",
+                value: "071904779",
+            }, {
+                title: "Open/ Closed",
+                value: "Open",
+            }, {
+                title: "Date Opened",
+                value: "Jan-10-19",
+            }, {
+                title: "Account Type",
+                value: "Credit Card",
+            },
+        ],
+    },
+    accountInformation2:
+    {
+        title: "Account Information 2",
+        dataList: [
+            {
+                title: "Status",
+                value: "Open",
+            }, {
+                title: "Status Updated",
+                value: "Sept 2023",
+            }, {
+                title: "Highest Balance",
+                value: "55",
+            }, {
+                title: "Monthly Payment",
+                value: "55",
+            }, {
+                title: "Last Payment Date",
+                value: "Sept 2023",
+            },
+        ],
+    },
+    contactInformation:
+    {
+        title: "Contact Info",
+        dataList: [
+            {
+                title: "Address",
+                value: "100 North Tryon Street, Charlotte, NC 28255",
+            }, {
+                title: "Phone Number",
+                value: "+1 503-279-3445",
+            },
+        ],
+    },
+}
+
+export const UsBancorpReportDetails = {
+
+    bank: {
+        title: "U.S. Bancorp",
+        status: "Late Payment",
+        percentage: "4%",
+        amount: "2,548",
+        balance: "7,568",
+        date: "Oct-02-23",
+        creditLimit: "100,000",
+    },
+    accountInformation1:
+    {
+        title: "Account Information 1",
+        dataList: [
+            {
+                title: "Account Number",
+                value: "071904779",
+            }, {
+                title: "Open/ Closed",
+                value: "Open",
+            }, {
+                title: "Date Opened",
+                value: "Jan-10-19",
+            }, {
+                title: "Account Type",
+                value: "Credit Card",
+            },
+        ],
+    },
+    accountInformation2:
+    {
+        title: "Account Information 2",
+        dataList: [
+            {
+                title: "Status",
+                value: "Open",
+            }, {
+                title: "Status Updated",
+                value: "Sept 2023",
+            }, {
+                title: "Highest Balance",
+                value: "55",
+            }, {
+                title: "Monthly Payment",
+                value: "55",
+            }, {
+                title: "Last Payment Date",
+                value: "Sept 2023",
+            },
+        ],
+    },
+    contactInformation:
+    {
+        title: "Contact Info",
+        dataList: [
+            {
+                title: "Address",
+                value: "100 North Tryon Street, Charlotte, NC 28255",
+            }, {
+                title: "Phone Number",
+                value: "+1 503-279-3445",
+            },
+        ],
+    },
+}

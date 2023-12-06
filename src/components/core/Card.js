@@ -4,6 +4,7 @@ import styles from '../../style';
 import { Core } from '..';
 import Icon from '../icons';
 import Slider from './Slider';
+import { Link } from 'react-router-dom';
 
 // function Card({ data, card1, card2, card3, card4, card5, card6 }) {
 function Card({ data, cardNumber }) {
@@ -313,7 +314,7 @@ function Card({ data, cardNumber }) {
                                 </div>
                             </div>
                         </div>
-                        <Slider min={300} max={850} sliderNumber={1} value={data?.score}  />
+                        <Slider min={300} max={850} sliderNumber={1} value={data?.score} />
 
                         {/* <div className='bg-white rounded-[5px] shadow-[0_35px_60px_-15px_rgba(0,0,0,0.1)] px-8 pt-10 pb-7 mt-6'>
                             <div className="relative font-medium">
@@ -376,14 +377,28 @@ function Card({ data, cardNumber }) {
                         <Slider min={0} max={100000} sliderNumber={2} value={data?.amount} amount />
                         <div className='flex flex-col gap-y-2'>
                             {data?.accountsBalance?.map(value => {
+                                let bankName;
+
+                                if (value?.title === "Bank of America") {
+                                    bankName = "bank-of-america";
+                                } else if (value?.title === "Capital One") {
+                                    bankName = "capital-one";
+                                } else if (value?.title === "U.S. Bancorp") {
+                                    bankName = "us-bancorp";
+                                }
+
+
                                 return (
                                     <div className='relative flex justify-between items-center rounded-full overflow-hidden shadow-[0_35px_60px_-15px_rgba(0,0,0,0.1)] pl-6 pr-1 py-1'>
                                         <div class="absolute left-0 top-0 w-full h-full bg-gradient-to-b from-gr-d-1 to-gr-d-2"></div>
                                         <div className='relative z-1 flex flex-col gap-y-1'>
-                                            <span className='flex justify-start items-center gap-x-3 text-black text-[17px] leading-[20px] font-bold'>{value?.title}<span className="text-green"><Icon name="ChevronRight" size="12px" /></span></span>
+                                            <span className='flex justify-start items-center gap-x-3 text-black text-[17px] leading-[20px] font-bold'>
+                                                <Link to={`${bankName}/details`}>
+                                                    {value?.title}</Link>
+                                                <span className="text-green"><Icon name="ChevronRight" size="12px" /></span>
+                                            </span>
                                             <span className='text-dark-blue text-[14px] leading-[16px] font-medium'>{value?.date}</span>
                                         </div>
-
                                         <div className='relative flex justify-between items-center w-[160px] rounded-full overflow-hidden text-white pl-5 pr-4 py-4'>
                                             <div class="absolute left-0 top-0 w-full h-full bg-gradient-to-b from-gr-a-1 to-gr-a-2"></div>
                                             <span className='relative z-[1]'>

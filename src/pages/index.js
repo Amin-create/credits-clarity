@@ -1,4 +1,5 @@
 import AboutPage from "./About";
+import BankDetails from "./dashboard/bank/details";
 import ContactPage from "./Contact";
 import CompanyDetails from "./dashboard/company/details";
 import Dashboard from "./dashboard/dashboard/main";
@@ -7,6 +8,7 @@ import ForgotPasswordPage from "./ForgotPassword";
 import HomePage from "./Home";
 import LoginPage from "./auth/Login";
 import MainCreditReports from "./dashboard/credit_reports/main";
+import Notification from "./dashboard/notification/main";
 import SignUpPage from "./auth/Signup";
 import TermsOfConditionsPage from "./TermsOfConditionsPage";
 import PrivacyPolicyPage from "./PrivacyPolicyPage";
@@ -14,7 +16,7 @@ import PrivacyPolicyPage from "./PrivacyPolicyPage";
 
 
 export {
-    AboutPage,
+    AboutPage, BankDetails,
     ContactPage,
     CompanyDetails,
     Dashboard,
@@ -23,6 +25,7 @@ export {
     HomePage,
     LoginPage,
     MainCreditReports,
+    Notification,
     SignUpPage,
     TermsOfConditionsPage,
     PrivacyPolicyPage
