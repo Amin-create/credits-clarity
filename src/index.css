@@ -222,9 +222,9 @@ button:disabled {
 
 
 .hs-accordion-content {
-  max-height: 0;
+  max-height: 50px;
   overflow: hidden;
-  transition: all 0.3s ease-in-out; /* Adjust timing as needed */
+  transition: all 0.5s ease-in-out; /* Adjust timing as needed */
 }
 
 .hs-accordion-content.w-full {

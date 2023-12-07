@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { Core } from '..';
 import { EquifaxCreditReports, ExperianCreditReports, TransUnionCreditReports, TransunionReportDetails } from '../../data';
 
-function CreditReports({ data }) {
+function AllSettings({ data }) {
     const [activeTab, setActiveTab] = useState('tab1');
 
     const handleTabChange = (tab) => {
@@ -15,52 +15,63 @@ function CreditReports({ data }) {
                 <div className="justify-center w-full max-auto">
                     <div className="justify-start w-full text-left">
                         <div className='flex flex-col justify-center items-center'>
-                            <ul className="flex gap-3 text-gray-500 bg-white bg-opacity-40 rounded-full p-[5px] mb-6">
+                            <ul className="flex gap-3 text-gray-500 p-[5px] mb-6">
                                 <li className="-mb-px">
                                     <a
                                         href="#_"
-                                        className={`inline-block px-10 py-2.5 text-[17px] leading-[22px] uppercase rounded-full ${activeTab === 'tab1' ? 'text-white bg-green font-bold' : 'font-semibold'}`}
+                                        className={`inline-block mx-3 py-1.5 text-[17px] leading-[22px] capitalize font-extrabold ${activeTab === 'tab1' ? 'text-green border-b-[4px] border-green' : 'text-black'}`}
                                         onClick={() => handleTabChange('tab1')}
                                     >
-                                        TransUnion
+                                        My Profile
                                     </a>
                                 </li>
                                 <li className="-mb-px">
                                     <a
                                         href="#_"
-                                        className={`inline-block px-10 py-2.5 text-[17px] leading-[22px] uppercase rounded-full ${activeTab === 'tab2' ? 'text-white bg-green font-bold' : 'font-semibold'}`}
+                                        className={`inline-block mx-3 py-1.5 text-[17px] leading-[22px] capitalize font-extrabold ${activeTab === 'tab2' ? 'text-green border-b-[4px] border-green' : 'text-black'}`}
                                         onClick={() => handleTabChange('tab2')}
                                     >
-                                        Equifax
+                                        Change Password
                                     </a>
                                 </li>
                                 <li className="-mb-px">
                                     <a
                                         href="#_"
-                                        className={`inline-block px-10 py-2.5 text-[17px] leading-[22px] uppercase rounded-full ${activeTab === 'tab3' ? 'text-white bg-green font-bold' : 'font-semibold'}`}
+                                        className={`inline-block mx-3 py-1.5 text-[17px] leading-[22px] capitalize font-extrabold ${activeTab === 'tab3' ? 'text-green border-b-[4px] border-green' : 'text-black'}`}
                                         onClick={() => handleTabChange('tab3')}
                                     >
-                                        Experian
+                                        Subscription
+                                    </a>
+                                </li>
+                                <li className="-mb-px">
+                                    <a
+                                        href="#_"
+                                        className={`inline-block mx-3 py-1.5 text-[17px] leading-[22px] capitalize font-extrabold ${activeTab === 'tab4' ? 'text-green border-b-[4px] border-green' : 'text-black'}`}
+                                        onClick={() => handleTabChange('tab4')}
+                                    >
+                                        FAQs
                                     </a>
                                 </li>
                             </ul>
                             <div className="w-full">
                                 <div className={`${activeTab === 'tab1' ? 'block' : 'hidden'}`}>
                                     <div className='flex gap-x-5'>
-                                        <Core.Card cardNumber={7} data={TransUnionCreditReports.creditReport} />
-                                        <Core.Card cardNumber={8} data={TransUnionCreditReports.personalInformation} />
+                                        a
                                     </div>
                                 </div>
                                 <div className={`${activeTab === 'tab2' ? 'block' : 'hidden'}`}>
                                     <div className='flex gap-x-5'>
-                                        <Core.Card cardNumber={7} data={EquifaxCreditReports.creditReport} />
-                                        <Core.Card cardNumber={8} data={EquifaxCreditReports.personalInformation} />
+                                        b
                                     </div>
                                 </div>
                                 <div className={`${activeTab === 'tab3' ? 'block' : 'hidden'}`}>
                                     <div className='flex gap-x-5'>
-                                        <Core.Card cardNumber={7} data={ExperianCreditReports.creditReport} />
-                                        <Core.Card cardNumber={8} data={ExperianCreditReports.personalInformation} />
+                                        c
+                                    </div>
+                                </div>
+                                <div className={`${activeTab === 'tab4' ? 'block' : 'hidden'}`}>
+                                    <div className='flex gap-x-5'>
+                                        d
                                     </div>
                                 </div>
                             </div>
@@ -91,4 +102,4 @@ function CreditReports({ data }) {
     )
 }
 
-export default CreditReports
+export default AllSettings

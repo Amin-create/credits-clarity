@@ -10,6 +10,7 @@ import LoginPage from "./auth/Login";
 import MainCreditReports from "./dashboard/credit_reports/main";
 import Notification from "./dashboard/notification/main";
 import SignUpPage from "./auth/Signup";
+import Setting from "./dashboard/setting/main";
 import TermsOfConditionsPage from "./TermsOfConditionsPage";
 import PrivacyPolicyPage from "./PrivacyPolicyPage";
 
@@ -26,7 +27,7 @@ export {
     LoginPage,
     MainCreditReports,
     Notification,
-    SignUpPage,
+    SignUpPage,Setting,
     TermsOfConditionsPage,
     PrivacyPolicyPage
 }

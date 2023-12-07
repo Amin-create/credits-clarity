@@ -14,7 +14,7 @@ import {
   MainCreditReports,
   Notification,
   PrivacyPolicyPage,
-  SignUpPage,
+  SignUpPage,Setting,
   TermsOfConditionsPage,
 } from "./pages/index";
 import { DashboardLayout } from "./components/layout";
@@ -44,6 +44,7 @@ function App() {
           <Route path="credit-reports" element={<MainCreditReports />} />
           <Route path="credit-reports/:companyName/details" element={<BankDetails />} />
           <Route path="notification" element={<Notification />} />
+          <Route path="setting" element={<Setting />} />
         </Route>
 
       </Routes>

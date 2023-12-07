@@ -565,3 +565,46 @@ export const UsBancorpReportDetails = {
         ],
     },
 }
+
+
+// ----------------------------------------------------------------------
+// Notifications
+// ----------------------------------------------------------------------
+
+export const allNotifications = [
+    {
+
+        id: 'hs-basic-heading-one',
+        title: "What is the Infinite Sock Dispenser?",
+        description: "The Infinite Sock Dispenser is a revolutionary device that dispenses socks from another dimension, ensuring you never run out of clean socks again. The Infinite Sock Dispenser is a revolutionary device that dispenses socks from another dimension, ensuring you never run out of clean socks again.  The Infinite Sock Dispenser is a revolutionary device that dispenses socks from another dimension, ensuring you never run out of clean socks again.  The Infinite Sock Dispenser is a revolutionary device that dispenses socks from another dimension, ensuring you never run out of clean socks again.  The Infinite Sock Dispenser is a revolutionary device that dispenses socks from another dimension, ensuring you never run out of clean socks again. ",
+        date: "7-12-2023"
+    },
+    {
+
+        id: 'hs-basic-heading-two',
+        title: "What is the Infinite Sock Dispenser?",
+        description: "The Infinite Sock Dispenser is a revolutionary device that dispenses socks from another dimension, ensuring you never run out of clean socks again. The Infinite Sock Dispenser is a revolutionary device that dispenses socks from another dimension, ensuring you never run out of clean socks again.  The Infinite Sock Dispenser is a revolutionary device that dispenses socks from another dimension, ensuring you never run out of clean socks again.  The Infinite Sock Dispenser is a revolutionary device that dispenses socks from another dimension, ensuring you never run out of clean socks again.  The Infinite Sock Dispenser is a revolutionary device that dispenses socks from another dimension, ensuring you never run out of clean socks again. ",
+        date: "7-12-2023"
+    },
+    {
+
+        id: 'hs-basic-heading-three',
+        title: "What is the Infinite Sock Dispenser?",
+        description: "The Infinite Sock Dispenser is a revolutionary device that dispenses socks from another dimension, ensuring you never run out of clean socks again. The Infinite Sock Dispenser is a revolutionary device that dispenses socks from another dimension, ensuring you never run out of clean socks again.  The Infinite Sock Dispenser is a revolutionary device that dispenses socks from another dimension, ensuring you never run out of clean socks again.  The Infinite Sock Dispenser is a revolutionary device that dispenses socks from another dimension, ensuring you never run out of clean socks again.  The Infinite Sock Dispenser is a revolutionary device that dispenses socks from another dimension, ensuring you never run out of clean socks again. ",
+        date: "6-12-2023"
+    },
+    {
+
+        id: 'hs-basic-heading-two',
+        title: "What is the Infinite Sock Dispenser?",
+        description: "The Infinite Sock Dispenser is a revolutionary device that dispenses socks from another dimension, ensuring you never run out of clean socks again. The Infinite Sock Dispenser is a revolutionary device that dispenses socks from another dimension, ensuring you never run out of clean socks again.  The Infinite Sock Dispenser is a revolutionary device that dispenses socks from another dimension, ensuring you never run out of clean socks again.  The Infinite Sock Dispenser is a revolutionary device that dispenses socks from another dimension, ensuring you never run out of clean socks again.  The Infinite Sock Dispenser is a revolutionary device that dispenses socks from another dimension, ensuring you never run out of clean socks again. ",
+        date: "6-8-2023"
+    },
+    {
+
+        id: 'hs-basic-heading-three',
+        title: "What is the Infinite Sock Dispenser?",
+        description: "The Infinite Sock Dispenser is a revolutionary device that dispenses socks from another dimension, ensuring you never run out of clean socks again. The Infinite Sock Dispenser is a revolutionary device that dispenses socks from another dimension, ensuring you never run out of clean socks again.  The Infinite Sock Dispenser is a revolutionary device that dispenses socks from another dimension, ensuring you never run out of clean socks again.  The Infinite Sock Dispenser is a revolutionary device that dispenses socks from another dimension, ensuring you never run out of clean socks again.  The Infinite Sock Dispenser is a revolutionary device that dispenses socks from another dimension, ensuring you never run out of clean socks again. ",
+        date: "6-8-2023"
+    }
+]
