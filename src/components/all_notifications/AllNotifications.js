@@ -1,5 +1,4 @@
 import React from 'react'
-import { Core } from '..';
 import Accordion from '../accordion/Accordion';
 
 function AllNotifications({ data }) {

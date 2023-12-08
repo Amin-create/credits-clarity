@@ -4,8 +4,7 @@ import Icons from '../../components/icons';
 
 const NavItem = ({ value, slug }) => {
     const pathParts = slug.split('/');
-    const _slug = pathParts[pathParts.length - 1];
-    console.log("_slug", _slug)
+    const _slug = pathParts[pathParts.length - 1]; 
     let path = value?.path; // Assuming value is an object
 
     if (path && path.startsWith('/')) {
@@ -59,10 +58,10 @@ function Sidebar({ isSidebarOpen, toggleSidebar, menu }) {
                     })}
                 </ul>
             </div>
-            <a className='block h-[80px] px-4 pt-2 pb-4'>
+            <a className='px-5 pb-3'>
                 <NavLink
                     to={'/login'}
-                    className='flex justify-start items-center gap-x-2 text-gray-6 hover:text-white text-[14px] hover:bg-gradient-to-r hover:from-purple-4 hover:to-purple-3 transition-all rounded-[8px] px-3 py-[10px]'
+                    className='flex justify-start items-center gap-x-2 text-dark-black hover:opacity-80 text-[14px] font-semibold hover:bg-gray-100 transition-all rounded-[8px] px-3 py-[10px]'
                 >
                     <span className='text-[18px]'>
                         <Icons name="Logout" />
@@ -70,6 +69,7 @@ function Sidebar({ isSidebarOpen, toggleSidebar, menu }) {
                     <span>Logout</span>
                 </NavLink>
             </a>
+            <p className='text-gray-1 px-8 pb-10'>© 2023 Credit Clarity </p>
         </aside>
     )
 }

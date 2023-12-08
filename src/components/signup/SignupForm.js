@@ -20,10 +20,6 @@ function SignupForm() {
     const [calenderError, setCalenderError] = useState("");
     const [ssnError, setSsnError] = useState("");
 
-
-
-
-
     console.log("email", email)
     console.log("password", password)
     console.log("confirmPassword", confirmPassword)

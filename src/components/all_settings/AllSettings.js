@@ -1,8 +1,10 @@
 import React, { useState } from 'react'
-import { Core } from '..';
-import { EquifaxCreditReports, ExperianCreditReports, TransUnionCreditReports, TransunionReportDetails } from '../../data';
+import MyProfile from './MyProfile';
+import ChangePassword from './ChangePassword';
+import Subscription from './Subscription';
+import Faq from './Faq';
 
-function AllSettings({ data }) {
+function AllSettings() {
     const [activeTab, setActiveTab] = useState('tab1');
 
     const handleTabChange = (tab) => {
@@ -15,7 +17,7 @@ function AllSettings({ data }) {
                 <div className="justify-center w-full max-auto">
                     <div className="justify-start w-full text-left">
                         <div className='flex flex-col justify-center items-center'>
-                            <ul className="flex gap-3 text-gray-500 p-[5px] mb-6">
+                            <ul className="flex gap-3 text-gray-500 p-[5px] mb-4">
                                 <li className="-mb-px">
                                     <a
                                         href="#_"
@@ -55,49 +57,22 @@ function AllSettings({ data }) {
                             </ul>
                             <div className="w-full">
                                 <div className={`${activeTab === 'tab1' ? 'block' : 'hidden'}`}>
-                                    <div className='flex gap-x-5'>
-                                        a
-                                    </div>
+                                    <MyProfile />
                                 </div>
                                 <div className={`${activeTab === 'tab2' ? 'block' : 'hidden'}`}>
-                                    <div className='flex gap-x-5'>
-                                        b
-                                    </div>
+                                    <ChangePassword />
                                 </div>
                                 <div className={`${activeTab === 'tab3' ? 'block' : 'hidden'}`}>
-                                    <div className='flex gap-x-5'>
-                                        c
-                                    </div>
+                                    <Subscription />
                                 </div>
                                 <div className={`${activeTab === 'tab4' ? 'block' : 'hidden'}`}>
-                                    <div className='flex gap-x-5'>
-                                        d
-                                    </div>
+                                    <Faq />
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-
-            {/* --------------
-            page credits reports > transunion >  report details START
-            -------------- */}
-
-            <div className='hidden fle x gap-x-5'>
-                <div className='   w-[50%]'>
-                    <Core.Card cardNumber={9} data={TransunionReportDetails.bank} />
-                </div>
-                <div className='flex flex-col gap-y-3 w-[50%]'>
-                    <Core.Card cardNumber={10} data={TransunionReportDetails.accountInformation1} />
-                    <Core.Card cardNumber={10} data={TransunionReportDetails.accountInformation2} />
-                    <Core.Card cardNumber={10} data={TransunionReportDetails.contactInformation} />
-                </div>
-            </div>
-
-            {/* --------------
-            page credits reports > transunion >  report details END
-            -------------- */}
         </section>
     )
 }

@@ -1,14 +1,7 @@
-import React, { useState } from 'react';
-import { Card } from '../core';
+import React, { useState } from 'react'; 
 import { Core } from '..';
 
 function StatsGroup({ data }) {
-    // const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-
-    // const toggleMobileMenu = () => {
-    //     setMobileMenuOpen(!mobileMenuOpen);
-    // };
-    console.log("data", data)
     return (
         <div className='flex flex-col gap-y-4 mt-4'>
             {data?.map(value => {

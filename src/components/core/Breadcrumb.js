@@ -7,7 +7,7 @@ function Breadcrumb({
     breadcrumb
 }) {
     return (
-        <div className='mb-5'>
+        <div className='mt-3 mb-5'>
             <h5 className='text-black-2 text-[32px] leading-[40px] font-bold'>{heading}</h5>
             <ol className="flex items-center whitespace-nowrap mt-2" aria-label="Breadcrumb">
                 {breadcrumb.map((value, index) => {

@@ -1,8 +1,7 @@
 import React from 'react';
 import { Core } from '..';
 
-function StatsDetailCards({ data }) {
-    console.log("data", data.creditScore)
+function StatsDetailCards({ data }) { 
     return (
         <div className='flex gap-x-4'>
             <Core.Card cardNumber={5} data={data.creditScore} />

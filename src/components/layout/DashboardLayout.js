@@ -30,9 +30,7 @@ const menu = [
 ]
 
 
-function DashboardLayout() {
-    // const [isChecked, setIsChecked] = useState(false);
-    // console.log("email", email)
+function DashboardLayout() { 
     const [isSidebarOpen, setIsSidebarOpen] = useState(false);
     const toggleSidebar = () => {
         setIsSidebarOpen(!isSidebarOpen);

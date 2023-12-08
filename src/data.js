@@ -213,13 +213,181 @@ export const dashboardCard = {
     description:
         "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release.",
 }
-
+export const dashboardStats = [
+    {
+        id: "1",
+        title: "TransUnion",
+        creditHealth: {
+            data: {
+                labels: [],
+                datasets: [
+                    {
+                        label: 'My First Dataset',
+                        data: [10, 10, 10, 10, 10, 10],
+                        backgroundColor: [
+                            '#EA6825',
+                            '#FA8E21',
+                            '#FFC142',
+                            '#B7D448',
+                            '#73BE42',
+                            '#01A249'
+                        ],
+                        circumference: 220,
+                        rotation: 250, borderWidth: 0,
+                    }
+                ]
+            },
+            options: {}
+        },
+        creditScore: {
+            data: {
+                labels: [],
+                datasets: [
+                    {
+                        label: 'My First Dataset',
+                        data: [10, 10, 10, 10, 10, 10],
+                        backgroundColor: [
+                            '#EA6825',
+                            '#FA8E21',
+                            '#FFC142',
+                            '#B7D448',
+                            '#73BE42',
+                            '#01A249'
+                        ],
+                        // circumference: 220,
+                        // rotation: 250
+                        borderWidth: 0,
+                    }
+                ]
+            },
+            options: {}
+        },
+    },
+    {
+        id: "2",
+        title: "Equifax",
+        creditHealth: {
+            data: {
+                labels: [],
+                datasets: [
+                    {
+                        label: 'My First Dataset',
+                        data: [10, 10, 10, 10, 10, 10],
+                        backgroundColor: [
+                            '#EA6825',
+                            '#FA8E21',
+                            '#FFC142',
+                            '#B7D448',
+                            '#73BE42',
+                            '#01A249'
+                        ],
+                        circumference: 220,
+                        rotation: 250, borderWidth: 0,
+                    }
+                ]
+            },
+            options: {}
+        },
+        creditScore: {
+            data: {
+                labels: [],
+                datasets: [
+                    {
+                        label: 'My First Dataset',
+                        data: [10, 10, 10, 10, 10, 10],
+                        backgroundColor: [
+                            '#EA6825',
+                            '#FA8E21',
+                            '#FFC142',
+                            '#B7D448',
+                            '#73BE42',
+                            '#01A249'
+                        ],
+                        // circumference: 220,
+                        // rotation: 250
+                        borderWidth: 0,
+                    }
+                ]
+            },
+            options: {}
+        },
+    },
+    {
+        id: "3",
+        title: "Experian",
+        creditHealth: {
+            data: {
+                labels: [],
+                datasets: [
+                    {
+                        label: 'My First Dataset',
+                        data: [10, 10, 10, 10, 10, 10],
+                        backgroundColor: [
+                            '#EA6825',
+                            '#FA8E21',
+                            '#FFC142',
+                            '#B7D448',
+                            '#73BE42',
+                            '#01A249'
+                        ],
+                        circumference: 220,
+                        rotation: 250, borderWidth: 0,
+                    }
+                ]
+            },
+            options: {}
+        },
+        creditScore: {
+            data: {
+                labels: [],
+                datasets: [
+                    {
+                        label: 'My First Dataset',
+                        data: [10, 10, 10, 10, 10, 10],
+                        backgroundColor: [
+                            '#EA6825',
+                            '#FA8E21',
+                            '#FFC142',
+                            '#B7D448',
+                            '#73BE42',
+                            '#01A249'
+                        ],
+                        // circumference: 220,
+                        // rotation: 250
+                        borderWidth: 0,
+                    }
+                ]
+            },
+            options: {}
+        },
+    }
+]
 
 export const TransUnionCreditScoreAndFactors = {
     creditScore: {
         title: "Credit Score",
         score: "875",
         points: "8",
+        creditScore: {
+            data: {
+                labels: ['July', 'August', 'September','October', 'November'],
+                datasets: [
+                    {
+                        label: 'Score',
+                        data: [100, 250, 200, 50, 300],
+                        fill: false,
+                        borderColor: 'orange',
+                        backgroundColor: 'orange',
+                        borderWidth: 2,
+                        pointBackgroundColor: 'white',
+                        pointBorderColor: 'orange',
+                        pointHoverBackgroundColor: 'orange',
+                        pointHoverBorderColor: 'white',
+                    },
+                ],
+            },
+            options: {}
+        },
     },
     creditFactors: {
         title: "Credit Factors",
@@ -371,7 +539,7 @@ export const TransunionReportDetails = {
         title: "Bank of America",
         status: "Late Payment",
         percentage: "4%",
-        amount: "2,548",
+        amount: "25568",
         balance: "7,568",
         date: "Oct-02-23",
         creditLimit: "100,000",
@@ -605,6 +773,36 @@ export const allNotifications = [
         id: 'hs-basic-heading-three',
         title: "What is the Infinite Sock Dispenser?",
         description: "The Infinite Sock Dispenser is a revolutionary device that dispenses socks from another dimension, ensuring you never run out of clean socks again. The Infinite Sock Dispenser is a revolutionary device that dispenses socks from another dimension, ensuring you never run out of clean socks again.  The Infinite Sock Dispenser is a revolutionary device that dispenses socks from another dimension, ensuring you never run out of clean socks again.  The Infinite Sock Dispenser is a revolutionary device that dispenses socks from another dimension, ensuring you never run out of clean socks again.  The Infinite Sock Dispenser is a revolutionary device that dispenses socks from another dimension, ensuring you never run out of clean socks again. ",
+        date: "6-8-2023"
+    }
+]
+
+export const faqs = [
+    {
+
+        id: 'hs-basic-heading-one',
+        title: "What is the Infinite Sock Dispenser?",
+        description: "The Infinite Sock Dispenser is a revolutionary device that dispenses socks from another dimension, ensuring you never run out of clean socks again. The Infinite Sock Dispenser is a revolutionary device that dispenses socks from another dimension, ensuring you never run out of clean socks again.  The Infinite Sock Dispenser is a revolutionary device that dispenses socks from another dimension, ensuring you never run out of clean socks again.  The Infinite Sock Dispenser is a revolutionary device that dispenses socks from another dimension, ensuring you never run out of clean socks again.  The Infinite Sock Dispenser is a revolutionary device that dispenses socks from another dimension, ensuring you never run out of clean socks again. ",
+        date: "7-12-2023"
+    },
+    {
+
+        id: 'hs-basic-heading-two',
+        title: "How does it work?",
+        description: "It taps into a parallel universe where socks are abundant and infinite, creating a portal to bring those socks into our world whenever you need them. The Infinite Sock Dispenser is a revolutionary device that dispenses socks from another dimension, ensuring you never run out of clean socks again. The Infinite Sock Dispenser is a revolutionary device that dispenses socks from another dimension, ensuring you never run out of clean socks again.",
+        date: "7-12-2023"
+    },
+    {
+
+        id: 'hs-basic-heading-three',
+        title: "Are the socks from the Infinite Sock Dispenser different from regular socks?",
+        description: "Yes, they are. These socks are made from a blend of unicorn hair and marshmallow fluff, making them the comfiest socks you'll ever wear. The Infinite Sock Dispenser is a revolutionary device that dispenses socks from another dimension, ensuring you never run out of clean socks again. The Infinite Sock Dispenser is a revolutionary device that dispenses socks from another dimension, ensuring you never run out of clean socks again.",
+        date: "6-12-2023"
+    },
+    {
+        id: 'hs-basic-heading-two',
+        title: "Are the socks from the Infinite Sock Dispenser different from regular socks?",
+        description: "Yes, they are. These socks are made from a blend of unicorn hair and marshmallow fluff, making them the comfiest socks you'll ever wear. The Infinite Sock Dispenser is a revolutionary device that dispenses socks from another dimension, ensuring you never run out of clean socks again. The Infinite Sock Dispenser is a revolutionary device that dispenses socks from another dimension, ensuring you never run out of clean socks again.",
         date: "6-8-2023"
     }
 ]

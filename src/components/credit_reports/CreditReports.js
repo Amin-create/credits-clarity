@@ -68,25 +68,6 @@ function CreditReports({ data }) {
                     </div>
                 </div>
             </div>
-
-            {/* --------------
-            page credits reports > transunion >  report details START
-            -------------- */}
-
-            <div className='hidden fle x gap-x-5'>
-                <div className='   w-[50%]'>
-                    <Core.Card cardNumber={9} data={TransunionReportDetails.bank} />
-                </div>
-                <div className='flex flex-col gap-y-3 w-[50%]'>
-                    <Core.Card cardNumber={10} data={TransunionReportDetails.accountInformation1} />
-                    <Core.Card cardNumber={10} data={TransunionReportDetails.accountInformation2} />
-                    <Core.Card cardNumber={10} data={TransunionReportDetails.contactInformation} />
-                </div>
-            </div>
-
-            {/* --------------
-            page credits reports > transunion >  report details END
-            -------------- */}
         </section>
     )
 }

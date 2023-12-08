@@ -1,10 +1,8 @@
 
 
 function Slider({ data, sliderNumber }) {
-    console.log("data,,,,,,,,,", data)
 
-
-
+    
     const getTooltipPosition = (value) => {
         // Calculate the position of the tooltip based on the value of the slider
         // Implement your logic to calculate the position here

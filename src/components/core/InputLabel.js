@@ -58,7 +58,6 @@ function InputLabel({
     }
 
     const icon = (name) => {
-        console.log("name", name)
         switch (name) {
             case "email":
                 return envelope;
@@ -130,9 +129,9 @@ function InputLabel({
     const validateInput = (name, value) => {
         switch (name) {
             case "fullName":
-                return value.trim() === "" ? "Please enter your Full Name" : !/\w+/.test(value) ? "Please enter your Full Name" : "";
+                return value.trim() === "" ? "Please enter your Full Name" : !/^[a-zA-Z\s]+$/.test(value) ? "Please enter a valid Full Name without numbers and special characters" : "";
             case "lastName":
-                return value.trim() === "" ? "Please enter your Last Name" : !/\w+/.test(value) ? "Please enter your Last Name" : "";
+                return value.trim() === "" ? "Please enter your Full Name" : !/^[a-zA-Z\s]+$/.test(value) ? "Please enter a valid Last Name without numbers and special characters" : "";
             case "email":
                 const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
                 return !emailRegex.test(value) ? "Please enter a valid Email Address" : "";
@@ -150,13 +149,15 @@ function InputLabel({
                 return "";
         }
     }
-
     const handleInputChange = (e) => {
         const { name, value } = e.target;
-        setState(value);
         const validationError = validateInput(name, value);
         setErrorMessage(validationError);
-    };
+    
+        if (!validationError) {
+            setState(value);
+        }
+    };    
 
     return (
         <>

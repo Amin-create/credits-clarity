@@ -137,6 +137,18 @@ const Icon = ({ name, size, ...props }) => {
                 <path d="M10.8747 9.99361C11.2001 10.319 11.2001 10.8467 10.8747 11.1721C10.5492 11.4975 10.0216 11.4975 9.69615 11.1721L5.7021 7.17812L1.70816 11.1721C1.38273 11.4976 0.855089 11.4976 0.529649 11.1721C0.204209 10.8467 0.204204 10.3191 0.529639 9.99362L4.52357 5.99962L0.52948 2.00559C0.20404 1.68015 0.204041 1.15252 0.529481 0.827084C0.85492 0.50165 1.38256 0.501649 1.708 0.827083L5.70208 4.8211L9.696 0.827098C10.0214 0.501658 10.5491 0.501655 10.8745 0.827089C11.2 1.15252 11.2 1.68016 10.8745 2.0056L6.8806 5.9996L10.8747 9.99361Z" fill="#858D9D" />
             </svg>
         ),
+        Card: (
+            <svg
+                {...props}
+                width={size ? size : "22"}
+                height={size ? size : "22"}
+                viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1.83325 7.79614H20.1666" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M5.5 15.1296H7.33333" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M9.625 15.1296H13.2917" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M5.90325 3.21289H16.0874C19.3508 3.21289 20.1666 4.01956 20.1666 7.23706V14.7629C20.1666 17.9804 19.3508 18.7871 16.0966 18.7871H5.90325C2.64909 18.7962 1.83325 17.9896 1.83325 14.7721V7.23706C1.83325 4.01956 2.64909 3.21289 5.90325 3.21289Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+        ),
         ChevronLeft: (
             <svg
                 {...props}
