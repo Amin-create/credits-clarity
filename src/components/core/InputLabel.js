@@ -125,7 +125,7 @@ function InputLabel({
         }
     }
 
-    const isPasswordInput = name === "password" || name === "confirmPassword" || name === "newPassword" ? true : false;
+    const isPasswordInput = name === "password" || name === "confirmPassword" || name === "newPassword" ? false : true;
 
     const validateInput = (name, value) => {
         switch (name) {
