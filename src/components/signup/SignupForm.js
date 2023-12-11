@@ -20,6 +20,17 @@ function SignupForm() {
     const [calenderError, setCalenderError] = useState("");
     const [ssnError, setSsnError] = useState("");
 
+    const [termsofServicesChecked, setTermsofServicesChecked] = useState(false);
+    const [privacyPolicyChecked, setPrivacyPolicyChecked] = useState(false);
+
+    const handleTermsCheckbox = () => {
+        setTermsofServicesChecked(!termsofServicesChecked);
+    };
+
+    const handlePrivacyCheckbox = () => {
+        setPrivacyPolicyChecked(!privacyPolicyChecked);
+    };
+
     console.log("email", email)
     console.log("password", password)
     console.log("confirmPassword", confirmPassword)
@@ -43,10 +54,26 @@ function SignupForm() {
             phoneNumber.trim() !== "" &&
             confirmPassword.trim() !== "" &&
             calender.trim() !== "" &&
-            ssn.trim() !== ""
+            ssn.trim() !== "" &&
+            termsofServicesChecked === true &&
+            privacyPolicyChecked === true
         );
     };
 
+
+    const handleSubmit = () => {
+        if (email !== "" &&
+            password !== "" &&
+            fullName !== "" &&
+            phoneNumber !== "" &&
+            confirmPassword !== "" &&
+            calender !== "" &&
+            ssn !== "" &&
+            password === confirmPassword
+        ) {
+            window.location.href = "/login"
+        }
+    };
     return (
         <section className='w-full relative'>
             <Core.Container wider>
@@ -79,6 +106,7 @@ function SignupForm() {
                                     errorMessage={passwordError}
                                 />
                                 <Core.InputLabel
+                                    password={password}
                                     setState={setConfirmPassword}
                                     name="confirmPassword"
                                     auth
@@ -111,31 +139,46 @@ function SignupForm() {
 
                                         <div className="relative flex gap-x-3">
                                             <div className="flex h-6 items-center">
-                                                <input type="checkbox" className="w-[18px] md:w-[24px] h-[18px] md:h-[24px] checkbox checkbox-success cursor-pointer appearance-none border-green border-[1px] rounded-[4px] md:rounded-[6px]" />
+                                                <input
+                                                    type="checkbox"
+                                                    className="w-[18px] md:w-[24px] h-[18px] md:h-[24px] checkbox checkbox-success cursor-pointer appearance-none border-green border-[1px] rounded-[4px] md:rounded-[6px]"
+                                                    checked={termsofServicesChecked}
+                                                    onChange={handleTermsCheckbox}
+                                                />
                                             </div>
                                             <div className="">
-                                                <label for="comments" className="text-dark-blue text-[12px] md:text-[14px] font-bold">I Agree <a className={`${styles.linkHover1}`} > <Link to="/terms-of-conditions">
-                                                    Terms of Services
-                                                </Link></a></label>
+                                                <label htmlFor="comments" className="text-dark-blue text-[12px] md:text-[14px] font-bold">
+                                                    I Agree
+                                                    <a className={`${styles.linkHover1}`}>
+                                                        <Link to="/terms-of-conditions">Terms of Services</Link>
+                                                    </a>
+                                                </label>
                                             </div>
                                         </div>
 
                                         <div className="relative flex gap-x-3">
                                             <div className="flex h-6 items-center">
-                                                <input type="checkbox" className="w-[18px] md:w-[24px] h-[18px] md:h-[24px] checkbox checkbox-success cursor-pointer appearance-none border-green border-[1px] rounded-[4px] md:rounded-[6px]" />
+                                                <input
+                                                    type="checkbox"
+                                                    className="w-[18px] md:w-[24px] h-[18px] md:h-[24px] checkbox checkbox-success cursor-pointer appearance-none border-green border-[1px] rounded-[4px] md:rounded-[6px]"
+                                                    checked={privacyPolicyChecked}
+                                                    onChange={handlePrivacyCheckbox}
+                                                />
                                             </div>
                                             <div className="">
-                                                <label for="candidates" className="text-dark-blue text-[12px] md:text-[14px] font-bold">I Agree <a className={`${styles.linkHover1}`} > <Link to="/privacy-policy">
-                                                    Privacy Policy
-                                                </Link></a></label>
+                                                <label htmlFor="candidates" className="text-dark-blue text-[12px] md:text-[14px] font-bold">
+                                                    I Agree
+                                                    <a className={`${styles.linkHover1}`}>
+                                                        <Link to="/privacy-policy">Privacy Policy</Link>
+                                                    </a>
+                                                </label>
                                             </div>
                                         </div>
-
                                     </div>
                                 </div>
                             </div>
                             <Core.Button greenIconicLg wider
-                                // onclick={handleSubmit} 
+                                onclick={handleSubmit}
                                 disabled={!isFormValid()}
                             >Create Account</Core.Button>
                             <p className='text-dark-blue text-[12px] md:text-[16px] leading-[14px] md:leading-[20px] font-regular text-center pt-4 md:pt-8'>

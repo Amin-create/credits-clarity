@@ -26,6 +26,14 @@ function LoginForm() {
         );
     };
 
+    const handleSubmit = () => {
+        if (email !== "" &&
+            password !== ""
+        ) {
+            window.location.href = "/dashboard"
+        }
+    };
+
     return (
         <section className='w-full relative'>
             <Core.Container wider>
@@ -76,7 +84,7 @@ function LoginForm() {
                                 </div>
                             </div>
                             <Core.Button greenIconicLg wider
-                                // onclick={handleSubmit} 
+                                onclick={handleSubmit}
                                 disabled={!isFormValid()}>Sign in</Core.Button>
                             <p className='text-dark-blue text-[12px] md:text-[16px] leading-[14px] md:leading-[20px] font-regular text-center pt-4 md:pt-8'>
                                 Don’t have any account? <NavLink to="/signup"><strong>Create an Account</strong></NavLink>

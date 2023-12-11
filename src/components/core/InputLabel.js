@@ -18,7 +18,8 @@ function InputLabel({
     // ----
     // common
     name,
-    setState
+    setState,
+    password
 }) {
     const [passwordVisible, setPasswordVisible] = useState(false);
     const [inputType, setInputType] = useState('text');
@@ -141,8 +142,9 @@ function InputLabel({
                 return !phoneRegex.test(value) ? "Please enter a valid Phone Number" : "";
             case "message":
                 return value.trim() === "" ? "Please enter your Message" : "";
-            case "password":
             case "confirmPassword":
+                return value !== password ? "Passwords do not match" : value.length < 8 ? "Password must be at least 8 characters long" : "";
+            case "password":
             case "newPassword":
                 return value.length < 8 ? "Password must be at least 8 characters long" : "";
             default:
@@ -153,11 +155,11 @@ function InputLabel({
         const { name, value } = e.target;
         const validationError = validateInput(name, value);
         setErrorMessage(validationError);
-    
+
         if (!validationError) {
             setState(value);
         }
-    };    
+    };
 
     return (
         <>
